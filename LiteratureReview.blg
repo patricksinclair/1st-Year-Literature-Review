@@ -3,52 +3,50 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: LiteratureReview.aux
 The style file: unsrt.bst
 Database file #1: BiofilmReferences.bib
-Warning--I didn't find a database entry for "jr:ashkin"
-Warning--I didn't find a database entry for "ob:Costerton1318"
-Warning--I didn't find a database entry for "ob:bornwolf"
-Warning--I didn't find a database entry for "jr:dholakia"
-Warning--I didn't find a database entry for "ob:hechtoptics"
 Warning--I didn't find a database entry for "jr:block"
 Warning--I didn't find a database entry for "jr:dammann"
-You've used 1 entry,
+Warning--empty year in bioref:tissue-antibio-grads
+Warning--can't use both author and editor fields in bioref:biofilm-fuel-consumption
+Warning--empty year in bioref:Greulich-growthDependentAntibiotics
+You've used 18 entries,
             1791 wiz_defined-function locations,
-            461 strings with 3819 characters,
-and the built_in function-call counts, 241 in all, are:
-= -- 20
-> -- 8
+            583 strings with 8353 characters,
+and the built_in function-call counts, 4739 in all, are:
+= -- 372
+> -- 283
 < -- 0
-+ -- 3
-- -- 2
-* -- 19
-:= -- 44
-add.period$ -- 3
-call.type$ -- 1
-change.case$ -- 1
++ -- 102
+- -- 84
+* -- 424
+:= -- 796
+add.period$ -- 57
+call.type$ -- 18
+change.case$ -- 16
 chr.to.int$ -- 0
-cite$ -- 1
-duplicate$ -- 9
-empty$ -- 24
-format.name$ -- 2
-if$ -- 51
+cite$ -- 21
+duplicate$ -- 164
+empty$ -- 429
+format.name$ -- 84
+if$ -- 1010
 int.to.chr$ -- 0
-int.to.str$ -- 1
-missing$ -- 1
-newline$ -- 8
-num.names$ -- 1
-pop$ -- 1
+int.to.str$ -- 18
+missing$ -- 20
+newline$ -- 96
+num.names$ -- 18
+pop$ -- 28
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 4
+skip$ -- 53
 stack$ -- 0
-substring$ -- 18
-swap$ -- 1
+substring$ -- 365
+swap$ -- 19
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 2
-width$ -- 2
-write$ -- 13
-(There were 7 warnings)
+warning$ -- 3
+while$ -- 36
+width$ -- 20
+write$ -- 202
+(There were 5 warnings)

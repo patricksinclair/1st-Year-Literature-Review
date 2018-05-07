@@ -2,3 +2,308 @@
 % Encoding: UTF-8
 
 
+@Article{biofilms:Costerton-biofilms-persistent,
+  Title                    = {Bacterial Biofilms: A Common Cause of Persistent Infections},
+  Author                   = {Costerton, J. W. and Stewart, Philip S. and Greenberg, E. P.},
+  Journal                  = {Science},
+  Year                     = {1999},
+  Number                   = {5418},
+  Pages                    = {1318--1322},
+  Volume                   = {284},
+
+  Abstract                 = {Bacteria that attach to surfaces aggregate in a hydrated polymeric matrix of their own synthesis to form biofilms. Formation of these sessile communities and their inherent resistance to antimicrobial agents are at the root of many persistent and chronic bacterial infections. Studies of biofilms have revealed differentiated, structured groups of cells with community properties. Recent advances in our understanding of the genetic and molecular basis of bacterial community behavior point to therapeutic targets that may provide a means for the control of biofilm infections.},
+  Doi                      = {10.1126/science.284.5418.1318},
+  Eprint                   = {http://science.sciencemag.org/content/284/5418/1318.full.pdf},
+  ISSN                     = {0036-8075},
+  Owner                    = {s1212500},
+  Publisher                = {American Association for the Advancement of Science},
+  Timestamp                = {2018.05.07},
+  Url                      = {http://science.sciencemag.org/content/284/5418/1318}
+}
+
+@Article{bioref:biofilm-formation,
+  Title                    = {Biofilm Formation: A Clinically Relevant Microbiological Process},
+  Author                   = {Donlan, Rodney M.},
+  Journal                  = {Clinical Infectious Diseases},
+  Year                     = {2001},
+  Number                   = {8},
+  Pages                    = {1387-1392},
+  Volume                   = {33},
+
+  Doi                      = {10.1086/322972},
+  Eprint                   = {/oup/backfile/content_public/journal/cid/33/8/10.1086/322972/2/33-8-1387.pdf},
+  Url                      = {http://dx.doi.org/10.1086/322972}
+}
+
+@Article{bioref:tissue-antibio-grads,
+  Title                    = {Challenges: Selective compartments for resistant microorganisms in antibiotic gradients},
+  Author                   = {Baquero Fernando and Negri María‐Cristina},
+  Journal                  = {BioEssays},
+  Number                   = {8},
+  Pages                    = {731-736},
+  Volume                   = {19},
+
+  Abstract                 = {Abstract The development of bacterial resistance to antibiotics is one of the best documented examples of contemporary biological evolution. Variability in the mechanisms of resistance depends on the diversity of genotypes in the huge bacterial populations, and also on the diversity of selective pressures that are produced along the antibiotic concentration gradients formed in the highly compartmentalized human body during therapy. These antibiotic gradients can be conceived as comprising selective compartments, each one of them defined as the concentration able to select a particular genetic variant. In vitro experimental models confirm that some antibiotic resistant variants are selected only at certain selective concentrations of antibiotics. The correspondence between selective compartments and selectable variants could offer a way of describing more accurately the antibiotic selective landscapes and for taking measures to prevent the development of a major threat to the future of modern medicine.},
+  Doi                      = {10.1002/bies.950190814},
+  Eprint                   = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/bies.950190814},
+  Owner                    = {s1212500},
+  Timestamp                = {2018.05.07},
+  Url                      = {https://onlinelibrary.wiley.com/doi/abs/10.1002/bies.950190814}
+}
+
+@Article{bioref:tau-leap-algorithm,
+  Title                    = {Approximate accelerated stochastic simulation of chemically reacting systems},
+  Author                   = {Daniel T. Gillespie},
+  Journal                  = {The Journal of Chemical Physics},
+  Year                     = {2001},
+  Number                   = {4},
+  Pages                    = {1716-1733},
+  Volume                   = {115},
+
+  Doi                      = {10.1063/1.1378322},
+  Eprint                   = { 
+ https://doi.org/10.1063/1.1378322
+ 
+},
+  Owner                    = {s1212500},
+  Timestamp                = {2018.05.07},
+  Url                      = { 
+ https://doi.org/10.1063/1.1378322
+ 
+}
+}
+
+@Article{bioref:Gillespie-algorithm,
+  Title                    = {A general method for numerically simulating the stochastic time evolution of coupled chemical reactions},
+  Author                   = {Daniel T Gillespie},
+  Journal                  = {Journal of Computational Physics},
+  Year                     = {1976},
+  Number                   = {4},
+  Pages                    = {403 - 434},
+  Volume                   = {22},
+
+  Doi                      = {https://doi.org/10.1016/0021-9991(76)90041-3},
+  ISSN                     = {0021-9991},
+  Owner                    = {s1212500},
+  Timestamp                = {2018.05.07},
+  Url                      = {http://www.sciencedirect.com/science/article/pii/0021999176900413}
+}
+
+@Article{bioref:Grasso-constant-antibtioic-concn,
+  Title                    = {New In Vitro Model to Study the Effect of Antibiotic Concentration and Rate of Elimination on Antibacterial Activity},
+  Author                   = {Grasso, S. and Meinardi, G. and De Carneri, I. and Tamassia, V.},
+  Journal                  = {Antimicrobial Agents and Chemotherapy},
+  Year                     = {1978},
+  Number                   = {4},
+  Pages                    = {570-576},
+  Volume                   = {13},
+
+  Abstract                 = {A new apparatus is described which serves to investigate the in vitro antibacterial activity of antibiotics as a function of different concentration time curves. The apparatus can be adjusted to simulate the biexponential serum level curves observed in vivo after oral or intramuscular administration. Preliminary studies were carried out with a cephalosporin derivative, cefazolin, against Escherichia coli and Klebsiella sp. strains simulating initial concentrations of 5, 10, and 20 μg/ml that decreased exponentially with half-lives of 30, 60, and 120 min. Surviving cells were counted at 1-h intervals for 10 h. In all the situations tested there was an initial phase of rapid bactericidal activity followed by a phase of bacteriostatic activity, whose length depended on the drug elimination rate but was relatively independent of the initial concentrations. Bacterial regrowth occurred when the antibiotic concentration fell below the minimum inhibitory concentration of the drug against the strains tested. The antibacterial activity of cefazolin, cephacetrile, and cephradine against E. coli and Klebsiella strains was also investigated, in a medium containing 4% human albumin, simulating the serum level curves observed in humans after an intramuscular dose of 1 g. The results obtained suggest that, for cephalosporins, a longer half-life might be more useful than higher peak levels.},
+  Doi                      = {10.1128/AAC.13.4.570},
+  Eprint                   = {http://aac.asm.org/content/13/4/570.full.pdf+html},
+  Url                      = {http://aac.asm.org/content/13/4/570.abstract}
+}
+
+@Article{bioref:PRL-drugGradients,
+  Title                    = {Mutational Pathway Determines Whether Drug Gradients Accelerate Evolution of Drug-Resistant Cells},
+  Author                   = {Greulich, Philip and Waclaw, Bart\l{}omiej and Allen, Rosalind J.},
+  Journal                  = {Phys. Rev. Lett.},
+  Year                     = {2012},
+
+  Month                    = {Aug},
+  Pages                    = {088101},
+  Volume                   = {109},
+
+  Doi                      = {10.1103/PhysRevLett.109.088101},
+  Issue                    = {8},
+  Numpages                 = {5},
+  Publisher                = {American Physical Society},
+  Url                      = {https://link.aps.org/doi/10.1103/PhysRevLett.109.088101}
+}
+
+@Book{bioref:shipping-CO2-nation,
+  Title                    = {Shipping Solutions: Technological And Operational Methods Available To Reduce CO2},
+  Author                   = {Harrould-Kolieb, Ellycia and Jacqueline Savitz},
+  Publisher                = {Washington, D.C.: Oceana},
+  Year                     = {2010},
+
+  Owner                    = {s1212500},
+  Timestamp                = {2018.05.07}
+}
+
+@Article{bioref:antibiotics-usage-USA-2011,
+  Title                    = {US Outpatient Antibiotic Prescribing Variation According to Geography, Patient Population, and Provider Specialty in 2011},
+  Author                   = {Hicks, Lauri A. and Bartoces, Monina G. and Roberts, Rebecca M. and Suda, Katie J. and Hunkler, Robert J. and Taylor, Jr ,Thomas H. and Schrag, Stephanie J.},
+  Journal                  = {Clinical Infectious Diseases},
+  Year                     = {2015},
+  Number                   = {9},
+  Pages                    = {1308-1316},
+  Volume                   = {60},
+
+  Doi                      = {10.1093/cid/civ076},
+  Eprint                   = {/oup/backfile/content_public/journal/cid/60/9/10.1093/cid/civ076/2/civ076.pdf},
+  Url                      = {http://dx.doi.org/10.1093/cid/civ076}
+}
+
+@Article{bioref:future-death-stats,
+  Title                    = {Will 10 Million People Die a Year due to Antimicrobial Resistance by 2050?},
+  Author                   = {de Kraker, Marlieke E. A. AND Stewardson, Andrew J. AND Harbarth, Stephan},
+  Journal                  = {PLOS Medicine},
+  Year                     = {2016},
+
+  Month                    = {11},
+  Number                   = {11},
+  Pages                    = {1-6},
+  Volume                   = {13},
+
+  Abstract                 = {Marlieke de Kraker and colleagues reflect on the need for better global estimates for the burden of antimicrobial resistance.},
+  Doi                      = {10.1371/journal.pmed.1002184},
+  Owner                    = {s1212500},
+  Publisher                = {Public Library of Science},
+  Timestamp                = {2018.05.07},
+  Url                      = {https://doi.org/10.1371/journal.pmed.1002184}
+}
+
+@Article{bioref:KUMAR19989,
+  Title                    = {Significance of microbial biofilms in food industry: a review},
+  Author                   = {C.Ganesh Kumar and S.K Anand},
+  Journal                  = {International Journal of Food Microbiology},
+  Year                     = {1998},
+  Number                   = {1},
+  Pages                    = {9 - 27},
+  Volume                   = {42},
+
+  Doi                      = {https://doi.org/10.1016/S0168-1605(98)00060-9},
+  ISSN                     = {0168-1605},
+  Keywords                 = {Biofilm, Microbial attachment, Extracellular matrix, Control, Removal, Bacteriocins},
+  Owner                    = {s1212500},
+  Timestamp                = {2018.05.07},
+  Url                      = {http://www.sciencedirect.com/science/article/pii/S0168160598000609}
+}
+
+@Article{bioref:india-death-stats,
+  Title                    = {Antibiotic resistance—the need for global solutions},
+  Author                   = {Ramanan Laxminarayan and Adriano Duse and Chand Wattal and Anita K M Zaidi and Heiman F L Wertheim and Nithima Sumpradit and Erika Vlieghe and Gabriel Levy Hara and Ian M Gould and Herman Goossens and Christina Greko and Anthony D So and Maryam Bigdeli and Göran Tomson and Will Woodhouse and Eva Ombaka and Arturo Quizhpe Peralta and Farah Naz Qamar and Fatima Mir and Sam Kariuki and Zulfiqar A Bhutta and Anthony Coates and Richard Bergstrom and Gerard D Wright and Eric D Brown and Otto Cars},
+  Journal                  = {The Lancet Infectious Diseases},
+  Year                     = {2013},
+  Number                   = {12},
+  Pages                    = {1057 - 1098},
+  Volume                   = {13},
+
+  Doi                      = {https://doi.org/10.1016/S1473-3099(13)70318-9},
+  ISSN                     = {1473-3099},
+  Owner                    = {s1212500},
+  Timestamp                = {2018.05.07},
+  Url                      = {http://www.sciencedirect.com/science/article/pii/S1473309913703189}
+}
+
+@Article{bioref:non-toxic-antifouling-strat,
+  Title                    = {Non-toxic antifouling strategies},
+  Author                   = {Chelsea M. Magin and Scott P. Cooper and Anthony B. Brennan},
+  Journal                  = {Materials Today},
+  Year                     = {2010},
+  Number                   = {4},
+  Pages                    = {36 - 44},
+  Volume                   = {13},
+
+  Doi                      = {https://doi.org/10.1016/S1369-7021(10)70058-4},
+  ISSN                     = {1369-7021},
+  Owner                    = {s1212500},
+  Timestamp                = {2018.05.07},
+  Url                      = {http://www.sciencedirect.com/science/article/pii/S1369702110700584}
+}
+
+@Book{bioref:biofilm-fuel-consumption,
+  Title                    = {Bacterial Biofilms and Biofouling: Translational Research in Marine Biotechnology: Proceedings of the October 5-6, 1999, Workshop.},
+  Author                   = {Marc W. Mittelman},
+  Editor                   = {National Academies Press (US)},
+  Publisher                = {National Research Council (US) Board on Biology; National Research Council (US) Ocean Studies Board},
+  Year                     = {2000},
+
+  Owner                    = {s1212500},
+  Timestamp                = {2018.05.07}
+}
+
+@Article{bioref:UV-biofilm-repellent,
+  Title                    = {Ultraviolet radiation (UV-C): a potential tool for the control of biofouling on marine optical instruments},
+  Author                   = { Jagadish S. Patil and Hideshi Kimoto and Takashi Kimoto and Toshiro Saino },
+  Journal                  = {Biofouling},
+  Year                     = {2007},
+  Note                     = {PMID: 17653932},
+  Number                   = {4},
+  Pages                    = {215-230},
+  Volume                   = {23},
+
+  Doi                      = {10.1080/08927010701275598},
+  Eprint                   = { 
+ https://doi.org/10.1080/08927010701275598
+ 
+},
+  Owner                    = {s1212500},
+  Publisher                = {Taylor \& Francis},
+  Timestamp                = {2018.05.07},
+  Url                      = { 
+ https://doi.org/10.1080/08927010701275598
+ 
+}
+}
+
+@Article{bioref:Greulich-growthDependentAntibiotics,
+  Title                    = {Growth‐dependent bacterial susceptibility to ribosome‐targeting antibiotics},
+  Author                   = {Greulich Philip and Scott Matthew and Evans Martin R and Allen Rosalind J},
+  Journal                  = {Molecular Systems Biology},
+  Number                   = {3},
+  Pages                    = {796},
+  Volume                   = {11},
+
+  Abstract                 = {Abstract Bacterial growth environment strongly influences the efficacy of antibiotic treatment, with slow growth often being associated with decreased susceptibility. Yet in many cases, the connection between antibiotic susceptibility and pathogen physiology remains unclear. We show that for ribosome‐targeting antibiotics acting on Escherichia coli, a complex interplay exists between physiology and antibiotic action; for some antibiotics within this class, faster growth indeed increases susceptibility, but for other antibiotics, the opposite is true. Remarkably, these observations can be explained by a simple mathematical model that combines drug transport and binding with physiological constraints. Our model reveals that growth‐dependent susceptibility is controlled by a single parameter characterizing the ‘reversibility’ of ribosome‐targeting antibiotic transport and binding. This parameter provides a spectrum classification of antibiotic growth‐dependent efficacy that appears to correspond at its extremes to existing binary classification schemes. In these limits, the model predicts universal, parameter‐free limiting forms for growth inhibition curves. The model also leads to non‐trivial predictions for the drug susceptibility of a translation mutant strain of E. coli, which we verify experimentally. Drug action and bacterial metabolism are mechanistically complex; nevertheless, this study illustrates how coarse‐grained models can be used to integrate pathogen physiology into drug design and treatment strategies.},
+  Doi                      = {10.15252/msb.20145949},
+  Eprint                   = {https://onlinelibrary.wiley.com/doi/pdf/10.15252/msb.20145949},
+  Keywords                 = {antibiotic pharmacodynamics, bacterial physiology, phenomenological growth laws, ribosome binding antibiotics},
+  Owner                    = {s1212500},
+  Timestamp                = {2018.05.07},
+  Url                      = {https://onlinelibrary.wiley.com/doi/abs/10.15252/msb.20145949}
+}
+
+@Article{bioref:first-antibiotics,
+  Title                    = {The introduction of ‘chemotherapy’ using arsphenamine – the first magic bullet},
+  Author                   = {KJ Williams},
+  Journal                  = {Journal of the Royal Society of Medicine},
+  Year                     = {2009},
+  Note                     = {PMID: 19679737},
+  Number                   = {8},
+  Pages                    = {343-348},
+  Volume                   = {102},
+
+  Doi                      = {10.1258/jrsm.2009.09k036},
+  Eprint                   = { 
+ https://doi.org/10.1258/jrsm.2009.09k036
+ 
+},
+  Owner                    = {s1212500},
+  Timestamp                = {2018.05.07},
+  Url                      = { 
+ https://doi.org/10.1258/jrsm.2009.09k036
+ 
+}
+}
+
+@Article{bioref:Zhang-effects-of-antibio-grad,
+  Title                    = {Acceleration of Emergence of Bacterial Antibiotic Resistance in Connected Microenvironments},
+  Author                   = {Zhang, Qiucen and Lambert, Guillaume and Liao, David and Kim, Hyunsung and Robin, Kristelle and Tung, Chih-kuan and Pourmand, Nader and Austin, Robert H.},
+  Journal                  = {Science},
+  Year                     = {2011},
+  Number                   = {6050},
+  Pages                    = {1764--1767},
+  Volume                   = {333},
+
+  Abstract                 = {The emergence of bacterial antibiotic resistance is a growing problem, yet the variables that influence the rate of emergence of resistance are not well understood. In a microfluidic device designed to mimic naturally occurring bacterial niches, resistance of Escherichia coli to the antibiotic ciprofloxacin developed within 10 hours. Resistance emerged with as few as 100 bacteria in the initial inoculation. Whole-genome sequencing of the resistant organisms revealed that four functional single-nucleotide polymorphisms attained fixation. Knowledge about the rapid emergence of antibiotic resistance in the heterogeneous conditions within the mammalian body may be helpful in understanding the emergence of drug resistance during cancer chemotherapy.},
+  Doi                      = {10.1126/science.1208747},
+  Eprint                   = {http://science.sciencemag.org/content/333/6050/1764.full.pdf},
+  ISSN                     = {0036-8075},
+  Owner                    = {s1212500},
+  Publisher                = {American Association for the Advancement of Science},
+  Timestamp                = {2018.05.07},
+  Url                      = {http://science.sciencemag.org/content/333/6050/1764}
+}
+

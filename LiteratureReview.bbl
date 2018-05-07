@@ -1,9 +1,119 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
-\bibitem{bioref:KUMAR19989}
-C.Ganesh Kumar and S.K Anand.
-\newblock Significance of microbial biofilms in food industry: a review.
-\newblock {\em International Journal of Food Microbiology}, 42(1):9 -- 27,
-  1998.
+\bibitem{bioref:first-antibiotics}
+KJ~Williams.
+\newblock The introduction of ‘chemotherapy’ using arsphenamine – the
+  first magic bullet.
+\newblock {\em Journal of the Royal Society of Medicine}, 102(8):343--348,
+  2009.
+\newblock PMID: 19679737.
+
+\bibitem{bioref:antibiotics-usage-USA-2011}
+Lauri~A. Hicks, Monina~G. Bartoces, Rebecca~M. Roberts, Katie~J. Suda,
+  Robert~J. Hunkler, Thomas~H. Taylor, Jr, and Stephanie~J. Schrag.
+\newblock Us outpatient antibiotic prescribing variation according to
+  geography, patient population, and provider specialty in 2011.
+\newblock {\em Clinical Infectious Diseases}, 60(9):1308--1316, 2015.
+
+\bibitem{bioref:india-death-stats}
+Ramanan Laxminarayan, Adriano Duse, Chand Wattal, Anita K~M Zaidi, Heiman F~L
+  Wertheim, Nithima Sumpradit, Erika Vlieghe, Gabriel~Levy Hara, Ian~M Gould,
+  Herman Goossens, Christina Greko, Anthony~D So, Maryam Bigdeli, Göran
+  Tomson, Will Woodhouse, Eva Ombaka, Arturo~Quizhpe Peralta, Farah~Naz Qamar,
+  Fatima Mir, Sam Kariuki, Zulfiqar~A Bhutta, Anthony Coates, Richard
+  Bergstrom, Gerard~D Wright, Eric~D Brown, and Otto Cars.
+\newblock Antibiotic resistance—the need for global solutions.
+\newblock {\em The Lancet Infectious Diseases}, 13(12):1057 -- 1098, 2013.
+
+\bibitem{bioref:future-death-stats}
+Marlieke E.~A. de~Kraker, Andrew~J. Stewardson, and Stephan Harbarth.
+\newblock Will 10 million people die a year due to antimicrobial resistance by
+  2050?
+\newblock {\em PLOS Medicine}, 13(11):1--6, 11 2016.
+
+\bibitem{bioref:Grasso-constant-antibtioic-concn}
+S.~Grasso, G.~Meinardi, I.~De~Carneri, and V.~Tamassia.
+\newblock New in vitro model to study the effect of antibiotic concentration
+  and rate of elimination on antibacterial activity.
+\newblock {\em Antimicrobial Agents and Chemotherapy}, 13(4):570--576, 1978.
+
+\bibitem{bioref:Zhang-effects-of-antibio-grad}
+Qiucen Zhang, Guillaume Lambert, David Liao, Hyunsung Kim, Kristelle Robin,
+  Chih-kuan Tung, Nader Pourmand, and Robert~H. Austin.
+\newblock Acceleration of emergence of bacterial antibiotic resistance in
+  connected microenvironments.
+\newblock {\em Science}, 333(6050):1764--1767, 2011.
+
+\bibitem{bioref:tissue-antibio-grads}
+Baquero Fernando and Negri María‐Cristina.
+\newblock Challenges: Selective compartments for resistant microorganisms in
+  antibiotic gradients.
+\newblock {\em BioEssays}, 19(8):731--736.
+
+\bibitem{bioref:biofilm-formation}
+Rodney~M. Donlan.
+\newblock Biofilm formation: A clinically relevant microbiological process.
+\newblock {\em Clinical Infectious Diseases}, 33(8):1387--1392, 2001.
+
+\bibitem{biofilms:Costerton-biofilms-persistent}
+J.~W. Costerton, Philip~S. Stewart, and E.~P. Greenberg.
+\newblock Bacterial biofilms: A common cause of persistent infections.
+\newblock {\em Science}, 284(5418):1318--1322, 1999.
+
+\bibitem{bioref:biofilm-fuel-consumption}
+Marc~W. Mittelman.
+\newblock {\em Bacterial Biofilms and Biofouling: Translational Research in
+  Marine Biotechnology: Proceedings of the October 5-6, 1999, Workshop.}
+\newblock National Research Council (US) Board on Biology; National Research
+  Council (US) Ocean Studies Board, 2000.
+
+\bibitem{bioref:shipping-CO2-nation}
+Ellycia Harrould-Kolieb and Jacqueline Savitz.
+\newblock {\em Shipping Solutions: Technological And Operational Methods
+  Available To Reduce CO2}.
+\newblock Washington, D.C.: Oceana, 2010.
+
+\bibitem{bioref:non-toxic-antifouling-strat}
+Chelsea~M. Magin, Scott~P. Cooper, and Anthony~B. Brennan.
+\newblock Non-toxic antifouling strategies.
+\newblock {\em Materials Today}, 13(4):36 -- 44, 2010.
+
+\bibitem{bioref:UV-biofilm-repellent}
+Jagadish~S. Patil, Hideshi Kimoto, Takashi Kimoto, and Toshiro Saino.
+\newblock Ultraviolet radiation (uv-c): a potential tool for the control of
+  biofouling on marine optical instruments.
+\newblock {\em Biofouling}, 23(4):215--230, 2007.
+\newblock PMID: 17653932.
+
+\bibitem{bioref:antimicro-paint-desc}
+J~Grant Burgess, Kenneth~G Boyd, Evelyn Armstrong, Zhong Jiang, Liming Yan,
+  Matz Berggren, Ulrika May, Tony Pisacane, Åke Granmo, and David~R Adams.
+\newblock The development of a marine natural product-based antifouling paint.
+\newblock {\em Biofouling}, 19(sup1):197--205, 2003.
+\newblock PMID: 14618721.
+
+\bibitem{bioref:PRL-drugGradients}
+Philip Greulich, Bart\l{}omiej Waclaw, and Rosalind~J. Allen.
+\newblock Mutational pathway determines whether drug gradients accelerate
+  evolution of drug-resistant cells.
+\newblock {\em Phys. Rev. Lett.}, 109:088101, Aug 2012.
+
+\bibitem{bioref:Greulich-growthDependentAntibiotics}
+Greulich Philip, Scott Matthew, Evans~Martin R, and Allen~Rosalind J.
+\newblock Growth‐dependent bacterial susceptibility to ribosome‐targeting
+  antibiotics.
+\newblock {\em Molecular Systems Biology}, 11(3):796.
+
+\bibitem{bioref:Gillespie-algorithm}
+Daniel~T Gillespie.
+\newblock A general method for numerically simulating the stochastic time
+  evolution of coupled chemical reactions.
+\newblock {\em Journal of Computational Physics}, 22(4):403 -- 434, 1976.
+
+\bibitem{bioref:tau-leap-algorithm}
+Daniel~T. Gillespie.
+\newblock Approximate accelerated stochastic simulation of chemically reacting
+  systems.
+\newblock {\em The Journal of Chemical Physics}, 115(4):1716--1733, 2001.
 
 \end{thebibliography}
