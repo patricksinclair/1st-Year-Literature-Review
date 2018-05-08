@@ -5,6 +5,7 @@
 \usepackage{head,fullpage}     % Add local fullpage and head macros
 \usepackage[pdftex]{graphicx}  % Add graphicx pachage with pdf flag (must use pdflatex)
 \usepackage{datetime}
+\usepackage{float}
 \renewcommand{\dateseparator}{-}
 \parindent=0pt          %  Switch off indent of paragraphs 
 \parskip=5pt            %  Put 5pt between each paragraph  
@@ -68,12 +69,12 @@ Signature:\hspace*{8cm}Date:
 
 \section{Background}
 
-\begin{itemize}
- \item Antibiotic resistance - its prevalence, not understood well
- \item overview of gradients frm martin paper - then mention a source of gradients is biofilms
- \item Biofilms - what are they (mention polymers perhaps)
- \item section on industrial applications - ship hulls etc
-\end{itemize}
+% \begin{itemize}
+%  \item Antibiotic resistance - its prevalence, not understood well
+%  \item overview of gradients frm martin paper - then mention a source of gradients is biofilms
+%  \item Biofilms - what are they (mention polymers perhaps)
+%  \item section on industrial applications - ship hulls etc
+% \end{itemize}
 
 Since their discovery in the early 1900s \cite{bioref:first-antibiotics}, antibiotics have shaped modern medicine,
 and indeed modern society as a whole.  Yet despite their prevalence, with over 260,000,000 courses of antibiotics prescribed 
@@ -107,7 +108,13 @@ incredibly important.
 
 Recently, several physical methods of reducing marine biofouling have been developed, which range from physical coatings that inhibit microbial
 attachment due to their topography \cite{bioref:non-toxic-antifouling-strat} to usage of ultraviolet radiation \cite{bioref:UV-biofilm-repellent}.
-However, the most widespread 
+However, the most widespread technique is that of anti-microbial paints which are applied to the boat hulls and then leach various antimicrobial
+compounds over time which inhibit biofouling \cite{bioref:antimicro-paint-desc}.  It is this latter method which is of relevant interest to this project
+due to its analogous nature of applying antibiotics to bacterial biofilms.
+
+This project will involve creating simulations of a range of scenarios where bacterial populations experience antibiotic gradients, and will
+investigate how these populations develop over time.  Including but not limited to; the effects of bacterial evolution, differing types of growth-rate dependent
+antibiotics and populations with heterogeneous species and resistance distributions.
 
 
 
@@ -125,46 +132,108 @@ However, the most widespread
 \section{Review of Background Bibliography}
 
 \begin{itemize}
+  \item overview of antibiotics - how they work etc
   \item Causes of antibiotic crisis
   \item growth rate dependent antibiotics, $\beta$-lactams etc
-  \item mention the differnt algorithms possible for the sims, gillespie etc - and give overview of what we used
+  \item how biofilms form - the bacteria change when in a biofilm, why are they difficult to get rid of 
   \item overview of biofouling, current ship hull anti-microbes
   \item difference of films and fouls
+  \item brief mention of macrofouling
   \item surface colonisation
   \item opposite gradient directions for films and fouls
   \item how biocidal paint works, diffusion coefficients etc
-  
+  \item mention the differnt algorithms possible for the sims, gillespie etc - and give overview of what we used
+  \item as in, mention the rates, algorithm and description of why used
  
 \end{itemize}
 
+\subsection{Antibiotic gradients}
+The issue of antibiotic resistance is one of the key issues plaguing modern science as of today, and as such, the field commands a 
+large volume of research dedicated to it with a wide range of methods involved, ranging from experimental to theoretical methods including both modelling and 
+more in depth simulation \cite{bioref:chait-interactions, bioref:Wang-treatment-tradeoff, bioref:Torella-optimal-drug-synergy}.  While current research is 
+investigating a wide variety of factors which contribute to the development of resistances, from mutational path lengths \cite{bioref:marvig-transmiss-lineage} to 
+the synergistic effects of various antibiotics \cite{bioref:Liu-baicalin-synergy}, the majority of these studies, including all studies referenced
+so far in this section, are performed with constant and uniform concentrations of antibiotics.
+
+While this situation tends to be more convenient for idealised in vivo experiments, many real-world in vivo scenarios do not have these conditions.
+Many naturally occurring structures, typically the ones which the drugs are intended to target, do not allow said drugs to fully permeate throughout
+the region, creating drug gradients where the drug concentration can vary noticeable over space.  These gradients can arise in a variety of 
+situations, from tissue \cite{bioref:minelli-peflox-penet} to bacterial biofilms \cite{bioref:Anderson2008}.
+
+It is only in recent years that the effects of these spatial heterogeneities have been considered as a serious influencer on the evolution of resistance. 
+In fact, models have been constructed which predict that drug gradients actually tend to accelerate the evolution of resistance \cite{bioref:Hermsen-source-and-sink}.
+To test this hypothesis, Zhang et al. \cite{bioref:Zhang-effects-of-antibio-grad} constructed an apparatus involving an array of several interconnected microhabitats with 
+an antibiotic gradient of ciprofloxacin.  This gradient ranged from no discernible antibiotic concentration at the top of the array to a concentration of 
+10$\mu$g/ml at the bottom.  This concentration is around 200 times the minimum inhibitory concentration (MIC) of ciprofloxacin \cite{bioref:ciprofloxa-mic}
+
+The array was then inoculated in the central microhabitats with around $10^6$ wild type \textit{E. coli}.  Chemotaxis due to nutrient consumption 
+then drove the bacteria towards the perimeter microhabitats.  Once resistant mutants had fixed, they then spread and propagated throughout the array,
+as shown in Figure \ref{fig:Zhang-gradient-apparatus}.
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=8cm]{Zhang-microhab-gradient-cropped}
+ \caption{The proliferation of the bacterial population when exposed to an antibiotic gradient.  The LHS shows the development
+ of the population after the initial inoculation, and the RHS shows the development of an identical slide which was 
+ inoculated with the resistant mutants. Zhang et al., 2011}
+ \label{fig:Zhang-gradient-apparatus}
+\end{figure}
+
+To confirm that it was indeed the gradient which allowed for this enhanced development of resistance, Zhang et al. conducted a range of further experiments.
+Firstly they eliminated the gradient by including ciprofloxacin at both ends of the array.  This uniform antibiotic concentration resulted in no growth
+from the inoculated wild-type \textit{E. coli}, as can be seen in Figure \ref{fig:Zhang-gradient-growth-graph}.
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=10cm]{Zhang-microhab-gradient-growth-graph}
+ \caption{The summed growth over the entire array for various scenarios.  The green diamonds are the initial experiment where the wild-type \textit{E. coli}
+ were placed in the antibiotic gradient.  The red circles are the resistant mutants which were then used to re-inoculate an identically set up array.
+ The blue triangles are the wild-type exposed to a uniform antibiotic concentration.  Zhang et al., 2011}
+ \label{fig:Zhang-gradient-growth-graph}
+\end{figure}
+
+
+Zhang et al. then performed the experiment in a 96 well plate with a gradient present, but with the microhabits now disconnected from one another, with discrete 
+antibiotic concentrations in each well, ranging from low to high concentrations as in the previous array.  This also resulted in no resistance being developed,
+as the growth of the bacterial colonies simply decreased as the 
+
+
+\subsection{Biofilms}
 
 The main articles used at this point in the project is \cite{bioref:PRL-drugGradients} and \cite{bioref:Greulich-growthDependentAntibiotics}
 
 
 
 
-In this section detail the main supporting references
-and articles \cite{jr:block} for your intended area of research
-and, most importantly, your critical evaluation of their
-relevance.  Also where your subject draws from multiple 
-disciplines, do not forget to include key reference from
-each discipline, even if they are relatively old \cite{jr:dammann}. 
 
-
-This is the main part of your review and is the part that
-will be of use to you when preparing for your thesis. Here try
-and identify as many of the key references as possible, and enter then
-into a {\tt BibTeX} file that you will use later. Remember that recording
-the page number, titles and details of these 
-key articles {\it now} will save you hours of
-searching through {\em Web-of-Knowledge} the day before your
-submit your thesis!
-
-This part should be written in standard scientific language, 
-aimed at the {\em experts in the field}. This is the main part of your first year report, and is 
-expected to be 10 pages in length.
+% In this section detail the main supporting references
+% and articles \cite{jr:block} for your intended area of research
+% and, most importantly, your critical evaluation of their
+% relevance.  Also where your subject draws from multiple 
+% disciplines, do not forget to include key reference from
+% each discipline, even if they are relatively old \cite{jr:dammann}. 
+% 
+% 
+% This is the main part of your review and is the part that
+% will be of use to you when preparing for your thesis. Here try
+% and identify as many of the key references as possible, and enter then
+% into a {\tt BibTeX} file that you will use later. Remember that recording
+% the page number, titles and details of these 
+% key articles {\it now} will save you hours of
+% searching through {\em Web-of-Knowledge} the day before your
+% submit your thesis!
+% 
+% This part should be written in standard scientific language, 
+% aimed at the {\em experts in the field}. This is the main part of your first year report, and is 
+% expected to be 10 pages in length.
 
 \section{Progress to Date}
+
+\begin{itemize}
+ \item make several sections giving brief overview of them - PRL replication, growth dependent, multispecies 
+ \item mention paper
+\end{itemize}
+
 
 Progress made so far in this project can be organised into several sections.  The initial few weeks of the project 
 were spent replicating the results and techniques found in \cite{bioref:PRL-drugGradients}.  Discussion was had
@@ -210,9 +279,11 @@ not expected to exceed 2 pages.
  
 \section{Summary}
 
-As short section highlighting the key aspect of your proposal.
-At this stage this may be a bit uncertain and will be subject
-to charge as the work progresses.
+The aim is to finish writing the paper regarding the work on the growth-dependent antibiotics, then to continue with the multispecies
+model and hopefully incorporate some realistic parameters contributed by AkzoNobel.  Following on from this, work will begin on the proposed
+continuum model which should incorporate surface texture and flow into the system.  This will be accompanied by some wet work at the AkzoNobel laboratory
+at their Newcastle compound.  This is mainly for interest and not intended to form a sizable component of the project.  There has also been some discussion of
+my involvement in AkzoNobel's metagenomic analysis of organisms gathered from their laboratory.
 %            Now build the reference list
 \bibliographystyle{unsrt}                      % The reference style
 %                This is plain and unsorted, so in the order

@@ -2,6 +2,107 @@
 % Encoding: UTF-8
 
 
+@InBook{bioref:Anderson2008,
+  Title                    = {Innate and Induced Resistance Mechanisms of Bacterial Biofilms},
+  Author                   = {Anderson, G. G.
+and O'Toole, G. A.},
+  Editor                   = {Romeo, Tony},
+  Pages                    = {85--105},
+  Publisher                = {Springer Berlin Heidelberg},
+  Year                     = {2008},
+
+  Address                  = {Berlin, Heidelberg},
+
+  Abstract                 = {Bacterial biofilms are highly recalcitrant to antibiotic treatment, which holds serious consequences for therapy of infections that involve biofilms. The genetic mechanisms of this biofilm antibiotic resistance appear to fall into two general classes: innate resistance factors and induced resistance factors. Innate mechanisms are activated as part of the biofilm developmental pathway, the factors being integral parts of biofilm structure and physiology. Innate pathways include decreased diffusion of antibiotics through the biofilm matrix, decreased oxygen and nutrient availability accompanied by altered metabolic activity, formation of persisters, and other specific molecules not fitting into the above groups. Induced resistance factors include those resulting from induction by the antimicrobial agent itself. Biofilm antibiotic resistance is likely manifested as an intricate mixture of innate and induced mechanisms. Many researchers are currently trying to overcome this extreme biofilm antibiotic resistance by developing novel therapies aimed at disrupting biofilms and killing the constituent bacteria. These studies have led to the identification of several molecules that effectively disturb biofilm physiology, often by interrupting bacterial quorum sensing. In this manner, manipulation of innate and induced resistance pathways holds much promise for treatment of biofilm infections.},
+  Booktitle                = {Bacterial Biofilms},
+  Doi                      = {10.1007/978-3-540-75418-3_5},
+  ISBN                     = {978-3-540-75418-3},
+  Owner                    = {s1212500},
+  Timestamp                = {2018.05.08},
+  Url                      = {https://doi.org/10.1007/978-3-540-75418-3_5}
+}
+
+@Article{bioref:cipro_mic,
+  Title                    = {Determination of minimum inhibitory concentrations},
+  Author                   = {Andrews, Jennifer M.},
+  Journal                  = {Journal of Antimicrobial Chemotherapy},
+  Year                     = {2001},
+  Pages                    = {5-16},
+  Volume                   = {48},
+
+  Doi                      = {10.1093/jac/48.suppl_1.5},
+  Eprint                   = {/oup/backfile/content_public/journal/jac/48/suppl_1/10.1093_jac_48.suppl_1.5/1/0480005.pdf},
+  Url                      = {http://dx.doi.org/10.1093/jac/48.suppl_1.5}
+}
+
+@Article{BERNABEI1998195,
+  Title                    = {Searching for WIMPs by the annual modulation signature},
+  Author                   = {R Bernabei and P Belli and F Montecchia and W Di Nicolantonio and A Incicchitti and D Prosperi and C Bacci and C.J Dai and L.K Ding and H.H Kuang and J.M Ma},
+  Journal                  = {Physics Letters B},
+  Year                     = {1998},
+  Number                   = {1},
+  Pages                    = {195 - 201},
+  Volume                   = {424},
+
+  Doi                      = {https://doi.org/10.1016/S0370-2693(98)00172-5},
+  ISSN                     = {0370-2693},
+  Owner                    = {s1212500},
+  Timestamp                = {2018.05.08},
+  Url                      = {http://www.sciencedirect.com/science/article/pii/S0370269398001725}
+}
+
+@Article{bioref:minelli-peflox-penet,
+  Title                    = {Pefloxacin penetration into human necrotic pancreatic tissue},
+  Author                   = {Bertazzoni Minelli E, Benini A, Muner A, Bassi C, Abbas H, Pederzoli P.},
+  Journal                  = {J Antimicrob Chemother.},
+  Year                     = {1996},
+
+  Month                    = {Aug},
+  Number                   = {2},
+  Pages                    = {237-43},
+  Volume                   = {38},
+
+  Owner                    = {s1212500},
+  Timestamp                = {2018.05.08}
+}
+
+@Article{bioref:antimicro-paint-desc,
+  Title                    = {The Development of a Marine Natural Product-based Antifouling Paint},
+  Author                   = { J Grant Burgess and Kenneth G Boyd and Evelyn Armstrong and Zhong Jiang and Liming Yan and Matz Berggren and Ulrika May and Tony Pisacane and Åke Granmo and David R Adams },
+  Journal                  = {Biofouling},
+  Year                     = {2003},
+  Note                     = {PMID: 14618721},
+  Number                   = {sup1},
+  Pages                    = {197-205},
+  Volume                   = {19},
+
+  Doi                      = {10.1080/0892701031000061778},
+  Eprint                   = { 
+ https://doi.org/10.1080/0892701031000061778
+ 
+},
+  Owner                    = {s1212500},
+  Publisher                = {Taylor \& Francis},
+  Timestamp                = {2018.05.07},
+  Url                      = { 
+ https://doi.org/10.1080/0892701031000061778
+ 
+}
+}
+
+@Article{bioref:chait-interactions,
+  Title                    = {Antibiotic interactions that select against resistance},
+  Author                   = {Chait, Remy and Craney, Allison and Kishony, Roy},
+  Journal                  = {Nature},
+  Year                     = {2007},
+  Number                   = {668},
+  Volume                   = {446},
+
+  Owner                    = {s1212500},
+  Timestamp                = {2018.05.08},
+  Url                      = {http://dx.doi.org/10.1038/nature05685}
+}
+
 @Article{biofilms:Costerton-biofilms-persistent,
   Title                    = {Bacterial Biofilms: A Common Cause of Persistent Infections},
   Author                   = {Costerton, J. W. and Stewart, Philip S. and Greenberg, E. P.},
@@ -131,6 +232,23 @@
   Timestamp                = {2018.05.07}
 }
 
+@Article{bioref:Hermsen-source-and-sink,
+  Title                    = {Sources and Sinks: A Stochastic Model of Evolution in Heterogeneous Environments},
+  Author                   = {Hermsen, Rutger and Hwa, Terence},
+  Journal                  = {Phys. Rev. Lett.},
+  Year                     = {2010},
+
+  Month                    = {Dec},
+  Pages                    = {248104},
+  Volume                   = {105},
+
+  Doi                      = {10.1103/PhysRevLett.105.248104},
+  Issue                    = {24},
+  Numpages                 = {4},
+  Publisher                = {American Physical Society},
+  Url                      = {https://link.aps.org/doi/10.1103/PhysRevLett.105.248104}
+}
+
 @Article{bioref:antibiotics-usage-USA-2011,
   Title                    = {US Outpatient Antibiotic Prescribing Variation According to Geography, Patient Population, and Provider Specialty in 2011},
   Author                   = {Hicks, Lauri A. and Bartoces, Monina G. and Roberts, Rebecca M. and Suda, Katie J. and Hunkler, Robert J. and Taylor, Jr ,Thomas H. and Schrag, Stephanie J.},
@@ -213,6 +331,25 @@
   Url                      = {http://www.sciencedirect.com/science/article/pii/S1369702110700584}
 }
 
+@Article{bioref:marvig-transmiss-lineage,
+  Title                    = {Genome Analysis of a Transmissible Lineage of Pseudomonas aeruginosa Reveals Pathoadaptive Mutations and Distinct Evolutionary Paths of Hypermutators},
+  Author                   = {Marvig, Rasmus Lykke AND Johansen, Helle Krogh AND Molin, Søren AND Jelsbak, Lars},
+  Journal                  = {PLOS Genetics},
+  Year                     = {2013},
+
+  Month                    = {09},
+  Number                   = {9},
+  Pages                    = {1-12},
+  Volume                   = {9},
+
+  Abstract                 = {Author Summary Pseudomonas aeruginosa is the dominating pathogen of chronic airway infections in patients with cystic fibrosis (CF). Although bacterial long-term persistence in CF hosts involves mutation and selection of genetic variants with increased fitness in the CF lung environment, our understanding of the within-host evolutionary processes is limited. Here, we performed a retrospective study of the P. aeruginosa DK2 clone type, which is a transmissible clone isolated from chronically infected Danish CF patients over a period of 38 years. Whole-genome analysis of DK2 isolates enabled a fine-grained reconstruction of the recent evolutionary history of the DK2 lineage and an identification of bacterial genes targeted by mutations to optimize pathogen fitness. The identification of such pathoadaptive genes gives new insight into how the pathogen evolves under the selective pressures of the host immune system and drug therapies. Furthermore, isolates with increased rates of mutation (hypermutator phenotype) emerged in the DK lineage. While this phenotype may accelerate evolution, we also show that hypermutators display differential mutagenesis of certain genes which enable them to follow alternative evolutionary pathways. Overall, our study identifies genes important for bacterial persistence and provides insight into the different mutational mechanisms that govern the adaptive genetic changes.},
+  Doi                      = {10.1371/journal.pgen.1003741},
+  Owner                    = {s1212500},
+  Publisher                = {Public Library of Science},
+  Timestamp                = {2018.05.08},
+  Url                      = {https://doi.org/10.1371/journal.pgen.1003741}
+}
+
 @Book{bioref:biofilm-fuel-consumption,
   Title                    = {Bacterial Biofilms and Biofouling: Translational Research in Marine Biotechnology: Proceedings of the October 5-6, 1999, Workshop.},
   Author                   = {Marc W. Mittelman},
@@ -265,6 +402,44 @@
   Url                      = {https://onlinelibrary.wiley.com/doi/abs/10.15252/msb.20145949}
 }
 
+@Article{bioref:Torella-optimal-drug-synergy,
+  Title                    = {Optimal Drug Synergy in Antimicrobial Treatments},
+  Author                   = {Torella, Joseph Peter AND Chait, Remy AND Kishony, Roy},
+  Journal                  = {PLOS Computational Biology},
+  Year                     = {2010},
+
+  Month                    = {06},
+  Number                   = {6},
+  Pages                    = {1-9},
+  Volume                   = {6},
+
+  Abstract                 = {Author Summary The use of antibiotics against bacterial infections has led to the emergence of multi-drug resistant pathogens such as tuberculosis and MRSA. In order to control resistance, clinicians have increasingly turned to multi-antibiotic therapies. The common wisdom is to use combinations of drugs that act synergistically to kill the infection, but the impact of drug synergy on the evolution of resistance is unclear. Using mathematical simulations of an in vivo infection model, we asked what level of drug synergy would minimize the risk of multi-drug resistance while preserving the efficacy of treatment. We found that synergy may increase or decrease the risk of multi-drug resistance in a given treatment, depending on infection properties such as mutation rate and the availability of resources. Surprisingly, under conditions of strong competition for resources within the host, we found that maximal synergy—currently favored in clinical settings—can actually increase the risk of multi-drug resistance. Our results identify conditions under which drug synergy exacerbates the problem of multi-drug resistance, and offer guidelines for the selection of drug pairs that suppress it.},
+  Doi                      = {10.1371/journal.pcbi.1000796},
+  Owner                    = {s1212500},
+  Publisher                = {Public Library of Science},
+  Timestamp                = {2018.05.08},
+  Url                      = {https://doi.org/10.1371/journal.pcbi.1000796}
+}
+
+@Article{bioref:Wang-treatment-tradeoff,
+  Title                    = {Upgrading antibiotic use within a class: Tradeoff between resistance and treatment success},
+  Author                   = {Wang, Y. Claire and Lipsitch, Marc},
+  Journal                  = {Proceedings of the National Academy of Sciences},
+  Year                     = {2006},
+  Number                   = {25},
+  Pages                    = {9655--9660},
+  Volume                   = {103},
+
+  Abstract                 = {Increasing resistance to antibiotics creates the need for prudent antibiotic use. When resistance to various antibiotics within a class is driven by stepwise accumulation of mutations, a dilemma may exist in regard to replacing an antibiotic that is losing effectiveness due to resistance with a new drug within the same class. Such replacement may enhance treatment success in the short term but promote the spread of highly resistant strains. We used mathematical models to quantify the tradeoff between minimizing treatment failures (by switching early) and minimizing the proliferation of the highly resistant strain (by delaying the switch). Numerical simulations were applied to investigate the cumulative prevalence of the highly resistant strain (Resistance) and the cumulative number of treatment failures (Failure) that resulted from following different antibiotic use policies. Whereas never switching to the new drug always minimizes Resistance and maximizes Failure, immediate switching usually maximizes Resistance and minimizes Failure. Thus, in most circumstances, there is a strict tradeoff in which early use of the new drug enhances treatment effectiveness while hastening the rise of high-level resistance. This tradeoff is most acute when acquired resistance is rare and the highly resistant strain is readily transmissible. However, exceptions occur when use of the new drug frequently leads to acquired resistance and when the highly resistant strain has substantial {\textquotedblleft}fitness cost{\textquotedblright}; these circumstances tend to favor an immediate switch. We discuss the implications of these considerations in regard to antibiotic choices for Streptococcus pneumoniae.},
+  Doi                      = {10.1073/pnas.0600636103},
+  Eprint                   = {http://www.pnas.org/content/103/25/9655.full.pdf},
+  ISSN                     = {0027-8424},
+  Owner                    = {s1212500},
+  Publisher                = {National Academy of Sciences},
+  Timestamp                = {2018.05.08},
+  Url                      = {http://www.pnas.org/content/103/25/9655}
+}
+
 @Article{bioref:first-antibiotics,
   Title                    = {The introduction of ‘chemotherapy’ using arsphenamine – the first magic bullet},
   Author                   = {KJ Williams},
@@ -286,6 +461,22 @@
  https://doi.org/10.1258/jrsm.2009.09k036
  
 }
+}
+
+@Article{bioref:Liu-baicalin-synergy,
+  Title                    = {Baicalin Synergy with β‐Lactam Antibiotics Against Methicillin‐resistant Staphylococcus aureus and Other β‐Lactam‐resistant Strains of S. aureus},
+  Author                   = {LIU IAIN X. and DURHAM DAVID G. and RICHARDS R. MICHAEL E.},
+  Journal                  = {Journal of Pharmacy and Pharmacology},
+  Number                   = {3},
+  Pages                    = {361-366},
+  Volume                   = {52},
+
+  Abstract                 = {Abstract Bacterial resistance to antibiotics is a serious global problem and includes strains of β‐lactam‐resistant Staphylococcus aureus and methicillin‐resistant S. aureus (MRSA). Novel antimicrobials and/or new approaches to combat the problem are urgently needed. The Chinese herb Xi‐nan Huangqin (Scutellaria amoena CM. Wright) has been used in traditional Chinese medicine to treat a wide range of infectious diseases. In this study we have examined the antibacterial action of baicalin, a flavone isolated from the herb. When combined with 16 μg mL−1 baicalin, minimum inhibitory concentrations (MICs) of benzylpenicillin against MRSA and penicillin‐resistant S. aureus were reduced from 125 and 250 μg mL−1 to 4 and 16 μg mL−1, respectively. This activity of baicalin was dose‐dependent. Viable counts showed that the killing of MRSA and β‐lactam‐resistant S. aureus cells by 10 to 50 μgm mL−1 ampicillin, amoxycillin, benzylpenicillin, methicillin and cefotaxime was potentiated by 25 μg mL−1 baicalin. From the study it was concluded that baicalin has the potential to restore the effectiveness of β‐lactam antibiotics against MRSA and other strains of β‐lactam‐resistant S. aureus. In view of its limited toxicity baicalin offers potential for the development of a valuable adjunct to β‐lactam treatments against otherwise resistant strains of microorganisms.},
+  Doi                      = {10.1211/0022357001773922},
+  Eprint                   = {https://onlinelibrary.wiley.com/doi/pdf/10.1211/0022357001773922},
+  Owner                    = {s1212500},
+  Timestamp                = {2018.05.08},
+  Url                      = {https://onlinelibrary.wiley.com/doi/abs/10.1211/0022357001773922}
 }
 
 @Article{bioref:Zhang-effects-of-antibio-grad,

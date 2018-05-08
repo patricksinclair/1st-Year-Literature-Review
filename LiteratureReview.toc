@@ -1,5 +1,7 @@
 \contentsline {section}{\numberline {1}Background}{2}
 \contentsline {section}{\numberline {2}Review of Background Bibliography}{3}
-\contentsline {section}{\numberline {3}Progress to Date}{3}
-\contentsline {section}{\numberline {4}Proposal}{3}
-\contentsline {section}{\numberline {5}Summary}{4}
+\contentsline {subsection}{\numberline {2.1}Antibiotic gradients}{3}
+\contentsline {subsection}{\numberline {2.2}Biofilms}{5}
+\contentsline {section}{\numberline {3}Progress to Date}{5}
+\contentsline {section}{\numberline {4}Proposal}{6}
+\contentsline {section}{\numberline {5}Summary}{7}

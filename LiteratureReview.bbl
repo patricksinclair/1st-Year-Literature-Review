@@ -92,6 +92,62 @@ J~Grant Burgess, Kenneth~G Boyd, Evelyn Armstrong, Zhong Jiang, Liming Yan,
 \newblock {\em Biofouling}, 19(sup1):197--205, 2003.
 \newblock PMID: 14618721.
 
+\bibitem{bioref:chait-interactions}
+Remy Chait, Allison Craney, and Roy Kishony.
+\newblock Antibiotic interactions that select against resistance.
+\newblock {\em Nature}, 446(668), 2007.
+
+\bibitem{bioref:Wang-treatment-tradeoff}
+Y.~Claire Wang and Marc Lipsitch.
+\newblock Upgrading antibiotic use within a class: Tradeoff between resistance
+  and treatment success.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  103(25):9655--9660, 2006.
+
+\bibitem{bioref:Torella-optimal-drug-synergy}
+Joseph~Peter Torella, Remy Chait, and Roy Kishony.
+\newblock Optimal drug synergy in antimicrobial treatments.
+\newblock {\em PLOS Computational Biology}, 6(6):1--9, 06 2010.
+
+\bibitem{bioref:marvig-transmiss-lineage}
+Rasmus~Lykke Marvig, Helle~Krogh Johansen, Søren Molin, and Lars Jelsbak.
+\newblock Genome analysis of a transmissible lineage of pseudomonas aeruginosa
+  reveals pathoadaptive mutations and distinct evolutionary paths of
+  hypermutators.
+\newblock {\em PLOS Genetics}, 9(9):1--12, 09 2013.
+
+\bibitem{bioref:Liu-baicalin-synergy}
+LIU~IAIN X., DURHAM~DAVID G., and RICHARDS R.~MICHAEL E.
+\newblock Baicalin synergy with β‐lactam antibiotics against
+  methicillin‐resistant staphylococcus aureus and other
+  β‐lactam‐resistant strains of s. aureus.
+\newblock {\em Journal of Pharmacy and Pharmacology}, 52(3):361--366.
+
+\bibitem{bioref:minelli-peflox-penet}
+Muner A Bassi C Abbas H Pederzoli~P. Bertazzoni Minelli~E, Benini~A.
+\newblock Pefloxacin penetration into human necrotic pancreatic tissue.
+\newblock {\em J Antimicrob Chemother.}, 38(2):237--43, Aug 1996.
+
+\bibitem{bioref:Anderson2008}
+G.~G. Anderson and G.~A. O'Toole.
+\newblock {\em Innate and Induced Resistance Mechanisms of Bacterial Biofilms},
+  pages 85--105.
+\newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 2008.
+
+\bibitem{bioref:Hermsen-source-and-sink}
+Rutger Hermsen and Terence Hwa.
+\newblock Sources and sinks: A stochastic model of evolution in heterogeneous
+  environments.
+\newblock {\em Phys. Rev. Lett.}, 105:248104, Dec 2010.
+
+\bibitem{bioref:ciprofloxa-mic}
+Peloquin CA, Cumbo TJ, Nix DE, Sands MF, and Schentag JJ.
+\newblock Evaluation of intravenous ciprofloxacin in patients with nosocomial
+  lower respiratory tract infections: Impact of plasma concentrations,
+  organism, minimum inhibitory concentration, and clinical condition on
+  bacterial eradication.
+\newblock {\em Archives of Internal Medicine}, 149(10):2269--2273, 1989.
+
 \bibitem{bioref:PRL-drugGradients}
 Philip Greulich, Bart\l{}omiej Waclaw, and Rosalind~J. Allen.
 \newblock Mutational pathway determines whether drug gradients accelerate
