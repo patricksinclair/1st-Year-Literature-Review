@@ -148,17 +148,50 @@ Peloquin CA, Cumbo TJ, Nix DE, Sands MF, and Schentag JJ.
   bacterial eradication.
 \newblock {\em Archives of Internal Medicine}, 149(10):2269--2273, 1989.
 
-\bibitem{bioref:PRL-drugGradients}
-Philip Greulich, Bart\l{}omiej Waclaw, and Rosalind~J. Allen.
-\newblock Mutational pathway determines whether drug gradients accelerate
-  evolution of drug-resistant cells.
-\newblock {\em Phys. Rev. Lett.}, 109:088101, Aug 2012.
-
 \bibitem{bioref:Greulich-growthDependentAntibiotics}
 Greulich Philip, Scott Matthew, Evans~Martin R, and Allen~Rosalind J.
 \newblock Growth‐dependent bacterial susceptibility to ribosome‐targeting
   antibiotics.
 \newblock {\em Molecular Systems Biology}, 11(3):796.
+
+\bibitem{bioref:Lewis-biofilm-riddle-2001}
+Kim Lewis.
+\newblock Riddle of biofilm resistance.
+\newblock {\em Antimicrobial Agents and Chemotherapy}, 45(4):999--1007, 2001.
+
+\bibitem{bioref:Anderson-innate-biofilm-resistances-2008}
+G.~G. Anderson and G.~A. O'Toole.
+\newblock {\em Innate and Induced Resistance Mechanisms of Bacterial Biofilms},
+  pages 85--105.
+\newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 2008.
+
+\bibitem{bioref:Donlan-biofilms-medical-devices-2002}
+Rodney~M. Donlan and J.~William Costerton.
+\newblock Biofilms: Survival mechanisms of clinically relevant microorganisms.
+\newblock {\em Clinical Microbiology Reviews}, 15(2):167--193, 2002.
+
+\bibitem{bioref:Chambers-modern-antifoul-coatings-2006}
+L.D. Chambers, K.R. Stokes, F.C. Walsh, and R.J.K. Wood.
+\newblock Modern approaches to marine antifouling coatings.
+\newblock {\em Surface and Coatings Technology}, 201(6):3642 -- 3652, 2006.
+
+\bibitem{bioref:Monds-biofilm-formation-2009}
+Russell~D. Monds and George~A. O’Toole.
+\newblock The developmental model of microbial biofilms: ten years of a
+  paradigm up for review.
+\newblock {\em Trends in Microbiology}, 17(2):73 -- 87, 2009.
+
+\bibitem{bioref:hall-stooley-biofilm-clumps-2005}
+Luanne Hall-Stoodley and Paul Stoodley.
+\newblock Biofilm formation and dispersal and the transmission of human
+  pathogens.
+\newblock {\em Trends in Microbiology}, 13(1):7 -- 10, 2005.
+
+\bibitem{bioref:Xavier-biofilm-framework-multiD-modelling-2005}
+Xavier~Joao B., Picioreanu Cristian, and Van Loosdrecht Mark~C. M.
+\newblock A framework for multidimensional modelling of activity and structure
+  of multispecies biofilms.
+\newblock {\em Environmental Microbiology}, 7(8):1085--1103, 2005.
 
 \bibitem{bioref:Gillespie-algorithm}
 Daniel~T Gillespie.

@@ -1,7 +1,8 @@
 \contentsline {section}{\numberline {1}Background}{2}
 \contentsline {section}{\numberline {2}Review of Background Bibliography}{3}
 \contentsline {subsection}{\numberline {2.1}Antibiotic gradients}{3}
-\contentsline {subsection}{\numberline {2.2}Biofilms}{5}
-\contentsline {section}{\numberline {3}Progress to Date}{5}
-\contentsline {section}{\numberline {4}Proposal}{6}
-\contentsline {section}{\numberline {5}Summary}{7}
+\contentsline {subsection}{\numberline {2.2}Modelling the effects of antibiotic gradients}{6}
+\contentsline {subsection}{\numberline {2.3}Biofilms}{8}
+\contentsline {section}{\numberline {3}Progress to Date}{9}
+\contentsline {section}{\numberline {4}Proposal}{9}
+\contentsline {section}{\numberline {5}Summary}{10}

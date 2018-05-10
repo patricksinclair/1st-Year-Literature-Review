@@ -9,6 +9,21 @@
 \renewcommand{\dateseparator}{-}
 \parindent=0pt          %  Switch off indent of paragraphs 
 \parskip=5pt            %  Put 5pt between each paragraph  
+
+
+\let\oldquote\quote
+\let\endoldquote\endquote
+\renewenvironment{quote}[2][]
+  {\if\relax\detokenize{#1}\relax
+     \def\quoteauthor{#2}%
+   \else
+     \def\quoteauthor{#2~---~#1}%
+   \fi
+   \oldquote}
+  {\par\nobreak\smallskip\hfill(\quoteauthor)%
+   \endoldquote\addvspace{\bigskipamount}}
+   
+   
 %
 %                       This section generates a title page
 %                       Edit only the sections indicated to put
@@ -193,18 +208,122 @@ from the inoculated wild-type \textit{E. coli}, as can be seen in Figure \ref{fi
 \end{figure}
 
 
-Zhang et al. then performed the experiment in a 96 well plate with a gradient present, but with the microhabits now disconnected from one another, with discrete 
+Zhang et al. then performed the experiment in a 96 well plate with a gradient present, but with the microhabitats now disconnected from one another, with discrete 
 antibiotic concentrations in each well, ranging from low to high concentrations as in the previous array.  This also resulted in no resistance being developed,
 as the growth of the bacterial colonies simply decreased as the concentration of ciprofloxacin increased, thereby implying that bacterial motility across the 
 gradients is what is key to the emergence of resistance.  
 
 To confirm the effects of motility on resistance development, Zhang et al. then used a series of agar plates with the same gradients as the microhabitat arrays,
-but varied the initial population sizes.  Once they reached an initial size of $10^8$
+but varied the initial population sizes.  Once they reached an initial size of $10^8$ bacteria, no motility was observed and as such growth only occurred in 
+the regions of the plate where the antibiotic concentration was below the MIC, and no clear resistant mutants emerged.
+
+Zhang et al. then proceeded to investigate what the source of the resistant mutants were, whether they were simply the descendants of already-present
+mutants, or if it was indeed legitimate de novo mutation as a response to the applied antibiotic stress.  Zhang et al. reasoned that if resistance emerged due to 
+preexisting, albeit rare, mutants, then either growth would have occurred above the MIC in the 96 well plate (which did not occur), or by serial dilution of the 
+starting wild-type colony, they  an initial population density would eventually be reached which contained no resistant mutants, and therefore no growth would occur.
+
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[height=9.6cm]{F2-large}
+ \caption{Bacterial growth over time in an antibiotic gradient up to 1 $\mu$g/ml of ciprofloxacin for various initial bacterial population sizes.  
+ The initial sizes range from the order of $10^6$ to as low as $10^2$.  It can be seen that even at the lowest starting densities, resistance still emerges.
+ Thus supporting the argument that resistance emerges due to de novo mutation and not preexisting mutants.  Zhang et al., 2011}
+ \label{fig:Zhang-gradient-inital-pop-sizes}
+\end{figure}
+
+
+As can be seen in Figure \ref{fig:Zhang-gradient-inital-pop-sizes}, even the most diluted populations developed resistance when exposed to the antibiotic gradient.  
+These results heavily support the proposal that the source of emergent resistance is due to de novo mutations and not from preexisting mutants distributed amongst the 
+wild-type.  Zhang et al. offered the following explanation as to why antibiotic gradients allow for such prevalent opportunities for resistance to emerge. 
+
+\begin{quote}{Zhang et al., 2011}
+ A spatially complex environment may lead to an enhanced rate of evolution for two reasons.  First, if a stress gradient is imposed on a connected network of 
+ populations, and if a mutant acquires some resistance to the local stress, the relative fitness of the mutant is increased if it moves to join a population
+ exposed to even higher stress.  Second, because there are fewer individuals in the region of higher stress, the mutant can fix more quickly in the smaller
+ population.
+\end{quote}
+
+\subsection{Modelling the effects of antibiotic gradients}
+
+As seen, there is clear experimental evidence supporting the notion that non-uniform drug distributions can accelerate the emergence of resistant organisms.  To gain 
+a better understanding of whether this is always the case and also how the mutants emerge and propagate,  Greulich et al. (2012) 
+\cite{bioref:Greulich-growthDependentAntibiotics} constructed a simple computational model which investigated how a bacterial population evolved along pathways 
+in genotype space when exposed to both uniform and non-uniform antibiotic concentrations.  It is this model which has also formed the basis for the other models
+constructed in this project.
+
+The model consisted of $L$ microhabitats interconnected in series with one another.  Each of which had a carrying capacity $K$ and a concentration of antibiotic present
+$c_i$, where $i$ is the index of the microhabitat.  Each bacteria had a numeric genotype $m$, which they could mutate between with a probability $\mu$ 
+and which had a maximum value of $M$.  This genotype described the level of resistance the bacteria had to the antibiotic.  At each step in the simulation 
+each bacteria could die or move to an adjacent microhabitat at constant rates $d$ and $b$, or replicate at a rate given by 
+
+\begin{equation}
+ R_{rep} = \phi_m(c_i)(1 - \frac{N_i}{K}).
+ \label{eqn:R_rep}
+\end{equation}
+
+Where $N_i$ is the total number of bacteria present in microhabitat $i$ and $\phi_m(c_i)$ is the genotype and antibiotic dependent growth rate.  
+This value decreases until the MIC for that particular genotype ($\beta_m$) is reached, after which that bacteria cannot replicate.  The simulation is 
+initialised by placing $K$ bacteria of genotype $m=1$ in the first microhabitat and then allowing them to proliferate throughout the system.  To illustrate the effects 
+of the antibiotic gradient, the simulations were performed under two different conditions; with a uniform antibiotic concentration ($c_i = c$) and with an exponentially 
+increasing antibiotic concentration ($c_i = \exp(\alpha{i}) - 1$).
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[height=5.6cm]{greulich-geno-distbs}
+ \caption{Distributions of bacterial genotypes throughout the series of interconnected microhabitats.  The thick blue line is the concentration of antibiotic per 
+ microhabitat, and the colours represent the distributions of genotypes.  $m=1$ is blue, $m=2$ green, with $m=3, 4, 5$ shown by red, orange and olive respectively.  
+ For the uniform concentration, any mutations are sporadic and randomly  distributed, however the exponential gradient shows clear emergence of resistance in a 
+ consistent manner.  Greulich et al., 2012.}
+ \label{fig:Greulich-geno-distbs}
+\end{figure}
+
+Once again, as shown in Figure \ref{fig:Greulich-geno-distbs}, the dynamics of how evolution emerges varies greatly between the uniform and non-uniform drug distributions.  
+For the uniform case, mutations arise sporadically and proliferate randomly, with the system as a whole generally evolving from one genotype to the other.  However when 
+exposed to the gradient, the genotypes tend to form ``stationary fronts'', with resistant mutants emerging at the tip of the colony, then quickly spreading to fill
+the remaining space until the MIC for the current advancing genotype is reached, at which point the process repeats itself.  As Figure \ref{fig:Greulich-geno-distbs} 
+illustrates, where the snapshots were taken after an equal amount of time had passed, the presence of the gradient drastically reduced the time necessary for resistance 
+to evolve.  To further investigate the effects of the gradients, Greulich et al. ran a series of simulations varying the overall concentration of the antibiotic for the 
+uniform case, and the steepness of the gradient for the non-uniform one and recorded the time taken ($\bar{\tau}$) for a fully resistant (i.e. $m = M$) mutant to arise.
+
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[height=5.8cm]{greulich-time-til-resistance}
+ \caption{Time taken for a fully resistant ($m = M$) mutant to emerge for a variety of uniform drug concentrations $c$, and steepness of non-uniform drug gradient $\alpha$.  
+ The red dashed line shows the minimum time taken for the uniformly concentrated system to reach resistance.  Greulich et al., 2012.}
+ \label{fig:Greulich-time-til-resistance}
+\end{figure}
+
+
+This experiment produced an interesting result, as shown in Figure \ref{fig:Greulich-time-til-resistance}.  $\bar{\tau}$ for the uniform case followed a simple inversely 
+proportional relation, which makes intuitive sense.  With a higher drug concentration present, there is also an increased pressure for resistance to emerge.  However 
+for the non-uniform case, the results are somewhat more involved.  For the smallest values of $\alpha$, it's seen that the presence of the gradient actually causes $\bar{\tau}$ 
+to be larger than in the uniform case, as there is much less pressure on the system for resistance to evolve.  Additionally, there seems to be an ``optimal'' value for $\alpha$, 
+above which $\bar{\tau}$ begins to increase.  This is due to the fact that for the higher values of $\alpha$, the regions which the lead mutants can fill get much narrower as 
+$\alpha$ increases, as seen in the snapshots included in Figure \ref{fig:Greulich-time-til-resistance}.  Thus reducing the available regions that the next generation of mutants 
+can arise from.  From this it appears that the contributions of antibiotic gradients on an evolving system are even more complex than first supposed.
+
 
 
 \subsection{Biofilms}
+\begin{itemize}
+ \item mention factors that affect formation, roughness etc
+ \item changes undergone by bacteria in the biofilm - polymer secretions etc
+ \item defense mechanisms from that paper - gradients caused by diffusions and changes in growth rates throughout the film
+ \item this section will probs be the most involved
+\end{itemize}
 
-The main articles used at this point in the project is \cite{bioref:PRL-drugGradients} and \cite{bioref:Greulich-growthDependentAntibiotics}
+Bacteria which aggregate onto and around a surface forming a biofilm have a range of additional defences available to them which free-flowing planktonic bacterial 
+colonies do not \cite{bioref:Lewis-biofilm-riddle-2001}.  These defences can afford biofilm colonies resistances to antibiotics 10-1000 times greater than their individual counterparts 
+\cite{bioref:Anderson-innate-biofilm-resistances-2008}, making treatment plans an immensely more complicated affair.  Biofilms can form on almost any surface where there is a 
+consistent influx of bacteria and other microorganisms, from medical devices \cite{bioref:Donlan-biofilms-medical-devices-2002} to the exterior of ship hulls 
+\cite{bioref:Chambers-modern-antifoul-coatings-2006}.  
+
+The formation of biofilms is a complex and little-understood process.  Whilst originally thought that biofilms were formed by single organisms attaching to a surface, leading to 
+the formation of micro-colonies and then 3D structures \cite{bioref:Monds-biofilm-formation-2009}, there is also now evidence that pre-existing bacterial aggregates can also 
+seed the formation of biofilms \cite{bioref:hall-stooley-biofilm-clumps-2005}, the differing shape and composition of which in turn can influence the final established biofilm 
+\cite{bioref:Xavier-biofilm-framework-multiD-modelling-2005}, making the developmental paths of biofilms increasingly hard to predict.
 
 
 
@@ -240,7 +359,7 @@ The main articles used at this point in the project is \cite{bioref:PRL-drugGrad
 
 
 Progress made so far in this project can be organised into several sections.  The initial few weeks of the project 
-were spent replicating the results and techniques found in \cite{bioref:PRL-drugGradients}.  Discussion was had
+were spent replicating the results and techniques found in \cite{bioref:Greulich-growthDependentAntibiotics}.  Discussion was had
 on the subject of which algorithm would be optimal for updating the system over time.  Algorithms such as Gillespie\cite{bioref:Gillespie-algorithm} 
 and $\tau$-leaping \cite{bioref:tau-leap-algorithm} were proposed, but 
 
@@ -254,27 +373,18 @@ and $\tau$-leaping \cite{bioref:tau-leap-algorithm} were proposed, but
 \end{itemize}
 
 
+Over the next year, the first step will be to complete writing the paper on the growth-rate dependent antibiotic model.  This should not take longer than a few weeks, as all 
+the results have now been collated, so a write-up and commentary, along with a discussion section is all that remains.  Along with some mainly stylistic editing.
+
+Following on from this, work will continue on the multispecies model.  The current version 
+
 In this section, detail, as far as you are currently able, 
 your research plan for the second and third years of your PhD, 
 drawing from the key references \cite{jr:block} that you have highlighted in your review section. 
 Here, try and illustrate
 your proposal, as in Figure~\ref{fig:prism} which is taken from the
 same paper as the illustration references.
-%
-%                       Here is how to inserted a centered
-%                       pdf file, this one is actually
-%                       out of Maple, but it will work for other
-%                       figures out of Xfig, Idraw and Xgraph
-%
-\begin{figure}[htb]     %Insert a figure as soon as possible
-        \begin{center}
-          \includegraphics[width=100mm]{OpticalSystem}
-\end{center}
-\caption{Here is the optical system from the same paper
-  as the reference drawn in {\tt xfig} and include to
-  shown how such a figure in included.}
-\label{fig:prism}                 % Reference label to the figure.
-\end{figure}
+
 
 At this stage it is {\em not} expected that this will be a fully-developed
 research proposal, but is your chance to show what you have extracted from the
@@ -288,6 +398,10 @@ model and hopefully incorporate some realistic parameters contributed by AkzoNob
 continuum model which should incorporate surface texture and flow into the system.  This will be accompanied by some wet work at the AkzoNobel laboratory
 at their Newcastle compound.  This is mainly for interest and not intended to form a sizable component of the project.  There has also been some discussion of
 my involvement in AkzoNobel's metagenomic analysis of organisms gathered from their laboratory.
+
+
+\pagebreak
+\newpage
 %            Now build the reference list
 \bibliographystyle{unsrt}                      % The reference style
 %                This is plain and unsorted, so in the order
