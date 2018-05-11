@@ -358,44 +358,89 @@ seed the formation of biofilms \cite{bioref:hall-stooley-biofilm-clumps-2005}, t
 \end{itemize}
 
 
+
+\subsection{Greulich et al. replication}
+
 Progress made so far in this project can be organised into several sections.  The initial few weeks of the project 
-were spent replicating the results and techniques found in \cite{bioref:Greulich-growthDependentAntibiotics}.  Discussion was had
+were spent replicating the results and techniques found in Greulich et al., 2012 \cite{bioref:Greulich-growthDependentAntibiotics}.  Discussion was had
 on the subject of which algorithm would be optimal for updating the system over time.  Algorithms such as Gillespie\cite{bioref:Gillespie-algorithm} 
-and $\tau$-leaping \cite{bioref:tau-leap-algorithm} were proposed, but 
+and $\tau$-leaping \cite{bioref:tau-leap-algorithm} were proposed, but eventually a simple Monte-Carlo style selection process as detailed in the supplementary material 
+of Greulich et al., was decided upon.  The purpose of this was mainly as a ``warm-up'' project.  Intended to increase fluency and familiarity in the techniques and background 
+theory required for the modelling of biological systems.  The results obtained from this body of work were rough, proof-of-concept illustrations, rather than the precise 
+quantitative results obtained in the actual paper.
+
+[INSERT SOME GRAPHS AND SCREENSHOTS]
+
+
+\subsection{Growth rate-dependant antibiotics}
+
+By far the majority of the time spent on this project has been on the modelling of growth rate-dependant antibiotics, based on the 2015 paper by Greulich et al. 
+\cite{bioref:Greulich-growthDependentAntibiotics}.  The foundation of this model was heavily borrowed 
+
+
 
 \section{Proposal}
 
-\begin{itemize}
- \item Writing paper on growth dependent stuffs
- \item begin work on more intricate continuum model - surface roughness and flow
- \item utilise data from AkzoNobel to accurately model growth
- \item visit AkzoNobel to undertake lab work and metagenomic analysis
-\end{itemize}
 
 
 Over the next year, the first step will be to complete writing the paper on the growth-rate dependent antibiotic model.  This should not take longer than a few weeks, as all 
 the results have now been collated, so a write-up and commentary, along with a discussion section is all that remains.  Along with some mainly stylistic editing.
 
-In this section, detail, as far as you are currently able, 
-your research plan for the second and third years of your PhD, 
-drawing from the key references \cite{jr:block} that you have highlighted in your review section. 
-Here, try and illustrate
-your proposal, as in Figure~\ref{fig:prism} which is taken from the
-same paper as the illustration references.
+Following on from this, work will continue on the multispecies model.  The current version is a simplistic toy model, similar to the one in the 
+Greulich paper \cite{bioref:Greulich-growthDependentAntibiotics}.  Ideally our industrial partners AkzoNobel will provide us with some more realistic parameters for factors such as 
+growth and death rates for a variety of microorganisms, and their susceptibility to various biocides.  When incorporated into the current model, this should provide us with some more 
+accurate, if still overly simplified, results for how a system with multiple species compete with each other over time.  Additionally, the current models only consider freely 
+moving, independent bacteria.  But as seen in the previous literature, there is a vast difference between the behaviour of these  planktonic bacteria and those which have 
+aggregated to form a biofilm.  As such, it seems that the next logical step is to incorporate the formation and subsequent property-altering qualities of biofilms.  I estimate 
+that at least, but no more than a few months will be spent working on this model.
+
+While these additions should certainly yield some interesting results, there is only so far that these simplistic models can take us in providing a clear picture of the mechanics 
+involved in how biofilms respond to the application of antibiotics.  Therefore the plan at present is to move on from this 1D ``lattice'' model and begin work on a more 
+intricate continuum model.  This model would allow us to incorporate key features of biofilms and the environment which surrounds them, such as surface roughness and flow around 
+the biofilm.  These models should allow us to perform research on both the medical and industrial scenarios where biofilms form, by varying the side of the biofilm that the 
+drug gradient arises from, and discerning whether these two situations create differing outcomes.  I predict that this will consume the majority of the second year of my PhD.
 
 
-At this stage it is {\em not} expected that this will be a fully-developed
-research proposal, but is your chance to show what you have extracted from the
-literature and how you see your own work will fit in. This section is
-not expected to exceed 2 pages.
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=16.4cm]{Matsumoto-biofilm-simulation}
+ \caption{Screenshot taken from the paper by Matsumoto at al., 2007 \cite{bioref:Matsumoto-sim-snapshot-2007} which contained several differing species of bacteria whose growth rates 
+ varied depending on the atmospheric composition of the biofilm.  This is included for illustrative purposes as an idea of what the simulations constructed in the later 
+ stages of this PhD project might resemble.}
+ \label{fig:Greulich-time-til-resistance}
+\end{figure}
+
+In conjunction with AkzoNobel, some wet work will be undertaken at their laboratory in Newcastle.  This would entail cultivating biofilms on various surfaces akin to industrial 
+ship hulls and exposing them to a variety of biocidal paints and then examining the composition of the established biofilm to compare the model with reality.  There might also 
+be opportunity to undertake part of the metagenomic analysis of these cultivated biofilms.  This aspect of the project is intended as more of an interesting aside, rather than 
+as a basis of the overall PhD project.  It should only require a month or so of involvement, and will likely be performed alongside my other commitments. 
+
+% In this section, detail, as far as you are currently able, 
+% your research plan for the second and third years of your PhD, 
+% drawing from the key references \cite{jr:block} that you have highlighted in your review section. 
+% Here, try and illustrate
+% your proposal, as in Figure~\ref{fig:prism} which is taken from the
+% same paper as the illustration references.
+% 
+% 
+% At this stage it is {\em not} expected that this will be a fully-developed
+% research proposal, but is your chance to show what you have extracted from the
+% literature and how you see your own work will fit in. This section is
+% not expected to exceed 2 pages.
  
 \section{Summary}
 
-The aim is to finish writing the paper regarding the work on the growth-dependent antibiotics, then to continue with the multispecies
+Simple models investigating the effects of antibiotic gradients have been constructed which demonstrate the relation between gradient steepness and time taken to evolve resistance, 
+the differing inhibition properties of growth-rate dependent antibiotics and how colonies involving multiple species with differing levels of resistance develop over time.  An 
+article is currently being written on the findings of the growth-rate dependent simulations.
+
+The aim for the next year or so is to finish writing the article regarding the work on the growth-dependent antibiotics, then to continue with the multispecies
 model and hopefully incorporate some realistic parameters contributed by AkzoNobel.  Following on from this, work will begin on the proposed
-continuum model which should incorporate surface texture and flow into the system.  This will be accompanied by some wet work at the AkzoNobel laboratory
+continuum model which could incorporate other factors such as surface texture and flow into the system.  This will be accompanied by some wet work at the AkzoNobel laboratory
 at their Newcastle compound.  This is mainly for interest and not intended to form a sizable component of the project.  There has also been some discussion of
-my involvement in AkzoNobel's metagenomic analysis of organisms gathered from their laboratory.
+my involvement in AkzoNobel's metagenomic analysis of organisms gathered from their laboratory to extract information about the growth rates and biocidal susceptibility from 
+microorganisms taken from biofilms attached to industrial shipping vessels.
 
 
 \pagebreak

@@ -148,11 +148,11 @@ Peloquin CA, Cumbo TJ, Nix DE, Sands MF, and Schentag JJ.
   bacterial eradication.
 \newblock {\em Archives of Internal Medicine}, 149(10):2269--2273, 1989.
 
-\bibitem{bioref:Greulich-growthDependentAntibiotics}
-Greulich Philip, Scott Matthew, Evans~Martin R, and Allen~Rosalind J.
-\newblock Growth‐dependent bacterial susceptibility to ribosome‐targeting
-  antibiotics.
-\newblock {\em Molecular Systems Biology}, 11(3):796.
+\bibitem{bioref:PRL-drugGradients}
+Philip Greulich, Bart\l{}omiej Waclaw, and Rosalind~J. Allen.
+\newblock Mutational pathway determines whether drug gradients accelerate
+  evolution of drug-resistant cells.
+\newblock {\em Phys. Rev. Lett.}, 109:088101, Aug 2012.
 
 \bibitem{bioref:Lewis-biofilm-riddle-2001}
 Kim Lewis.
@@ -204,5 +204,19 @@ Daniel~T. Gillespie.
 \newblock Approximate accelerated stochastic simulation of chemically reacting
   systems.
 \newblock {\em The Journal of Chemical Physics}, 115(4):1716--1733, 2001.
+
+\bibitem{bioref:Greulich-growthDependentAntibiotics}
+Greulich Philip, Scott Matthew, Evans~Martin R, and Allen~Rosalind J.
+\newblock Growth‐dependent bacterial susceptibility to ribosome‐targeting
+  antibiotics.
+\newblock {\em Molecular Systems Biology}, 11(3):796.
+
+\bibitem{bioref:Matsumoto-sim-snapshot-2007}
+S.~Matsumoto, A.~Terada, Y.~Aoi, S.~Tsuneda, E.~Alpkvist, C.~Picioreanu, and
+  {M. C M} {van Loosdrecht}.
+\newblock Experimental and simulation analysis of community structure of
+  nitrifying bacteria in a membrane-aerated biofilm.
+\newblock In {\em Water Science and Technology}, volume~55 of {\em Water
+  Science and Technology}, pages 283--290, 2007.
 
 \end{thebibliography}

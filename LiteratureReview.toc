@@ -4,5 +4,7 @@
 \contentsline {subsection}{\numberline {2.2}Modelling the effects of antibiotic gradients}{6}
 \contentsline {subsection}{\numberline {2.3}Biofilms}{8}
 \contentsline {section}{\numberline {3}Progress to Date}{9}
-\contentsline {section}{\numberline {4}Proposal}{9}
-\contentsline {section}{\numberline {5}Summary}{10}
+\contentsline {subsection}{\numberline {3.1}Greulich et al. replication}{9}
+\contentsline {subsection}{\numberline {3.2}Growth rate-dependant antibiotics}{9}
+\contentsline {section}{\numberline {4}Proposal}{10}
+\contentsline {section}{\numberline {5}Summary}{11}

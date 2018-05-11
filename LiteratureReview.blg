@@ -3,7 +3,6 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: LiteratureReview.aux
 The style file: unsrt.bst
 Database file #1: BiofilmReferences.bib
-Warning--I didn't find a database entry for "jr:block"
 Warning--empty year in bioref:tissue-antibio-grads
 Warning--can't use both author and editor fields in bioref:biofilm-fuel-consumption
 Warning--empty year in bioref:Liu-baicalin-synergy
@@ -14,47 +13,48 @@ while executing---line 944 of file unsrt.bst
 Too many commas in name 1 of "Bertazzoni Minelli E, Benini A, Muner A, Bassi C, Abbas H, Pederzoli P." for entry bioref:minelli-peflox-penet
 while executing---line 944 of file unsrt.bst
 Warning--can't use both author and editor fields in bioref:Anderson2008
-Warning--empty year in bioref:Greulich-growthDependentAntibiotics
 Warning--can't use both author and editor fields in bioref:Anderson-innate-biofilm-resistances-2008
-You've used 33 entries,
+Warning--empty year in bioref:Greulich-growthDependentAntibiotics
+Warning--can't use both volume and number fields in bioref:Matsumoto-sim-snapshot-2007
+You've used 35 entries,
             1791 wiz_defined-function locations,
-            686 strings with 11661 characters,
-and the built_in function-call counts, 8448 in all, are:
-= -- 707
-> -- 425
-< -- 2
-+ -- 155
-- -- 122
-* -- 720
-:= -- 1366
-add.period$ -- 102
-call.type$ -- 33
-change.case$ -- 29
+            700 strings with 12214 characters,
+and the built_in function-call counts, 9122 in all, are:
+= -- 763
+> -- 459
+< -- 4
++ -- 167
+- -- 132
+* -- 777
+:= -- 1463
+add.period$ -- 108
+call.type$ -- 35
+change.case$ -- 31
 chr.to.int$ -- 0
-cite$ -- 39
-duplicate$ -- 316
-empty$ -- 800
-format.name$ -- 122
-if$ -- 1847
+cite$ -- 42
+duplicate$ -- 347
+empty$ -- 861
+format.name$ -- 132
+if$ -- 1999
 int.to.chr$ -- 0
-int.to.str$ -- 33
-missing$ -- 37
-newline$ -- 171
-num.names$ -- 33
-pop$ -- 52
+int.to.str$ -- 35
+missing$ -- 39
+newline$ -- 181
+num.names$ -- 35
+pop$ -- 57
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 124
+skip$ -- 143
 stack$ -- 0
-substring$ -- 681
-swap$ -- 50
-text.length$ -- 2
+substring$ -- 731
+swap$ -- 65
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 6
-while$ -- 70
-width$ -- 35
-write$ -- 368
+warning$ -- 7
+while$ -- 76
+width$ -- 37
+write$ -- 391
 (There were 3 error messages)
