@@ -375,7 +375,22 @@ quantitative results obtained in the actual paper.
 \subsection{Growth rate-dependant antibiotics}
 
 By far the majority of the time spent on this project has been on the modelling of growth rate-dependant antibiotics, based on the 2015 paper by Greulich et al. 
-\cite{bioref:Greulich-growthDependentAntibiotics}.  The foundation of this model was heavily borrowed 
+\cite{bioref:Greulich-growthDependentAntibiotics}.  In this paper, Greulich et al. proposed that certain ribosome-targeting antibiotics were more effective on either 
+fast-growing or slow-growing bacteria depending on how the antibiotic bound to the target ribosomes.  It's been shown that the ribosome content of a cell correlates with 
+the cell's growth rate \cite{bioref:Bremer-ribosome-content-2008}, with fast-growing cells dedicating more of their resources to ribosome production than their slow-growing 
+counterparts \cite{bioref:Scott-ribosome-content-2010}.  For example, the antibiotic tetracycline binds reversibly to the bacteria's ribosomes and is more effective when the 
+bacteria are fast-growing.  In contrast, streptomycin binds irreversibly with the bacterial ribosomes and is more suited for bacteria which are growing slowly.  Here we 
+assume that the growth rate of bacteria is directly proportional to nutrient availability, with a rich nutrient supply corresponding to a high growth rate.
+
+
+The foundation of this model was heavily borrowed from the one created in the previous section, but with the key addition of nutrients, which were used to modify the 
+growth rate in lieu of the carrying capacity factor from the previous model.  Two simple functional forms for the MIC of fast-growth and slow-growth targeting antibiotics 
+were constructed as follows: for the fast-growth targeting antibiotics; 
+
+\begin{equation}
+ \beta =  10 - 9\frac{\mu(S)}{\mu_{\max}}
+\end{equation}
+
 
 
 

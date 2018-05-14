@@ -248,7 +248,7 @@ wild-type.  Zhang et al. offered the following explanation as to why antibiotic 
 
 As seen, there is clear experimental evidence supporting the notion that non-uniform drug distributions can accelerate the emergence of resistant organisms.  To gain 
 a better understanding of whether this is always the case and also how the mutants emerge and propagate,  Greulich et al. (2012) 
-\cite{bioref:Greulich-growthDependentAntibiotics} constructed a simple computational model which investigated how a bacterial population evolved along pathways 
+\cite{bioref:PRL-drugGradients} constructed a simple computational model which investigated how a bacterial population evolved along pathways 
 in genotype space when exposed to both uniform and non-uniform antibiotic concentrations.  It is this model which has also formed the basis for the other models
 constructed in this project.
 
@@ -362,8 +362,8 @@ seed the formation of biofilms \cite{bioref:hall-stooley-biofilm-clumps-2005}, t
 \subsection{Greulich et al. replication}
 
 Progress made so far in this project can be organised into several sections.  The initial few weeks of the project 
-were spent replicating the results and techniques found in Greulich et al., 2012 \cite{bioref:Greulich-growthDependentAntibiotics}.  Discussion was had
-on the subject of which algorithm would be optimal for updating the system over time.  Algorithms such as Gillespie\cite{bioref:Gillespie-algorithm} 
+were spent replicating the results and techniques found in Greulich et al., 2012 \cite{bioref:PRL-drugGradients}.  Discussion was had
+on the subject of which algorithm would be optimal for updating the system over time.  Algorithms such as Gillespie \cite{bioref:Gillespie-algorithm} 
 and $\tau$-leaping \cite{bioref:tau-leap-algorithm} were proposed, but eventually a simple Monte-Carlo style selection process as detailed in the supplementary material 
 of Greulich et al., was decided upon.  The purpose of this was mainly as a ``warm-up'' project.  Intended to increase fluency and familiarity in the techniques and background 
 theory required for the modelling of biological systems.  The results obtained from this body of work were rough, proof-of-concept illustrations, rather than the precise 
@@ -375,7 +375,16 @@ quantitative results obtained in the actual paper.
 \subsection{Growth rate-dependant antibiotics}
 
 By far the majority of the time spent on this project has been on the modelling of growth rate-dependant antibiotics, based on the 2015 paper by Greulich et al. 
-\cite{bioref:Greulich-growthDependentAntibiotics}.  The foundation of this model was heavily borrowed 
+\cite{bioref:Greulich-growthDependentAntibiotics}.  In this paper, Greulich et al. proposed that certain ribosome-targeting antibiotics were more effective on either 
+fast-growing or slow-growing bacteria depending on how the antibiotic bound to the target ribosomes.  It's been shown that the ribosome content of a cell correlates with 
+the cell's growth rate \cite{bioref:Bremer-ribosome-content-2008}, with fast-growing cells dedicating more of their resources to ribosome production than their slow-growing 
+counterparts \cite{bioref:Scott-ribosome-content-2010}.  Here we assume that the growth rate of bacteria is directly proportional to nutrient availability
+
+For example, the antibiotic tetracycline binds reversibly to the bacteria's ribosomes and is more effective when the bacteria are fast-growing.  In contrast, streptomycin 
+binds irreversibly with the bacterial ribosomes and is more suited for 
+
+The foundation of this model was heavily borrowed from the one created in the previous section, but with the key addition of 
+nutrients, which were used to modify the growth rate in lieu of the carrying capacity factor from the previous model.  
 
 
 

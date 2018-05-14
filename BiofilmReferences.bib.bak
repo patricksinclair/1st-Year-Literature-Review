@@ -90,6 +90,17 @@ and O'Toole, G. A.},
   Timestamp                = {2018.05.08}
 }
 
+@Article{bioref:Bremer-ribosome-content-2008,
+  Title                    = {Modulation of Chemical Composition and Other Parameters of the Cell at Different Exponential Growth Rates},
+  Author                   = {Bremer H, Dennis P},
+  Journal                  = {EcoSal Plus},
+  Year                     = {2008},
+
+  Owner                    = {s1212500},
+  Timestamp                = {2018.05.14},
+  Url                      = {http://www.asmscience.org/content/journal/ecosalplus/10.1128/ecosal.5.2.3}
+}
+
 @Article{bioref:antimicro-paint-desc,
   Title                    = {The Development of a Marine Natural Product-based Antifouling Paint},
   Author                   = { J Grant Burgess and Kenneth G Boyd and Evelyn Armstrong and Zhong Jiang and Liming Yan and Matz Berggren and Ulrika May and Tony Pisacane and Åke Granmo and David R Adams },
@@ -534,6 +545,18 @@ and O'Toole, G. A.},
   Owner                    = {s1212500},
   Timestamp                = {2018.05.07},
   Url                      = {https://onlinelibrary.wiley.com/doi/abs/10.15252/msb.20145949}
+}
+
+@Article{bioref:Scott-ribosome-content-2010,
+  Title                    = {Interdependence of Cell Growth and Gene Expression: Origins and Consequences},
+  Author                   = {Scott, Matthew and W Gunderson, Carl and M Mateescu, Eduard and Zhang, Zhongge and Hwa, Terence},
+  Year                     = {2010},
+
+  Month                    = {11},
+  Pages                    = {1099-102},
+  Volume                   = {330},
+
+  Booktitle                = {Science (New York, N.Y.)}
 }
 
 @Article{bioref:Torella-optimal-drug-synergy,
