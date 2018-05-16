@@ -17,45 +17,45 @@ Warning--can't use both author and editor fields in bioref:Anderson-innate-biofi
 Warning--empty year in bioref:Greulich-growthDependentAntibiotics
 Warning--empty journal in bioref:Scott-ribosome-content-2010
 Warning--can't use both volume and number fields in bioref:Matsumoto-sim-snapshot-2007
-You've used 37 entries,
+You've used 40 entries,
             1791 wiz_defined-function locations,
-            712 strings with 12692 characters,
-and the built_in function-call counts, 9525 in all, are:
-= -- 795
-> -- 480
+            734 strings with 13355 characters,
+and the built_in function-call counts, 10278 in all, are:
+= -- 865
+> -- 506
 < -- 4
-+ -- 175
-- -- 138
-* -- 805
-:= -- 1532
-add.period$ -- 114
-call.type$ -- 37
-change.case$ -- 33
++ -- 185
+- -- 145
+* -- 868
+:= -- 1649
+add.period$ -- 123
+call.type$ -- 40
+change.case$ -- 36
 chr.to.int$ -- 0
-cite$ -- 45
-duplicate$ -- 364
-empty$ -- 899
-format.name$ -- 138
-if$ -- 2085
+cite$ -- 48
+duplicate$ -- 391
+empty$ -- 976
+format.name$ -- 145
+if$ -- 2251
 int.to.chr$ -- 0
-int.to.str$ -- 37
-missing$ -- 41
-newline$ -- 191
-num.names$ -- 37
-pop$ -- 63
+int.to.str$ -- 40
+missing$ -- 44
+newline$ -- 206
+num.names$ -- 40
+pop$ -- 66
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 149
+skip$ -- 159
 stack$ -- 0
-substring$ -- 755
-swap$ -- 66
+substring$ -- 837
+swap$ -- 69
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 8
-while$ -- 79
-width$ -- 39
-write$ -- 411
+while$ -- 86
+width$ -- 42
+write$ -- 444
 (There were 3 error messages)

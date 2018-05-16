@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2018.2.26)  14 MAY 2018 16:15
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2018.2.26)  16 MAY 2018 16:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -64,6 +64,27 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/02/03 v3.3-65 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/02/03 v1.5-62 caption3 kernel (AR)
+\captionmargin=\dimen105
+\captionmargin@=\dimen106
+\captionwidth=\dimen107
+\caption@tempdima=\dimen108
+\caption@indent=\dimen109
+\caption@parindent=\dimen110
+\caption@hangindent=\dimen111
+)
+\c@ContinuedFloat=\count88
+)
+\c@subfigure=\count89
+\c@subtable=\count90
+)
 (/usr/share/texlive/texmf-dist/tex/latex/datetime/datetime.sty
 Package: datetime 2010/09/21 v2.58 Date Time Package
 
@@ -78,59 +99,59 @@ Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
 
 (/usr/share/texlive/texmf-dist/tex/latex/etex-pkg/etex.sty
 Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
-\et@xins=\count88
+\et@xins=\count91
 )
-\etb@tempcnta=\count89
+\etb@tempcnta=\count92
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fcprefix.sty
 Package: fcprefix 2012/09/28
 
 (/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fcnumparser.sty
 Package: fcnumparser 2012/09/28
-\fc@digit@counter=\count90
+\fc@digit@counter=\count93
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks15
-\ex@=\dimen105
+\ex@=\dimen112
 )
-\c@padzeroesN=\count91
-\fc@tmpcatcode=\count92
-\@DT@modctr=\count93
-\@ordinalctr=\count94
-\@orgargctr=\count95
-\@strctr=\count96
-\@tmpstrctr=\count97
-\@DT@loopN=\count98
-\@DT@X=\count99
+\c@padzeroesN=\count94
+\fc@tmpcatcode=\count95
+\@DT@modctr=\count96
+\@ordinalctr=\count97
+\@orgargctr=\count98
+\@strctr=\count99
+\@tmpstrctr=\count100
+\@DT@loopN=\count101
+\@DT@X=\count102
 
 (/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fc-english.def
 File: fc-english.def 2012/06/18
 ))
-\@day=\count100
-\@month=\count101
-\@year=\count102
-\c@HOUR=\count103
-\c@HOURXII=\count104
-\c@MINUTE=\count105
-\c@TOHOUR=\count106
-\c@TOMINUTE=\count107
-\c@SECOND=\count108
-\currenthour=\count109
-\currentminute=\count110
-\currentsecond=\count111
+\@day=\count103
+\@month=\count104
+\@year=\count105
+\c@HOUR=\count106
+\c@HOURXII=\count107
+\c@MINUTE=\count108
+\c@TOHOUR=\count109
+\c@TOMINUTE=\count110
+\c@SECOND=\count111
+\currenthour=\count112
+\currentminute=\count113
+\currentsecond=\count114
 Package datetime Info: No datetime.cfg file found, using default settings on in
 put line 292.
-\@dtctr=\count112
-\dayofyear=\count113
-\dayofweek=\count114
+\@dtctr=\count115
+\dayofyear=\count116
+\dayofweek=\count117
 LaTeX Info: Redefining \today on input line 724.
 \dt@a=\toks16
 \dt@b=\toks17
 )
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count115
+\c@float@type=\count118
 \float@exts=\toks18
 \float@box=\box26
 \@float@everytoks=\toks19
@@ -140,33 +161,36 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 
 LaTeX Warning: Label `fig:Greulich-time-til-resistance' multiply defined.
 
+
+LaTeX Warning: Label `fig:Greulich-time-til-resistance' multiply defined.
+
 )
 \openout1 = `LiteratureReview.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
  (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count116
-\scratchdimen=\dimen106
+\scratchcounter=\count119
+\scratchdimen=\dimen113
 \scratchbox=\box28
-\nofMPsegments=\count117
-\nofMParguments=\count118
+\nofMPsegments=\count120
+\nofMParguments=\count121
 \everyMPshowfont=\toks20
-\MPscratchCnt=\count119
-\MPscratchDim=\dimen107
-\MPnumerator=\count120
-\makeMPintoPDFobject=\count121
+\MPscratchCnt=\count122
+\MPscratchDim=\dimen114
+\MPnumerator=\count123
+\makeMPintoPDFobject=\count124
 \everyMPtoPDFconversion=\toks21
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -216,10 +240,14 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: End \AtBeginDocument code.
+
 <crest.pdf, id=1, 362.35374pt x 363.3575pt>
 File: crest.pdf Graphic file (type pdf)
  <use crest.pdf>
-Package pdftex.def Info: crest.pdf used on input line 41.
+Package pdftex.def Info: crest.pdf used on input line 44.
 (pdftex.def)             Requested size: 113.81102pt x 114.12555pt.
  [1
 
@@ -236,21 +264,21 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \openout3 = `LiteratureReview.toc'.
 
  [1]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 150.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 153.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 150.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 153.
  [2] [3]
 <Zhang-microhab-gradient-cropped.png, id=28, 560.0925pt x 581.17125pt>
 File: Zhang-microhab-gradient-cropped.png Graphic file (type png)
 
 <use Zhang-microhab-gradient-cropped.png>
 Package pdftex.def Info: Zhang-microhab-gradient-cropped.png used on input line
- 190.
+ 193.
 (pdftex.def)             Requested size: 227.62204pt x 236.18892pt.
 
 <Zhang-microhab-gradient-growth-graph.png, id=30, 414.04688pt x 335.00156pt>
@@ -258,13 +286,13 @@ File: Zhang-microhab-gradient-growth-graph.png Graphic file (type png)
 
 <use Zhang-microhab-gradient-growth-graph.png>
 Package pdftex.def Info: Zhang-microhab-gradient-growth-graph.png used on input
- line 203.
+ line 206.
 (pdftex.def)             Requested size: 284.52756pt x 230.21587pt.
  [4 <./Zhang-microhab-gradient-cropped.png>] <F2-large.jpg, id=36, 1166.3575pt 
 x 1284.8pt>
 File: F2-large.jpg Graphic file (type jpg)
  <use F2-large.jpg>
-Package pdftex.def Info: F2-large.jpg used on input line 228.
+Package pdftex.def Info: F2-large.jpg used on input line 231.
 (pdftex.def)             Requested size: 247.96782pt x 273.14662pt.
 
 [5 <./Zhang-microhab-gradient-growth-graph.png>] [6 <./F2-large.jpg>]
@@ -272,7 +300,7 @@ Package pdftex.def Info: F2-large.jpg used on input line 228.
 File: greulich-geno-distbs.png Graphic file (type png)
 
 <use greulich-geno-distbs.png>
-Package pdftex.def Info: greulich-geno-distbs.png used on input line 273.
+Package pdftex.def Info: greulich-geno-distbs.png used on input line 276.
 (pdftex.def)             Requested size: 406.93205pt x 159.3356pt.
  [7 <./greulich-geno-distbs.png>]
 <greulich-time-til-resistance.png, id=51, 409.53pt x 225.09094pt>
@@ -280,22 +308,105 @@ File: greulich-time-til-resistance.png Graphic file (type png)
 
 <use greulich-time-til-resistance.png>
 Package pdftex.def Info: greulich-time-til-resistance.png used on input line 29
-2.
+5.
 (pdftex.def)             Requested size: 300.26044pt x 165.02606pt.
- [8 <./greulich-time-til-resistance.png>] [9] <Matsumoto-biofilm-simulation.png
-, id=59, 783.67781pt x 256.70906pt>
+
+
+LaTeX Warning: Citation `bioref:Stewart-biofilm-resis-mechanisms-2002' on page 
+8 undefined on input line 324.
+
+[8 <./greulich-time-til-resistance.png>] [9]
+<simple-slowGrowers-S_Vs_Alpha-contours.png, id=59, 1003.75pt x 752.8125pt>
+File: simple-slowGrowers-S_Vs_Alpha-contours.png Graphic file (type png)
+
+<use simple-slowGrowers-S_Vs_Alpha-contours.png>
+Package pdftex.def Info: simple-slowGrowers-S_Vs_Alpha-contours.png used on inp
+ut line 432.
+(pdftex.def)             Requested size: 221.95674pt x 166.46928pt.
+
+<simple-fastGrowers-S_Vs_Alpha-contours.png, id=60, 1003.75pt x 752.8125pt>
+File: simple-fastGrowers-S_Vs_Alpha-contours.png Graphic file (type png)
+
+<use simple-fastGrowers-S_Vs_Alpha-contours.png>
+Package pdftex.def Info: simple-fastGrowers-S_Vs_Alpha-contours.png used on inp
+ut line 437.
+(pdftex.def)             Requested size: 221.95674pt x 166.46928pt.
+ [10]
+<simple-slowGrowers-S_Vs_C-contours.png, id=66, 1003.75pt x 752.8125pt>
+File: simple-slowGrowers-S_Vs_C-contours.png Graphic file (type png)
+
+<use simple-slowGrowers-S_Vs_C-contours.png>
+Package pdftex.def Info: simple-slowGrowers-S_Vs_C-contours.png used on input l
+ine 450.
+(pdftex.def)             Requested size: 221.95674pt x 166.46928pt.
+
+<simple-fastGrowers-S_Vs_C-contours.png, id=67, 1003.75pt x 752.8125pt>
+File: simple-fastGrowers-S_Vs_C-contours.png Graphic file (type png)
+
+<use simple-fastGrowers-S_Vs_C-contours.png>
+Package pdftex.def Info: simple-fastGrowers-S_Vs_C-contours.png used on input l
+ine 455.
+(pdftex.def)             Requested size: 221.95674pt x 166.46928pt.
+
+<simple-slowGrowers-alpha=0_004884694070738408-spatialDistb.png, id=68, 1003.75
+pt x 752.8125pt>
+File: simple-slowGrowers-alpha=0_004884694070738408-spatialDistb.png Graphic fi
+le (type png)
+
+<use simple-slowGrowers-alpha=0_004884694070738408-spatialDistb.png>
+Package pdftex.def Info: simple-slowGrowers-alpha=0_004884694070738408-spatialD
+istb.png used on input line 478.
+(pdftex.def)             Requested size: 135.89174pt x 101.91248pt.
+
+<simple-flatGrowers-alpha=0_004884694070738408-spatialDistb.png, id=69, 1003.75
+pt x 752.8125pt>
+File: simple-flatGrowers-alpha=0_004884694070738408-spatialDistb.png Graphic fi
+le (type png)
+
+<use simple-flatGrowers-alpha=0_004884694070738408-spatialDistb.png>
+Package pdftex.def Info: simple-flatGrowers-alpha=0_004884694070738408-spatialD
+istb.png used on input line 483.
+(pdftex.def)             Requested size: 135.89174pt x 101.91248pt.
+
+<simple-fastGrowers-alpha=0_004884694070738408-spatialDistb.png, id=70, 1003.75
+pt x 752.8125pt>
+File: simple-fastGrowers-alpha=0_004884694070738408-spatialDistb.png Graphic fi
+le (type png)
+
+<use simple-fastGrowers-alpha=0_004884694070738408-spatialDistb.png>
+Package pdftex.def Info: simple-fastGrowers-alpha=0_004884694070738408-spatialD
+istb.png used on input line 488.
+(pdftex.def)             Requested size: 135.89174pt x 101.91248pt.
+ [11 <./simple-slowGrowers-S_Vs_Alpha-contours.png> <./simple-fastGrowers-S_Vs_
+Alpha-contours.png> <./simple-slowGrowers-S_Vs_C-contours.png> <./simple-fastGr
+owers-S_Vs_C-contours.png>]
+
+LaTeX Warning: Citation `bioref:Elias-biofilm-multispecies-2012' on page 12 und
+efined on input line 511.
+
+<multispecies-snapshot.png, id=74, 1003.75pt x 586.19pt>
+File: multispecies-snapshot.png Graphic file (type png)
+
+<use multispecies-snapshot.png>
+Package pdftex.def Info: multispecies-snapshot.png used on input line 523.
+(pdftex.def)             Requested size: 282.56436pt x 165.02606pt.
+ [12 <./simple-slowGrowers-alpha=0_004884694070738408-spatialDistb.png> <./simp
+le-flatGrowers-alpha=0_004884694070738408-spatialDistb.png> <./simple-fastGrowe
+rs-alpha=0_004884694070738408-spatialDistb.png>] <Matsumoto-biofilm-simulation.
+png, id=79, 783.67781pt x 256.70906pt>
 File: Matsumoto-biofilm-simulation.png Graphic file (type png)
 
 <use Matsumoto-biofilm-simulation.png>
-Package pdftex.def Info: Matsumoto-biofilm-simulation.png used on input line 42
-2.
+Package pdftex.def Info: Matsumoto-biofilm-simulation.png used on input line 55
+4.
 (pdftex.def)             Requested size: 466.62502pt x 152.85541pt.
 
-Overfull \hbox (13.65714pt too wide) in paragraph at lines 422--425
+Overfull \hbox (13.65714pt too wide) in paragraph at lines 554--557
  [][] 
  []
 
-[10] [11 <./Matsumoto-biofilm-simulation.png>] (./LiteratureReview.bbl
+[13 <./multispecies-snapshot.png>] [14 <./Matsumoto-biofilm-simulation.png>]
+(./LiteratureReview.bbl
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ò in font cmr12!
@@ -315,7 +426,7 @@ Missing character: There is no ≠ in font cmr12!
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ê in font cmr12!
- [12]
+ [15]
 Missing character: There is no √ in font cmr12!
 Missing character: There is no Ö in font cmr12!
 Missing character: There is no √ in font cmr12!
@@ -336,8 +447,7 @@ Missing character: There is no ê in font cmr12!
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ê in font cmr12!
-
-[13]
+ [16]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
@@ -347,32 +457,37 @@ Missing character: There is no ê in font cmr12!
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ê in font cmr12!
-) [14] (./LiteratureReview.aux)
+) [17] (./LiteratureReview.aux)
+
+LaTeX Warning: There were undefined references.
+
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2705 strings out of 495063
- 38520 string characters out of 3182201
- 104943 words of memory out of 3000000
- 5838 multiletter control sequences out of 15000+200000
+ 3834 strings out of 495063
+ 60606 string characters out of 3182201
+ 125294 words of memory out of 3000000
+ 6950 multiletter control sequences out of 15000+200000
  9455 words of font info for 33 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 37i,7n,23p,918b,254s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,7n,40p,918b,413s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmti12.pfb>
-Output written on LiteratureReview.pdf (15 pages, 1669191 bytes).
+type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
+12.pfb>
+Output written on LiteratureReview.pdf (18 pages, 2061136 bytes).
 PDF statistics:
- 107 PDF objects out of 1000 (max. 8388607)
- 67 compressed objects within 1 object stream
+ 133 PDF objects out of 1000 (max. 8388607)
+ 79 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 

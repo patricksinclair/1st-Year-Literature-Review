@@ -2,10 +2,13 @@
 %                       This is a basic LeTeX Template
 %                       for the First Year PhD literature review 
 \documentclass[a4paper,12pt]{article}
+
 \usepackage{head,fullpage}     % Add local fullpage and head macros
-\usepackage[pdftex]{graphicx}  % Add graphicx pachage with pdf flag (must use pdflatex)
+\usepackage{graphicx}
+\usepackage{subcaption} % Add graphicx pachage with pdf flag (must use pdflatex)
 \usepackage{datetime}
 \usepackage{float}
+
 \renewcommand{\dateseparator}{-}
 \parindent=0pt          %  Switch off indent of paragraphs 
 \parskip=5pt            %  Put 5pt between each paragraph  
@@ -325,7 +328,9 @@ the formation of micro-colonies and then 3D structures \cite{bioref:Monds-biofil
 seed the formation of biofilms \cite{bioref:hall-stooley-biofilm-clumps-2005}, the differing shape and composition of which in turn can influence the final established biofilm 
 \cite{bioref:Xavier-biofilm-framework-multiD-modelling-2005}, making the developmental paths of biofilms increasingly hard to predict.
 
-
+Regardless of how they come to be, biofilms have a range of features which distinguish them from a simple gathering of bacteria. One such key trait that marks them apart is that of the 
+inter-cellular matrix.  When bacteria aggregate into a biofilm, they secrete a variety of macromolecules such as exopolysaccharides, DNA and protein fragments 
+\cite{bioref:Whitechurch-biomatrix-components-2002}, which allows the bacteria to adhere to both surfaces and one another.
 
 
 
@@ -378,14 +383,145 @@ By far the majority of the time spent on this project has been on the modelling 
 \cite{bioref:Greulich-growthDependentAntibiotics}.  In this paper, Greulich et al. proposed that certain ribosome-targeting antibiotics were more effective on either 
 fast-growing or slow-growing bacteria depending on how the antibiotic bound to the target ribosomes.  It's been shown that the ribosome content of a cell correlates with 
 the cell's growth rate \cite{bioref:Bremer-ribosome-content-2008}, with fast-growing cells dedicating more of their resources to ribosome production than their slow-growing 
-counterparts \cite{bioref:Scott-ribosome-content-2010}.  Here we assume that the growth rate of bacteria is directly proportional to nutrient availability
+counterparts \cite{bioref:Scott-ribosome-content-2010}.  For example, the antibiotic tetracycline binds reversibly to the bacteria's ribosomes and is more effective when the 
+bacteria are fast-growing.  In contrast, streptomycin binds irreversibly with the bacterial ribosomes and is more suited for bacteria which are growing slowly.  Here we 
+assume that the growth rate of bacteria is directly proportional to nutrient availability, with a rich nutrient supply corresponding to a high growth rate.
 
-For example, the antibiotic tetracycline binds reversibly to the bacteria's ribosomes and is more effective when the bacteria are fast-growing.  In contrast, streptomycin 
-binds irreversibly with the bacterial ribosomes and is more suited for 
 
-The foundation of this model was heavily borrowed from the one created in the previous section, but with the key addition of 
-nutrients, which were used to modify the growth rate in lieu of the carrying capacity factor from the previous model.  
+The foundation of this model was heavily borrowed from the one created in the previous section, but with the key addition of nutrients, which were used to modify the 
+growth rate in lieu of the carrying capacity factor from the previous model.  Two simple functional forms for the MICs of fast-growing bacteria targeting antibiotics (FGBTA)
+and slow-growing bacteria targeting antibiotics (SGBTA) were constructed as follows: for the fast-growth targeting antibiotics; 
 
+\begin{equation}
+ \beta =  10 - 9\frac{\mu(S)}{\mu_{\max}}
+ \label{eqn:fast-growth-beta}
+\end{equation}
+
+and for the slow-growth targeting antibiotics;
+
+\begin{equation}
+ \beta = 1 + 9\frac{\mu(S)}{\mu_{\max}}.
+ \label{eqn:slow-growth-beta}
+\end{equation}
+
+
+Here 
+
+\begin{equation}
+ \mu(S) = \frac{S}{K' + S}
+\end{equation}
+
+where $K'$ is a constant which represents the nutrient concentration at which bacterial growth is half-maximal, the value used here is for that of \textit{E. coli} 
+growing in glucose, and $S$ is a measure of the nutrients present.  Each replication by a bacteria consumes nutrients, altering the MIC in the microhabitat, 
+which in turn alters the growth rate.  As $\mu_{\max}$ is a constant representing the maximum concentration of nutrients in each microhabitat, the ratio $\frac{\mu(S)}{\mu_{\max}}$ 
+will decrease over time with each successful replication.  Therefore for the bacteria exposed to the fast-growth targeting antibiotics, the tip of the advancing population will be 
+more inhibited than the slow-growing bulk towards the rear of the colony, and vice versa for the slow-growth targeting antibiotics.
+
+A variety of experiments were conducted using this model, ranging from the effects of the differing types of antibiotic growth on overall population sizes, to their impact 
+on spatial proliferation and how the growth rates decreased over time.  Additionally, as a form of ``control'' group, a series of experiments were also performed utilising 
+growth-independent bacteria targeting antibiotics (GIBTA) whose MIC didn't vary with $S$ or $c$, but rather remained constant at all times.
+
+
+
+\begin{figure}[H]
+ \centering
+ \begin{subfigure}[h]{0.49\textwidth}
+ \includegraphics[width=\textwidth]{simple-slowGrowers-S_Vs_Alpha-contours}
+  \caption{SGBTA}
+  \label{subfig:SGBTA-alphagrad-contours}
+  \end{subfigure}
+  \begin{subfigure}[h]{0.49\textwidth}
+  \includegraphics[width=\textwidth]{simple-fastGrowers-S_Vs_Alpha-contours}
+  \caption{FGBTA}
+  \label{subfig:FGBTA-alphagrad-contours}
+ \end{subfigure}
+\caption{Overall sizes of bacterial populations after 1000 time units have passed, for a variety of antibiotic gradients and initial nutrient concentrations.  
+From this it can be seen that the SGBTA are less effective at inhibiting overall bacterial growth.}
+\label{fig:alpha-popsize-contours}
+\end{figure}
+
+
+\begin{figure}[H]
+ \centering
+ \begin{subfigure}[h]{0.49\textwidth}
+ \includegraphics[width=\textwidth]{simple-slowGrowers-S_Vs_C-contours}
+  \caption{SGBTA}
+  \label{subfig:SGBTA-const_C-contours}
+  \end{subfigure}
+  \begin{subfigure}[h]{0.49\textwidth}
+  \includegraphics[width=\textwidth]{simple-fastGrowers-S_Vs_C-contours}
+  \caption{FGBTA}
+  \label{subfig:FGBTA-const_C-contours}
+ \end{subfigure}
+\caption{Overall sizes of bacterial populations after 1000 time units have passed, for a variety of uniform antibiotic and initial nutrient concentrations.  
+From this it can be seen that the SGBTA are less effective at inhibiting overall bacterial growth, however the impact of a uniform antibiotic concentration has opposing effects 
+for SGBTA and FGBTA.  The presence of a gradient causes the SGBTA to be more effective inhibitor, while the reverse is true for the FGBTA.}
+\label{fig:const_C-popsize-contours}
+\end{figure}
+
+Some examples of the results that these experiments yielded are shown in Figures \ref{fig:alpha-popsize-contours}, \ref{fig:const_C-popsize-contours} and \ref{fig:alpha-spatdistbs}.  
+Figure \ref{fig:alpha-popsize-contours} shows the total growth achieved by the bacteria for various initial nutrient concentrations and steepness of antibiotic gradients, whereas 
+Figure \ref{fig:const_C-popsize-contours} utilises uniform antibiotic concentrations.  From these results two observations can be made.  Firstly, if we compare Figures 
+\ref{subfig:SGBTA-alphagrad-contours} to \ref{subfig:FGBTA-alphagrad-contours} and \ref{subfig:SGBTA-const_C-contours} to \ref{subfig:FGBTA-const_C-contours}, it can be seen that 
+in both cases, the SGBTA are much less effective at inhibiting the growth of the population.  However when the scenarios involving gradients are compared to those without, two 
+differing features can be observed, which leads to the second observation; SGBTA are more effective inhibitors when they are applied in the form of a gradient, but the reverse is true 
+for FGBTA, which are more effective in uniform concentrations.
+
+
+
+\begin{figure}[H]
+ \centering
+ \begin{subfigure}[h]{0.3\textwidth}
+ \includegraphics[width=\textwidth]{simple-slowGrowers-alpha=0_004884694070738408-spatialDistb}
+  \caption{SGBTA}
+  \label{subfig:SGBTA-spatdistb-spef_alpha}
+  \end{subfigure}
+  \begin{subfigure}[h]{0.3\textwidth}
+   \includegraphics[width=\textwidth]{simple-flatGrowers-alpha=0_004884694070738408-spatialDistb}
+   \caption{GIBTA}
+   \label{subfig:GIBTA-spatdistb-spef_alpha}
+  \end{subfigure}
+  \begin{subfigure}[h]{0.3\textwidth}
+  \includegraphics[width=\textwidth]{simple-fastGrowers-alpha=0_004884694070738408-spatialDistb}
+  \caption{FGBTA}
+  \label{subfig:FGBTA-spatdistb-spef_alpha}
+ \end{subfigure}
+\caption{Spatial distributions of bacterial populations exposed to SGBTA, GIBTA and FGBTA respectively.  The steepness of the antibiotic gradient has been chosen here such that 
+the antibiotic concentration has a maximum of just over 10 in the final microhabitat.  Once again, the SGBTA is inferior at inhibiting bacterial growth.}
+\label{fig:alpha-spatdistbs}
+\end{figure}
+
+
+Following on from this, simulations were run to determine how gradients of these differing antibiotic types affected the spatial distribution of the bacteria, an example of which is 
+shown in Figure \ref{fig:alpha-spatdistbs}.  Here once again we can see that the SGBTA allow for the bacteria to spread much further than the FGBTA in the same timeframe, with the 
+GIBTA's efficacy being somewhere inbetween the two.  Therefore showing that antibiotics which target the fast-growing tip of an advancing colony are more effective at impeding their 
+progress.  
+
+These simulations were then performed using more ``realistic'' expressions for the MICs and replication rates of relevant bacteria, from the findings in Greulich et al., 2015, which 
+continue to corroborate these findings.  This component of the project has now deemed to have been completed and is currently in the process of being written up into a paper intended 
+for publication.
+
+
+\subsection{Multispecies models}
+
+While many experimental investigations in laboratory conditions utilise biofilms containing only one species of bacteria, in nature the vast majority of biofilms are actually composed 
+of a wide variety of species, which have differing physical properties and typically are in competition with one another \cite{bioref:Elias-biofilm-multispecies-2012}.  Motivated by 
+our discussion with AkzoNobel, where they highlighted the importance of understanding how these multispecies biofilms behave in order to better design the combinations of 
+anti-microbials they include in their anti-fouling paints.
+
+To this end, work has now begun on creating a model which contains a variety of species of bacteria, each with differing resistances to the applied antibiotic.  This design is 
+currently in its infancy, and is little more than a toy at the moment.  However there are plans to incorporate real lab data supplied by AkzoNobel to allow the model to utilise 
+growth curves and other relevant features of observed microorganisms from real-world environments, rather than the simple numeric approximations the model currently has in place.  
+Additionally discussions have been had about how best to incorporate another external source of bacteria to the system, representing the influx of microorganisms which one would 
+experience in the wild.
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[height=5.8cm]{multispecies-snapshot}
+ \caption{Snapshot of the GUI for the current multispecies model.  The most resistant species are shown at the bottom of the picture, with the resistances decreasing towards the top.  
+ The system is exposed to an antibiotic gradient which is at its lowest on the left of the system, and increases exponentially towards the right.}
+ \label{fig:Greulich-time-til-resistance}
+\end{figure}
 
 
 \section{Proposal}

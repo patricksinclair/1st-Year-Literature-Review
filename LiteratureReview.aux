@@ -26,27 +26,30 @@
 \citation{bioref:ciprofloxa-mic}
 \@writefile{toc}{\contentsline {section}{\numberline {2}Review of Background Bibliography}{3}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Antibiotic gradients}{3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces The proliferation of the bacterial population when exposed to an antibiotic gradient. The LHS shows the development of the population after the initial inoculation, and the RHS shows the development of an identical slide which was inoculated with the resistant mutants. Zhang et al., 2011}}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces The proliferation of the bacterial population when exposed to an antibiotic gradient. The LHS shows the development of the population after the initial inoculation, and the RHS shows the development of an identical slide which was inoculated with the resistant mutants. Zhang et al., 2011\relax }}{4}}
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{fig:Zhang-gradient-apparatus}{{1}{4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces The summed growth over the entire array for various scenarios. The green diamonds are the initial experiment where the wild-type \textit  {E. coli} were placed in the antibiotic gradient. The red circles are the resistant mutants which were then used to re-inoculate an identically set up array. The blue triangles are the wild-type exposed to a uniform antibiotic concentration. Zhang et al., 2011}}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces The summed growth over the entire array for various scenarios. The green diamonds are the initial experiment where the wild-type \textit  {E. coli} were placed in the antibiotic gradient. The red circles are the resistant mutants which were then used to re-inoculate an identically set up array. The blue triangles are the wild-type exposed to a uniform antibiotic concentration. Zhang et al., 2011\relax }}{5}}
 \newlabel{fig:Zhang-gradient-growth-graph}{{2}{5}}
 \citation{bioref:PRL-drugGradients}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Bacterial growth over time in an antibiotic gradient up to 1 $\mu $g/ml of ciprofloxacin for various initial bacterial population sizes. The initial sizes range from the order of $10^6$ to as low as $10^2$. It can be seen that even at the lowest starting densities, resistance still emerges. Thus supporting the argument that resistance emerges due to de novo mutation and not preexisting mutants. Zhang et al., 2011}}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Bacterial growth over time in an antibiotic gradient up to 1 $\mu $g/ml of ciprofloxacin for various initial bacterial population sizes. The initial sizes range from the order of $10^6$ to as low as $10^2$. It can be seen that even at the lowest starting densities, resistance still emerges. Thus supporting the argument that resistance emerges due to de novo mutation and not preexisting mutants. Zhang et al., 2011\relax }}{6}}
 \newlabel{fig:Zhang-gradient-inital-pop-sizes}{{3}{6}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Modelling the effects of antibiotic gradients}{6}}
 \newlabel{eqn:R_rep}{{1}{7}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Distributions of bacterial genotypes throughout the series of interconnected microhabitats. The thick blue line is the concentration of antibiotic per microhabitat, and the colours represent the distributions of genotypes. $m=1$ is blue, $m=2$ green, with $m=3, 4, 5$ shown by red, orange and olive respectively. For the uniform concentration, any mutations are sporadic and randomly distributed, however the exponential gradient shows clear emergence of resistance in a consistent manner. Greulich et al., 2012.}}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Distributions of bacterial genotypes throughout the series of interconnected microhabitats. The thick blue line is the concentration of antibiotic per microhabitat, and the colours represent the distributions of genotypes. $m=1$ is blue, $m=2$ green, with $m=3, 4, 5$ shown by red, orange and olive respectively. For the uniform concentration, any mutations are sporadic and randomly distributed, however the exponential gradient shows clear emergence of resistance in a consistent manner. Greulich et al., 2012.\relax }}{7}}
 \newlabel{fig:Greulich-geno-distbs}{{4}{7}}
 \citation{bioref:Lewis-biofilm-riddle-2001}
 \citation{bioref:Anderson-innate-biofilm-resistances-2008}
+\citation{bioref:Stewart-biofilm-resis-mechanisms-2002}
 \citation{bioref:Donlan-biofilms-medical-devices-2002}
 \citation{bioref:Chambers-modern-antifoul-coatings-2006}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Time taken for a fully resistant ($m = M$) mutant to emerge for a variety of uniform drug concentrations $c$, and steepness of non-uniform drug gradient $\alpha $. The red dashed line shows the minimum time taken for the uniformly concentrated system to reach resistance. Greulich et al., 2012.}}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Time taken for a fully resistant ($m = M$) mutant to emerge for a variety of uniform drug concentrations $c$, and steepness of non-uniform drug gradient $\alpha $. The red dashed line shows the minimum time taken for the uniformly concentrated system to reach resistance. Greulich et al., 2012.\relax }}{8}}
 \newlabel{fig:Greulich-time-til-resistance}{{5}{8}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Biofilms}{8}}
 \citation{bioref:Monds-biofilm-formation-2009}
 \citation{bioref:hall-stooley-biofilm-clumps-2005}
 \citation{bioref:Xavier-biofilm-framework-multiD-modelling-2005}
+\citation{bioref:Whitechurch-biomatrix-components-2002}
 \citation{bioref:PRL-drugGradients}
 \citation{bioref:Gillespie-algorithm}
 \citation{bioref:tau-leap-algorithm}
@@ -55,14 +58,40 @@
 \citation{bioref:Scott-ribosome-content-2010}
 \@writefile{toc}{\contentsline {section}{\numberline {3}Progress to Date}{9}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Greulich et al. replication}{9}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Growth rate-dependant antibiotics}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Growth rate-dependant antibiotics}{10}}
+\newlabel{eqn:fast-growth-beta}{{2}{10}}
+\newlabel{eqn:slow-growth-beta}{{3}{10}}
+\newlabel{subfig:SGBTA-alphagrad-contours}{{6a}{11}}
+\newlabel{sub@subfig:SGBTA-alphagrad-contours}{{a}{11}}
+\newlabel{subfig:FGBTA-alphagrad-contours}{{6b}{11}}
+\newlabel{sub@subfig:FGBTA-alphagrad-contours}{{b}{11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Overall sizes of bacterial populations after 1000 time units have passed, for a variety of antibiotic gradients and initial nutrient concentrations. From this it can be seen that the SGBTA are less effective at inhibiting overall bacterial growth.\relax }}{11}}
+\newlabel{fig:alpha-popsize-contours}{{6}{11}}
+\newlabel{subfig:SGBTA-const_C-contours}{{7a}{11}}
+\newlabel{sub@subfig:SGBTA-const_C-contours}{{a}{11}}
+\newlabel{subfig:FGBTA-const_C-contours}{{7b}{11}}
+\newlabel{sub@subfig:FGBTA-const_C-contours}{{b}{11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Overall sizes of bacterial populations after 1000 time units have passed, for a variety of uniform antibiotic and initial nutrient concentrations. From this it can be seen that the SGBTA are less effective at inhibiting overall bacterial growth, however the impact of a uniform antibiotic concentration has opposing effects for SGBTA and FGBTA. The presence of a gradient causes the SGBTA to be more effective inhibitor, while the reverse is true for the FGBTA.\relax }}{11}}
+\newlabel{fig:const_C-popsize-contours}{{7}{11}}
+\citation{bioref:Elias-biofilm-multispecies-2012}
+\newlabel{subfig:SGBTA-spatdistb-spef_alpha}{{8a}{12}}
+\newlabel{sub@subfig:SGBTA-spatdistb-spef_alpha}{{a}{12}}
+\newlabel{subfig:GIBTA-spatdistb-spef_alpha}{{8b}{12}}
+\newlabel{sub@subfig:GIBTA-spatdistb-spef_alpha}{{b}{12}}
+\newlabel{subfig:FGBTA-spatdistb-spef_alpha}{{8c}{12}}
+\newlabel{sub@subfig:FGBTA-spatdistb-spef_alpha}{{c}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Spatial distributions of bacterial populations exposed to SGBTA, GIBTA and FGBTA respectively. The steepness of the antibiotic gradient has been chosen here such that the antibiotic concentration has a maximum of just over 10 in the final microhabitat. Once again, the SGBTA is inferior at inhibiting bacterial growth.\relax }}{12}}
+\newlabel{fig:alpha-spatdistbs}{{8}{12}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Multispecies models}{12}}
 \citation{bioref:Greulich-growthDependentAntibiotics}
 \citation{bioref:Matsumoto-sim-snapshot-2007}
 \citation{bioref:Matsumoto-sim-snapshot-2007}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Proposal}{10}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Screenshot taken from the paper by Matsumoto at al., 2007 \cite  {bioref:Matsumoto-sim-snapshot-2007} which contained several differing species of bacteria whose growth rates varied depending on the atmospheric composition of the biofilm. This is included for illustrative purposes as an idea of what the simulations constructed in the later stages of this PhD project might resemble.}}{11}}
-\newlabel{fig:Greulich-time-til-resistance}{{6}{11}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Summary}{11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Snapshot of the GUI for the current multispecies model. The most resistant species are shown at the bottom of the picture, with the resistances decreasing towards the top. The system is exposed to an antibiotic gradient which is at its lowest on the left of the system, and increases exponentially towards the right.\relax }}{13}}
+\newlabel{fig:Greulich-time-til-resistance}{{9}{13}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Proposal}{13}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Screenshot taken from the paper by Matsumoto at al., 2007 \cite  {bioref:Matsumoto-sim-snapshot-2007} which contained several differing species of bacteria whose growth rates varied depending on the atmospheric composition of the biofilm. This is included for illustrative purposes as an idea of what the simulations constructed in the later stages of this PhD project might resemble.\relax }}{14}}
+\newlabel{fig:Greulich-time-til-resistance}{{10}{14}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Summary}{14}}
 \bibstyle{unsrt}
 \bibdata{BiofilmReferences}
 \bibcite{bioref:first-antibiotics}{1}
@@ -96,9 +125,11 @@
 \bibcite{bioref:Monds-biofilm-formation-2009}{29}
 \bibcite{bioref:hall-stooley-biofilm-clumps-2005}{30}
 \bibcite{bioref:Xavier-biofilm-framework-multiD-modelling-2005}{31}
-\bibcite{bioref:Gillespie-algorithm}{32}
-\bibcite{bioref:tau-leap-algorithm}{33}
-\bibcite{bioref:Greulich-growthDependentAntibiotics}{34}
-\bibcite{bioref:Bremer-ribosome-content-2008}{35}
-\bibcite{bioref:Scott-ribosome-content-2010}{36}
-\bibcite{bioref:Matsumoto-sim-snapshot-2007}{37}
+\bibcite{bioref:Whitechurch-biomatrix-components-2002}{32}
+\bibcite{bioref:Gillespie-algorithm}{33}
+\bibcite{bioref:tau-leap-algorithm}{34}
+\bibcite{bioref:Greulich-growthDependentAntibiotics}{35}
+\bibcite{bioref:Bremer-ribosome-content-2008}{36}
+\bibcite{bioref:Scott-ribosome-content-2010}{37}
+\bibcite{bioref:Elias-biofilm-multispecies-2012}{38}
+\bibcite{bioref:Matsumoto-sim-snapshot-2007}{39}

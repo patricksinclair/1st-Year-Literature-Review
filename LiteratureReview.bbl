@@ -165,6 +165,12 @@ G.~G. Anderson and G.~A. O'Toole.
   pages 85--105.
 \newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 2008.
 
+\bibitem{bioref:Stewart-biofilm-resis-mechanisms-2002}
+Philip~S. Stewart.
+\newblock Mechanisms of antibiotic resistance in bacterial biofilms.
+\newblock {\em International Journal of Medical Microbiology}, 292(2):107 --
+  113, 2002.
+
 \bibitem{bioref:Donlan-biofilms-medical-devices-2002}
 Rodney~M. Donlan and J.~William Costerton.
 \newblock Biofilms: Survival mechanisms of clinically relevant microorganisms.
@@ -192,6 +198,11 @@ Xavier~Joao B., Picioreanu Cristian, and Van Loosdrecht Mark~C. M.
 \newblock A framework for multidimensional modelling of activity and structure
   of multispecies biofilms.
 \newblock {\em Environmental Microbiology}, 7(8):1085--1103, 2005.
+
+\bibitem{bioref:Whitechurch-biomatrix-components-2002}
+Cynthia~B. Whitchurch, Tim Tolker-Nielsen, Paula~C. Ragas, and John~S. Mattick.
+\newblock Extracellular dna required for bacterial biofilm formation.
+\newblock {\em Science}, 295(5559):1487--1487, 2002.
 
 \bibitem{bioref:Gillespie-algorithm}
 Daniel~T Gillespie.
@@ -223,6 +234,11 @@ Matthew Scott, Carl W~Gunderson, Eduard M~Mateescu, Zhongge Zhang, and Terence
 \newblock Interdependence of cell growth and gene expression: Origins and
   consequences.
 \newblock 330:1099--102, 11 2010.
+
+\bibitem{bioref:Elias-biofilm-multispecies-2012}
+Sivan Elias and Ehud Banin.
+\newblock Multi-species biofilms: living with friendly neighbors.
+\newblock {\em FEMS Microbiology Reviews}, 36(5):990--1004, 2012.
 
 \bibitem{bioref:Matsumoto-sim-snapshot-2007}
 S.~Matsumoto, A.~Terada, Y.~Aoi, S.~Tsuneda, E.~Alpkvist, C.~Picioreanu, and

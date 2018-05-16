@@ -217,6 +217,20 @@ and O'Toole, G. A.},
   Url                      = {http://cmr.asm.org/content/15/2/167.abstract}
 }
 
+@Article{bioref:Elias-biofilm-multispecies-2012,
+  Title                    = {Multi-species biofilms: living with friendly neighbors},
+  Author                   = {Elias, Sivan and Banin, Ehud},
+  Journal                  = {FEMS Microbiology Reviews},
+  Year                     = {2012},
+  Number                   = {5},
+  Pages                    = {990-1004},
+  Volume                   = {36},
+
+  Doi                      = {10.1111/j.1574-6976.2012.00325.x},
+  Eprint                   = {/oup/backfile/content_public/journal/femsre/36/5/10.1111_j.1574-6976.2012.00325.x/1/36-5-990.pdf},
+  Url                      = {http://dx.doi.org/10.1111/j.1574-6976.2012.00325.x}
+}
+
 @Article{bioref:tissue-antibio-grads,
   Title                    = {Challenges: Selective compartments for resistant microorganisms in antibiotic gradients},
   Author                   = {Baquero Fernando and Negri María‐Cristina},
@@ -559,6 +573,23 @@ and O'Toole, G. A.},
   Booktitle                = {Science (New York, N.Y.)}
 }
 
+@Article{bioref:Stewart-biofilm-resis-mechanisms-2002,
+  Title                    = {Mechanisms of antibiotic resistance in bacterial biofilms},
+  Author                   = {Philip S. Stewart},
+  Journal                  = {International Journal of Medical Microbiology},
+  Year                     = {2002},
+  Number                   = {2},
+  Pages                    = {107 - 113},
+  Volume                   = {292},
+
+  Doi                      = {https://doi.org/10.1078/1438-4221-00196},
+  ISSN                     = {1438-4221},
+  Keywords                 = {biofilm, penetration, growth rate, stress response, persister},
+  Owner                    = {s1212500},
+  Timestamp                = {2018.05.16},
+  Url                      = {http://www.sciencedirect.com/science/article/pii/S1438422104700909}
+}
+
 @Article{bioref:Torella-optimal-drug-synergy,
   Title                    = {Optimal Drug Synergy in Antimicrobial Treatments},
   Author                   = {Torella, Joseph Peter AND Chait, Remy AND Kishony, Roy},
@@ -595,6 +626,24 @@ and O'Toole, G. A.},
   Publisher                = {National Academy of Sciences},
   Timestamp                = {2018.05.08},
   Url                      = {http://www.pnas.org/content/103/25/9655}
+}
+
+@Article{bioref:Whitechurch-biomatrix-components-2002,
+  Title                    = {Extracellular DNA Required for Bacterial Biofilm Formation},
+  Author                   = {Whitchurch, Cynthia B. and Tolker-Nielsen, Tim and Ragas, Paula C. and Mattick, John S.},
+  Journal                  = {Science},
+  Year                     = {2002},
+  Number                   = {5559},
+  Pages                    = {1487--1487},
+  Volume                   = {295},
+
+  Doi                      = {10.1126/science.295.5559.1487},
+  Eprint                   = {http://science.sciencemag.org/content/295/5559/1487.full.pdf},
+  ISSN                     = {0036-8075},
+  Owner                    = {s1212500},
+  Publisher                = {American Association for the Advancement of Science},
+  Timestamp                = {2018.05.16},
+  Url                      = {http://science.sciencemag.org/content/295/5559/1487}
 }
 
 @Article{bioref:first-antibiotics,
