@@ -149,21 +149,20 @@ antibiotics and populations with heterogeneous species and resistance distributi
 
 \section{Review of Background Bibliography}
 
-\begin{itemize}
-  \item overview of antibiotics - how they work etc
-  \item Causes of antibiotic crisis
-  \item growth rate dependent antibiotics, $\beta$-lactams etc
-  \item how biofilms form - the bacteria change when in a biofilm, why are they difficult to get rid of 
-  \item overview of biofouling, current ship hull anti-microbes
-  \item difference of films and fouls
-  \item brief mention of macrofouling
-  \item surface colonisation
-  \item opposite gradient directions for films and fouls
-  \item how biocidal paint works, diffusion coefficients etc
-  \item mention the differnt algorithms possible for the sims, gillespie etc - and give overview of what we used
-  \item as in, mention the rates, algorithm and description of why used
- 
-\end{itemize}
+% \begin{itemize}
+% %   \item overview of antibiotics - how they work etc
+% %   \item Causes of antibiotic crisis
+% %   \item growth rate dependent antibiotics, $\beta$-lactams etc
+% %   \item how biofilms form - the bacteria change when in a biofilm, why are they difficult to get rid of 
+% %   \item overview of biofouling, current ship hull anti-microbes
+% %   \item difference of films and fouls
+% %   \item brief mention of macrofouling
+% %   \item surface colonisation
+% %   \item opposite gradient directions for films and fouls
+% %   \item how biocidal paint works, diffusion coefficients etc
+% %   \item mention the differnt algorithms possible for the sims, gillespie etc - and give overview of what we used
+% %   \item as in, mention the rates, algorithm and description of why used
+%  \end{itemize}
 
 \subsection{Antibiotic gradients}
 The issue of antibiotic resistance is one of the key issues plaguing modern science as of today, and as such, the field commands a 
@@ -176,7 +175,7 @@ so far in this section, are performed with constant and uniform concentrations o
 While this situation tends to be more convenient for idealised in vivo experiments, many real-world in vivo scenarios do not have these conditions.
 Many naturally occurring structures, typically the ones which the drugs are intended to target, do not allow said drugs to fully permeate throughout
 the region, creating drug gradients where the drug concentration can vary noticeable over space.  These gradients can arise in a variety of 
-situations, from tissue \cite{bioref:minelli-peflox-penet} to bacterial biofilms \cite{bioref:Anderson2008}.
+situations, from tissue \cite{bioref:minelli-peflox-penet} to bacterial biofilms \cite{bioref:Kim-biofilm-antibio-grad-2010}.
 
 It is only in recent years that the effects of these spatial heterogeneities have been considered as a serious influencer on the evolution of resistance. 
 In fact, models have been constructed which predict that drug gradients actually tend to accelerate the evolution of resistance \cite{bioref:Hermsen-source-and-sink}.
@@ -310,18 +309,20 @@ can arise from.  From this it appears that the contributions of antibiotic gradi
 
 
 \subsection{Biofilms}
-\begin{itemize}
- \item mention factors that affect formation, roughness etc
- \item changes undergone by bacteria in the biofilm - polymer secretions etc
- \item defense mechanisms from that paper - gradients caused by diffusions and changes in growth rates throughout the film
- \item this section will probs be the most involved
-\end{itemize}
+
+% \begin{itemize}
+%  \item mention factors that affect formation, roughness etc
+%  \item changes undergone by bacteria in the biofilm - polymer secretions etc
+%  \item defense mechanisms from that paper - gradients caused by diffusions and changes in growth rates throughout the film
+%  \item this section will probs be the most involved
+% \end{itemize}
 
 Bacteria which aggregate onto and around a surface forming a biofilm have a range of additional defences available to them which free-flowing planktonic bacterial 
 colonies do not \cite{bioref:Lewis-biofilm-riddle-2001}.  These defences can afford biofilm colonies resistances to antibiotics 10-1000 times greater than their individual counterparts 
-\cite{bioref:Anderson-innate-biofilm-resistances-2008}, making treatment plans an immensely more complicated affair.  Biofilms can form on almost any surface where there is a 
-consistent influx of bacteria and other microorganisms, from medical devices \cite{bioref:Donlan-biofilms-medical-devices-2002} to the exterior of ship hulls 
-\cite{bioref:Chambers-modern-antifoul-coatings-2006}.  
+\cite{bioref:Anderson-innate-biofilm-resistances-2008}, making treatment plans an immensely more complicated affair.  These resistance mechanisms are simple to replicate in laboratory 
+conditions, which heavily suggests that it is indeed the biofilm itself which possesses these qualities, rather than any external influence from the host or environment 
+\cite{bioref:Stewart-biofilm-resis-mechanisms-2002}.  Biofilms can form on almost any surface where there is a consistent influx of bacteria and other microorganisms, from medical 
+devices \cite{bioref:Donlan-biofilms-medical-devices-2002} to the exterior of ship hulls \cite{bioref:Chambers-modern-antifoul-coatings-2006}.  
 
 The formation of biofilms is a complex and little-understood process.  Whilst originally thought that biofilms were formed by single organisms attaching to a surface, leading to 
 the formation of micro-colonies and then 3D structures \cite{bioref:Monds-biofilm-formation-2009}, there is also now evidence that pre-existing bacterial aggregates can also 
@@ -331,6 +332,29 @@ seed the formation of biofilms \cite{bioref:hall-stooley-biofilm-clumps-2005}, t
 Regardless of how they come to be, biofilms have a range of features which distinguish them from a simple gathering of bacteria. One such key trait that marks them apart is that of the 
 inter-cellular matrix.  When bacteria aggregate into a biofilm, they secrete a variety of macromolecules such as exopolysaccharides, DNA and protein fragments 
 \cite{bioref:Whitechurch-biomatrix-components-2002}, which allows the bacteria to adhere to both surfaces and one another.
+
+This matrix forms just one of the biofilm's innate defence mechanisms.  Although its composition is mainly water, perhaps up to 97\% in some cases 
+\cite{bioref:Zhang-biofilm-water97pc-1998}, the organic material present in it acts as a diffusion barrier to the applied antibiotic, preventing it from fully penetrating 
+the biofilm.  On average, the diffusion coefficient of an administered antibiotic in a biofilm matrix is roughly 40\% that of it in pure water 
+\cite{bioref:Stewart-biofilm-diffusion-coeff-1998}.  However it is not thought that this reduction in antibiotic mobility alone is enough to explain the levels of resistance which 
+biofilms exhibit.  
+
+Another feature of biofilms which may explain their durability is that of the formation of microenvironemts within their structure \cite{bioref:Wimpenny-micrograds-1995}.  Factors such 
+as oxygen limitation and poor nutrient diffusion throughout the biofilm matrix creates regions where the growth rate is substantially reduced compared to the outer sections.  As the 
+efficacy of many antibiotics are dependent on growth rates \cite{bioref:Field-gr-depend-antib-2005}, this causes many antibiotics to only be effective against specific sections of 
+a biofilm, rather than the structure as a whole, an example of which can be see in Figure \ref{fig:Pamp-dead-innards-biofilms}.  This multitude of factors make further research into how 
+biofilms evolve over time essential, as the surface has only just been scratched into just how the internal workings of biofilms interplay with one another.
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[height=5.8cm]{Pamp-dead-biof-inside}
+ \caption{The effects of the antibiotic colistin on a biofilm consisting of \textit{P. aeruginosa} bacteria.  Colistin is an antibiotic which targets slow-growing, metabolically 
+ inactive cells, as can be seen, it is therefore more effective against the internal regions of the biofilm.  Live cells are shown in green, dead cells in red.}
+ \label{fig:Pamp-dead-innards-biofilms}
+\end{figure}
+
+
+%write about majority innate stuff, then diffusion . then do differing growth rates and gene alteration and that picture martin sent then done
 
 
 
@@ -357,10 +381,10 @@ inter-cellular matrix.  When bacteria aggregate into a biofilm, they secrete a v
 
 \section{Progress to Date}
 
-\begin{itemize}
- \item make several sections giving brief overview of them - PRL replication, growth dependent, multispecies 
- \item mention paper
-\end{itemize}
+% \begin{itemize}
+%  \item make several sections giving brief overview of them - PRL replication, growth dependent, multispecies 
+%  \item mention paper
+% \end{itemize}
 
 
 
@@ -520,13 +544,12 @@ experience in the wild.
  \includegraphics[height=5.8cm]{multispecies-snapshot}
  \caption{Snapshot of the GUI for the current multispecies model.  The most resistant species are shown at the bottom of the picture, with the resistances decreasing towards the top.  
  The system is exposed to an antibiotic gradient which is at its lowest on the left of the system, and increases exponentially towards the right.}
- \label{fig:Greulich-time-til-resistance}
+ \label{fig:multispecies-snapshot}
 \end{figure}
 
 
+
 \section{Proposal}
-
-
 
 Over the next year, the first step will be to complete writing the paper on the growth-rate dependent antibiotic model.  This should not take longer than a few weeks, as all 
 the results have now been collated, so a write-up and commentary, along with a discussion section is all that remains.  Along with some mainly stylistic editing.

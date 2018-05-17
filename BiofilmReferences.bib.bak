@@ -2,26 +2,6 @@
 % Encoding: UTF-8
 
 
-@InBook{bioref:Anderson2008,
-  Title                    = {Innate and Induced Resistance Mechanisms of Bacterial Biofilms},
-  Author                   = {Anderson, G. G.
-and O'Toole, G. A.},
-  Editor                   = {Romeo, Tony},
-  Pages                    = {85--105},
-  Publisher                = {Springer Berlin Heidelberg},
-  Year                     = {2008},
-
-  Address                  = {Berlin, Heidelberg},
-
-  Abstract                 = {Bacterial biofilms are highly recalcitrant to antibiotic treatment, which holds serious consequences for therapy of infections that involve biofilms. The genetic mechanisms of this biofilm antibiotic resistance appear to fall into two general classes: innate resistance factors and induced resistance factors. Innate mechanisms are activated as part of the biofilm developmental pathway, the factors being integral parts of biofilm structure and physiology. Innate pathways include decreased diffusion of antibiotics through the biofilm matrix, decreased oxygen and nutrient availability accompanied by altered metabolic activity, formation of persisters, and other specific molecules not fitting into the above groups. Induced resistance factors include those resulting from induction by the antimicrobial agent itself. Biofilm antibiotic resistance is likely manifested as an intricate mixture of innate and induced mechanisms. Many researchers are currently trying to overcome this extreme biofilm antibiotic resistance by developing novel therapies aimed at disrupting biofilms and killing the constituent bacteria. These studies have led to the identification of several molecules that effectively disturb biofilm physiology, often by interrupting bacterial quorum sensing. In this manner, manipulation of innate and induced resistance pathways holds much promise for treatment of biofilm infections.},
-  Booktitle                = {Bacterial Biofilms},
-  Doi                      = {10.1007/978-3-540-75418-3_5},
-  ISBN                     = {978-3-540-75418-3},
-  Owner                    = {s1212500},
-  Timestamp                = {2018.05.08},
-  Url                      = {https://doi.org/10.1007/978-3-540-75418-3_5}
-}
-
 @InBook{bioref:Anderson-innate-biofilm-resistances-2008,
   Title                    = {Innate and Induced Resistance Mechanisms of Bacterial Biofilms},
   Author                   = {Anderson, G. G.
@@ -247,6 +227,29 @@ and O'Toole, G. A.},
   Url                      = {https://onlinelibrary.wiley.com/doi/abs/10.1002/bies.950190814}
 }
 
+@Article{bioref:Field-gr-depend-antib-2005,
+  Title                    = {Effect of oxygen limitation on the in vitro antimicrobial susceptibility of clinical isolates of Pseudomonas aeruginosa grown planktonically and as biofilms},
+  Author                   = {Field, T. R.
+and White, A.
+and Elborn, J. S.
+and Tunney, M. M.},
+  Journal                  = {European Journal of Clinical Microbiology and Infectious Diseases},
+  Year                     = {2005},
+
+  Month                    = {Oct},
+  Number                   = {10},
+  Pages                    = {677},
+  Volume                   = {24},
+
+  Abstract                 = {Pseudomonas aeruginosa, the predominant causative pathogen of chronic lung infection in patients with cystic fibrosis, may grow under anaerobic conditions as biofilms in the lungs of cystic fibrosis patients. To determine if growth under anaerobic conditions affects the antimicrobial susceptibility of P. aeruginosa, the susceptibility of clinical isolates of P. aeruginosa grown planktonically and as biofilms to a range of antibiotics was determined. Growth under anaerobic conditions did not reduce the ability of ceftazidime, meropenem, aztreonam, piperacillin, or piperacillin/tazobactam to inhibit planktonic growth, with MIC50 values for these antibiotics remaining unchanged or decreasing. However, tobramycin was less effective at inhibiting planktonic bacterial growth under anaerobic conditions, with the MIC50 of tobramycin increasing twofold. Growth under anaerobic conditions also decreased the bactericidal activity of tobramycin, with the MBC50 of tobramycin increasing fourfold. The killing kinetics of tobramycin was also examined under aerobic and anaerobic conditions for selected isolates. When isolates 6A and 12A were grown aerobically, concentration-dependent decreases in total viable count were apparent with tobramycin. In contrast, when these isolates were grown anaerobically, tobramycin at the same concentrations did not decrease the total viable count. When isolates were grown as biofilms under both aerobic and anaerobic conditions, isolate- and concentration-dependent differences in killing of the biofilms by tobramycin were apparent. However, tobramycin at concentrations up to 128 mg/l was unable to eradicate biofilms of any of the isolates tested, whether biofilms were grown aerobically or anaerobically. These results show that oxygen limitation may reduce, in a strain-dependent manner, the susceptibility to tobramycin of P. aeruginosa grown planktonically and as biofilms.},
+  Day                      = {26},
+  Doi                      = {10.1007/s10096-005-0031-9},
+  ISSN                     = {1435-4373},
+  Owner                    = {s1212500},
+  Timestamp                = {2018.05.17},
+  Url                      = {https://doi.org/10.1007/s10096-005-0031-9}
+}
+
 @Article{bioref:tau-leap-algorithm,
   Title                    = {Approximate accelerated stochastic simulation of chemically reacting systems},
   Author                   = {Daniel T. Gillespie},
@@ -372,6 +375,23 @@ and O'Toole, G. A.},
   Doi                      = {10.1093/cid/civ076},
   Eprint                   = {/oup/backfile/content_public/journal/cid/60/9/10.1093/cid/civ076/2/civ076.pdf},
   Url                      = {http://dx.doi.org/10.1093/cid/civ076}
+}
+
+@Article{bioref:Kim-biofilm-antibio-grad-2010,
+  Title                    = {In situ monitoring of antibiotic susceptibility of bacterial biofilms in a microfluidic device},
+  Author                   = {Kim, Keun Pil and Kim, Yun-Gon and Choi, Chang-Hyung and Kim, Hye-Eun and Lee, Sang-Ho and Chang, Woo-Suk and Lee, Chang-Soo},
+  Journal                  = {Lab Chip},
+  Year                     = {2010},
+  Pages                    = {3296-3299},
+  Volume                   = {10},
+
+  Abstract                 = {Antibiotic resistance of biofilms is a growing public health concern due to overuse and improper use of antibiotics. Thus{,} determining an effective minimal concentration of antibiotics to eradicate bacterial biofilms is crucial. Here we present a simple{,} novel one-pot assay for the analysis of antibiotic susceptibility of bacterial biofilms using a microfluidics system where continuous concentration gradients of antibiotics are generated. The results of minimal biofilm eradication concentration (MBEC) clearly confirm that the concentration required to eradicate biofilm-grown Pseudomonas aeruginosa is higher than the minimal inhibitory concentration (MIC) that has been widely used to determine the lowest concentration of antibiotics against planktonically grown bacteria.},
+  Doi                      = {10.1039/C0LC00154F},
+  Issue                    = {23},
+  Owner                    = {s1212500},
+  Publisher                = {The Royal Society of Chemistry},
+  Timestamp                = {2018.05.17},
+  Url                      = {http://dx.doi.org/10.1039/C0LC00154F}
 }
 
 @Article{bioref:future-death-stats,
@@ -561,6 +581,24 @@ and O'Toole, G. A.},
   Url                      = {https://onlinelibrary.wiley.com/doi/abs/10.15252/msb.20145949}
 }
 
+@Article{bioref:Stewart-biofilm-diffusion-coeff-1998,
+  Title                    = {A review of experimental measurements of effective diffusive permeabilities and effective diffusion coefficients in biofilms},
+  Author                   = {Stewart Philip S.},
+  Journal                  = {Biotechnology and Bioengineering},
+  Year                     = {1998},
+  Number                   = {3},
+  Pages                    = {261-272},
+  Volume                   = {59},
+
+  Abstract                 = {Abstract Experimental measurements of effective diffusive permeabilities and effective diffusion coefficients in biofilms are reviewed. Effective diffusive permeabilities, the parameter appropriate to the analysis of reaction‐diffusion interactions, depend on solute type and biofilm density. Three categories of solute physical chemistry with distinct diffusive properties were distinguished by the present analysis. In order of descending mean relative effective diffusive permeability (De/Daq) these were inorganic anions or cations (0.56), nonpolar solutes with molecular weights of 44 or less (0.43), and organic solutes of molecular weight greater than 44 (0.29). Effective diffusive permeabilities decrease sharply with increasing biomass volume fraction suggesting a serial resistance model of diffusion in biofilms as proposed by Hinson and Kocher (1996). A conceptual model of biofilm structure is proposed in which each cell is surrounded by a restricted permeability envelope. Effective diffusion coefficients, which are appropriate to the analysis of transient penetration of nonreactive solutes, are generally similar to effective diffusive permeabilities in biofilms of similar composition. In three studies that examine diffusion of very large molecular weight solutes ( > 5000) in biofilms, the average ratio of the relative effective diffusion coefficient of the large solute to the relative effective diffusion coefficient of either sucrose or fluorescein was 0.64, 0.61, and 0.36. It is proposed that large solutes are effectively excluded from microbial cells, that small solutes partition into and diffuse within cells, and that ionic solutes are excluded from cells but exhibit increased diffusive permeability (but decreased effective diffusion coefficients) due to sorption to the biofilm matrix. © 1998 John Wiley \& Sons, Inc. Biotechnol Bioeng 59:261–272, 1998.},
+  Doi                      = {10.1002/(SICI)1097-0290(19980805)59:3<261::AID-BIT1>3.0.CO;2-9},
+  Eprint                   = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/%28SICI%291097-0290%2819980805%2959%3A3%3C261%3A%3AAID-BIT1%3E3.0.CO%3B2-9},
+  Keywords                 = {effective diffusive permeability, diffusion coefficient, biofilm, cell density, review},
+  Owner                    = {s1212500},
+  Timestamp                = {2018.05.17},
+  Url                      = {https://onlinelibrary.wiley.com/doi/abs/10.1002/%28SICI%291097-0290%2819980805%2959%3A3%3C261%3A%3AAID-BIT1%3E3.0.CO%3B2-9}
+}
+
 @Article{bioref:Scott-ribosome-content-2010,
   Title                    = {Interdependence of Cell Growth and Gene Expression: Origins and Consequences},
   Author                   = {Scott, Matthew and W Gunderson, Carl and M Mateescu, Eduard and Zhang, Zhongge and Hwa, Terence},
@@ -669,6 +707,19 @@ and O'Toole, G. A.},
 }
 }
 
+@InBook{bioref:Wimpenny-micrograds-1995,
+  Title                    = {Biochemical reactions and the establishment of gradients within biofilms. In: Microbial biofilms},
+  Author                   = {Wimpenny, J. W. T., Kinniment, S. L.},
+  Chapter                  = {5},
+  Editor                   = {H. M. Lappin-Scott,  J. W. Costerton,},
+  Pages                    = {99-117},
+  Publisher                = {Cambridge University Press},
+  Year                     = {1995},
+
+  Owner                    = {s1212500},
+  Timestamp                = {2018.05.17}
+}
+
 @Article{bioref:Liu-baicalin-synergy,
   Title                    = {Baicalin Synergy with β‐Lactam Antibiotics Against Methicillin‐resistant Staphylococcus aureus and Other β‐Lactam‐resistant Strains of S. aureus},
   Author                   = {LIU IAIN X. and DURHAM DAVID G. and RICHARDS R. MICHAEL E.},
@@ -702,5 +753,28 @@ and O'Toole, G. A.},
   Publisher                = {American Association for the Advancement of Science},
   Timestamp                = {2018.05.07},
   Url                      = {http://science.sciencemag.org/content/333/6050/1764}
+}
+
+@Article{bioref:Zhang-biofilm-water97pc-1998,
+  Title                    = {Measurement of polysaccharides and proteins in biofilm extracellular polymers},
+  Author                   = {Xiaoqi Zhang and Paul L. Bishop and Margaret J. Kupferle},
+  Journal                  = {Water Science and Technology},
+  Year                     = {1998},
+  Note                     = {Microorganisms in Activated Sludge and Biofilm Processes II},
+  Number                   = {4},
+  Pages                    = {345 - 348},
+  Volume                   = {37},
+
+  Doi                      = {https://doi.org/10.1016/S0273-1223(98)00127-9},
+  ISSN                     = {0273-1223},
+  Keywords                 = {Biofilm, extracellular polymers (ECPs), polysaccharides, proteins, reactors, spatial distribution, structure},
+  Owner                    = {s1212500},
+  Timestamp                = {2018.05.17},
+  Url                      = {http://www.sciencedirect.com/science/article/pii/S0273122398001279}
+}
+
+@InBook{,
+  Owner                    = {s1212500},
+  Timestamp                = {2018.05.17}
 }
 

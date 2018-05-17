@@ -3,9 +3,9 @@
 \contentsline {subsection}{\numberline {2.1}Antibiotic gradients}{3}
 \contentsline {subsection}{\numberline {2.2}Modelling the effects of antibiotic gradients}{6}
 \contentsline {subsection}{\numberline {2.3}Biofilms}{8}
-\contentsline {section}{\numberline {3}Progress to Date}{9}
-\contentsline {subsection}{\numberline {3.1}Greulich et al. replication}{9}
+\contentsline {section}{\numberline {3}Progress to Date}{10}
+\contentsline {subsection}{\numberline {3.1}Greulich et al. replication}{10}
 \contentsline {subsection}{\numberline {3.2}Growth rate-dependant antibiotics}{10}
-\contentsline {subsection}{\numberline {3.3}Multispecies models}{12}
-\contentsline {section}{\numberline {4}Proposal}{13}
-\contentsline {section}{\numberline {5}Summary}{14}
+\contentsline {subsection}{\numberline {3.3}Multispecies models}{13}
+\contentsline {section}{\numberline {4}Proposal}{14}
+\contentsline {section}{\numberline {5}Summary}{15}

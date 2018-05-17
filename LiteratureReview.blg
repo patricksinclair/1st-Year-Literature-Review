@@ -12,50 +12,52 @@ Too many commas in name 1 of "Bertazzoni Minelli E, Benini A, Muner A, Bassi C, 
 while executing---line 944 of file unsrt.bst
 Too many commas in name 1 of "Bertazzoni Minelli E, Benini A, Muner A, Bassi C, Abbas H, Pederzoli P." for entry bioref:minelli-peflox-penet
 while executing---line 944 of file unsrt.bst
-Warning--can't use both author and editor fields in bioref:Anderson2008
 Warning--can't use both author and editor fields in bioref:Anderson-innate-biofilm-resistances-2008
+Too many commas in name 1 of "Wimpenny, J. W. T., Kinniment, S. L." for entry bioref:Wimpenny-micrograds-1995
+while executing---line 944 of file unsrt.bst
+Warning--can't use both author and editor fields in bioref:Wimpenny-micrograds-1995
 Warning--empty year in bioref:Greulich-growthDependentAntibiotics
 Warning--empty journal in bioref:Scott-ribosome-content-2010
 Warning--can't use both volume and number fields in bioref:Matsumoto-sim-snapshot-2007
-You've used 40 entries,
+You've used 44 entries,
             1791 wiz_defined-function locations,
-            734 strings with 13355 characters,
-and the built_in function-call counts, 10278 in all, are:
-= -- 865
-> -- 506
-< -- 4
-+ -- 185
-- -- 145
-* -- 868
-:= -- 1649
-add.period$ -- 123
-call.type$ -- 40
-change.case$ -- 36
+            770 strings with 14822 characters,
+and the built_in function-call counts, 11268 in all, are:
+= -- 944
+> -- 554
+< -- 5
++ -- 203
+- -- 159
+* -- 956
+:= -- 1811
+add.period$ -- 136
+call.type$ -- 44
+change.case$ -- 40
 chr.to.int$ -- 0
-cite$ -- 48
-duplicate$ -- 391
-empty$ -- 976
-format.name$ -- 145
-if$ -- 2251
+cite$ -- 52
+duplicate$ -- 428
+empty$ -- 1073
+format.name$ -- 159
+if$ -- 2468
 int.to.chr$ -- 0
-int.to.str$ -- 40
-missing$ -- 44
-newline$ -- 206
-num.names$ -- 40
-pop$ -- 66
+int.to.str$ -- 44
+missing$ -- 48
+newline$ -- 227
+num.names$ -- 44
+pop$ -- 70
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 159
+skip$ -- 170
 stack$ -- 0
-substring$ -- 837
-swap$ -- 69
-text.length$ -- 4
+substring$ -- 917
+swap$ -- 74
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 8
-while$ -- 86
-width$ -- 42
-write$ -- 444
-(There were 3 error messages)
+while$ -- 93
+width$ -- 46
+write$ -- 489
+(There were 4 error messages)

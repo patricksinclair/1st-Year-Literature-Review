@@ -117,7 +117,7 @@ Rasmus~Lykke Marvig, Helle~Krogh Johansen, Søren Molin, and Lars Jelsbak.
 \newblock {\em PLOS Genetics}, 9(9):1--12, 09 2013.
 
 \bibitem{bioref:Liu-baicalin-synergy}
-LIU~IAIN X., DURHAM~DAVID G., and RICHARDS R.~MICHAEL E.
+Liu~Iain X., Durham~David G., and Richards R.~Michael E.
 \newblock Baicalin synergy with β‐lactam antibiotics against
   methicillin‐resistant staphylococcus aureus and other
   β‐lactam‐resistant strains of s. aureus.
@@ -128,11 +128,12 @@ Muner A Bassi C Abbas H Pederzoli~P. Bertazzoni Minelli~E, Benini~A.
 \newblock Pefloxacin penetration into human necrotic pancreatic tissue.
 \newblock {\em J Antimicrob Chemother.}, 38(2):237--43, Aug 1996.
 
-\bibitem{bioref:Anderson2008}
-G.~G. Anderson and G.~A. O'Toole.
-\newblock {\em Innate and Induced Resistance Mechanisms of Bacterial Biofilms},
-  pages 85--105.
-\newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 2008.
+\bibitem{bioref:Kim-biofilm-antibio-grad-2010}
+Keun~Pil Kim, Yun-Gon Kim, Chang-Hyung Choi, Hye-Eun Kim, Sang-Ho Lee, Woo-Suk
+  Chang, and Chang-Soo Lee.
+\newblock In situ monitoring of antibiotic susceptibility of bacterial biofilms
+  in a microfluidic device.
+\newblock {\em Lab Chip}, 10:3296--3299, 2010.
 
 \bibitem{bioref:Hermsen-source-and-sink}
 Rutger Hermsen and Terence Hwa.
@@ -203,6 +204,33 @@ Xavier~Joao B., Picioreanu Cristian, and Van Loosdrecht Mark~C. M.
 Cynthia~B. Whitchurch, Tim Tolker-Nielsen, Paula~C. Ragas, and John~S. Mattick.
 \newblock Extracellular dna required for bacterial biofilm formation.
 \newblock {\em Science}, 295(5559):1487--1487, 2002.
+
+\bibitem{bioref:Zhang-biofilm-water97pc-1998}
+Xiaoqi Zhang, Paul~L. Bishop, and Margaret~J. Kupferle.
+\newblock Measurement of polysaccharides and proteins in biofilm extracellular
+  polymers.
+\newblock {\em Water Science and Technology}, 37(4):345 -- 348, 1998.
+\newblock Microorganisms in Activated Sludge and Biofilm Processes II.
+
+\bibitem{bioref:Stewart-biofilm-diffusion-coeff-1998}
+Stewart~Philip S.
+\newblock A review of experimental measurements of effective diffusive
+  permeabilities and effective diffusion coefficients in biofilms.
+\newblock {\em Biotechnology and Bioengineering}, 59(3):261--272, 1998.
+
+\bibitem{bioref:Wimpenny-micrograds-1995}
+Kinniment S.~L. Wimpenny, J. W.~T.
+\newblock {\em Biochemical reactions and the establishment of gradients within
+  biofilms. In: Microbial biofilms}, chapter~5, pages 99--117.
+\newblock Cambridge University Press, 1995.
+
+\bibitem{bioref:Field-gr-depend-antib-2005}
+T.~R. Field, A.~White, J.~S. Elborn, and M.~M. Tunney.
+\newblock Effect of oxygen limitation on the in vitro antimicrobial
+  susceptibility of clinical isolates of pseudomonas aeruginosa grown
+  planktonically and as biofilms.
+\newblock {\em European Journal of Clinical Microbiology and Infectious
+  Diseases}, 24(10):677, Oct 2005.
 
 \bibitem{bioref:Gillespie-algorithm}
 Daniel~T Gillespie.
