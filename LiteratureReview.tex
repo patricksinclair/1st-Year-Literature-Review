@@ -46,7 +46,7 @@
 \par\noindent                                           % Centre Title, and name
 \vspace*{2cm}
 \begin{center}
-        \Large\bf Modelling the effects of spatial heterogeneity in antibiotic concentrations on the emergence of drug resistance. \\
+        \Large\bf Modelling the growth of microbial populations in heterogeneous antimicrobial concentrations \\
         \Large\bf First Year Report and Literature Review
 \end{center}
 \vspace*{1.5cm}
@@ -59,9 +59,10 @@
 %                       Insert your abstract HERE
 %                       
 \begin{abstract}
-        The mechanisms of how antibiotic resistance evolves and develops, especially in the case of biofilm formation, is one of the key issues of modern medicine.  
-        This project aims to use stochastic computer modelling techniques to investigate how the presence of antibiotic gradients can affect the growth and proliferation 
-        of bacterial populations in order to better understand what influences the emergence of antibiotic resistance.
+	Spatial gradients of antimicrobial chemicals are ubiquitous in both modern medicine and industry, from bacterial biofilms caused by infection and the application of antibiotics, 
+	to marine biofouling and the leaching of antimicrobials from specially designed shipping hull coatings.  
+        This project aims to use stochastic computer modelling techniques to investigate how the presence of antimicrobial gradients can affect the growth and proliferation 
+        of microbial populations in order to better understand how to minimise the formation and persistence of microbial biofilms.
 \end{abstract}
 
 \vspace*{1cm}
@@ -98,41 +99,42 @@ Signature:\hspace*{8cm}Date:
 Since their discovery in the early 1900s \cite{bioref:first-antibiotics}, antibiotics have shaped modern medicine,
 and indeed modern society as a whole.  Yet despite their prevalence, with over 260,000,000 courses of antibiotics prescribed 
 in the USA alone each year \cite{bioref:antibiotics-usage-USA-2011}, very little is still known about the actual 
-underlying pharmacodynamics.  I.e., how these chemicals actually regulate the growth and death of bacteria.  This 
+underlying pharmacodynamics, i.e., how these chemicals actually regulate the growth and death of bacteria.  This 
 lack of understanding is becoming increasingly significant with the rising emergence of antibiotic resistance.  
 There were over 58,000 deaths in newborns under the age of a year in India in 2013 due to drug-resistant 
 strains of bacteria \cite{bioref:india-death-stats}, with experts predicting that the number of deaths from 
 antibiotic-resistant bacteria will number in the millions by 2050 \cite{bioref:future-death-stats}.
 
-This project aims to shed further light on how the application of antibiotics causes bacterial populations
+Part of the work involved in this PhD aims to shed further light on how the application of antibiotics causes bacterial populations
 to evolve and proliferate over time.  In particular, in the cases of when the applied antibiotic concentration has
-the form of a gradient.  A considerable portion of antibiotic research has been performed under ideal conditions
-with constant, uniform antibiotic concentration \cite{bioref:Grasso-constant-antibtioic-concn}, however it has only 
-recently been proposed that the effects of spatial heterogeneity may be a major factor in the emergence of resistance 
+the form of a gradient.  A considerable portion of antibiotic research has been performed under laboratory conditions
+with constant, uniform antibiotic concentration \cite{bioref:Grasso-constant-antibtioic-concn}, however it has now become clear that the 
+effects of spatial heterogeneity may be a major factor in the emergence of resistance 
 and the efficacy of drugs \cite{bioref:Zhang-effects-of-antibio-grad}.  While these concentration gradients can simply arise 
 due to scenarios such as diffusion throughout body tissue \cite{bioref:tissue-antibio-grads}, the scenario which is most pertinent
-to this project is that of antibiotic concentration throughout biofilms.
+to this project is that of antibiotic concentration gradients in biofilms.
 
-Biofilms arise when microbial organisms adhere irreversibly to a surface and then begin to secrete various polymers which further aid
-in surface and inter-microbial attachment \cite{bioref:biofilm-formation} and creates a ``slimey'' surface.  These structures are 
-particularly problematic as it is difficult to achieve sufficient drug penetration to adequately curtail microbial growth, which leads to an
-increase in the persistence of infections \cite{biofilms:Costerton-biofilms-persistent}.
+Biofilms arise when microbial organisms adhere irreversibly to a surface and then begin to secrete various polymers, which further aid
+in surface and inter-microbial attachment \cite{bioref:biofilm-formation}, so that the microbial population create a ``slimey'' surface.  These structures are 
+particularly problematic as bacteria found in biofilms are innately more resistant to applied antimicrobials and  it is also difficult to achieve sufficient drug 
+penetration throughout the biofilm to adequately curtail microbial growth, which leads to an increase in the persistence of infections \cite{biofilms:Costerton-biofilms-persistent}.
 
-The ability to inhibit and even prevent biofilm growth and formation has not only a multitude of medical applications, but industrial as well.
-In the shipping industry it's estimated that around 10\%, up to even 45\%, of all fuel consumption of large shipping vessels arises from overcoming the 
-hydrodynamic drag caused by biofilm formation on ship hulls below the water level \cite{bioref:biofilm-fuel-consumption}.  This not only has
+The ability to inhibit and even prevent biofilm growth and formation not only has a multitude of medical applications, but has industrial applications as well.
+In the shipping industry it is estimated that around 10\%, up to even 45\%, of all fuel consumption of large shipping vessels arises from overcoming the 
+hydrodynamic drag caused by algal and other microbial biofilm formation on ship hulls below the water level \cite{bioref:biofilm-fuel-consumption}.  This not only has
 economic influences, but also major environmental implications.  When compared to other nations, the shipping industry is the 7th largest 
 producer of CO$_2$ on the planet \cite{bioref:shipping-CO2-nation}.  Therefore, research into how these marine biofilms form and develop is 
-incredibly important.
+incredibly important.  To this end, this PhD also involves collaboration with AkzoNobel, an industrial paint company, which will entail modelling the formation of biofilms 
+on the exterior of ship hulls in the presence of antimicrobial chemical gradients.
 
 Recently, several physical methods of reducing marine biofouling have been developed, which range from physical coatings that inhibit microbial
 attachment due to their topography \cite{bioref:non-toxic-antifouling-strat} to usage of ultraviolet radiation \cite{bioref:UV-biofilm-repellent}.
 However, the most widespread technique is that of anti-microbial paints which are applied to the boat hulls and then leach various antimicrobial
-compounds over time which inhibit biofouling \cite{bioref:antimicro-paint-desc}.  It is this latter method which is of relevant interest to this project
-due to its analogous nature of applying antibiotics to bacterial biofilms.
+compounds over time which inhibit biofouling \cite{bioref:antimicro-paint-desc}.  It is this latter method which is of relevant interest to this project, 
+as it has analogies with the application of antibiotics to bacterial biofilms.
 
-This project will involve creating simulations of a range of scenarios where bacterial populations experience antibiotic gradients, and will
-investigate how these populations develop over time.  Including but not limited to; the effects of bacterial evolution, differing types of growth-rate dependent
+This project will involve creating computer simulations of a range of scenarios where microbial populations experience gradients of antimicrobial chemicals, and will
+investigate how these populations develop over time.  Work so far has included differing types of growth-rate dependent
 antibiotics and populations with heterogeneous species and resistance distributions.
 
 
@@ -166,29 +168,30 @@ antibiotics and populations with heterogeneous species and resistance distributi
 %  \end{itemize}
 
 \subsection{Antibiotic gradients}
-The issue of antibiotic resistance is one of the key issues plaguing modern science as of today, and as such, the field commands a 
-large volume of research dedicated to it with a wide range of methods involved, ranging from experimental to theoretical methods including both modelling and 
-more in depth simulation \cite{bioref:chait-interactions, bioref:Wang-treatment-tradeoff, bioref:Torella-optimal-drug-synergy}.  While current research is 
-investigating a wide variety of factors which contribute to the development of resistances, from mutational path lengths \cite{bioref:marvig-transmiss-lineage} to 
-the synergistic effects of various antibiotics \cite{bioref:Liu-baicalin-synergy}, the majority of these studies, including all studies referenced
+The issue of antibiotic resistance is one of the key issues plaguing modern science as of today.  As such, the field commands a 
+large volume of dedicated research utilising a wide range of methods.  Ranging from experimental to theoretical techniques including both modelling and 
+more in-depth simulation \cite{bioref:chait-interactions, bioref:Wang-treatment-tradeoff, bioref:Torella-optimal-drug-synergy}.  Current research is 
+investigating a wide variety of factors which contribute to the development of resistances.  From mutational path lengths \cite{bioref:marvig-transmiss-lineage} to 
+the synergistic effects of various antibiotics \cite{bioref:Liu-baicalin-synergy}.  However, the majority of these studies, including all studies referenced
 so far in this section, are performed with constant and uniform concentrations of antibiotics.
 
-While this situation tends to be more convenient for idealised in vivo experiments, many real-world in vivo scenarios do not have these conditions.
-Many naturally occurring structures, typically the ones which the drugs are intended to target, do not allow said drugs to fully permeate throughout
-the region, creating drug gradients where the drug concentration can vary noticeable over space.  These gradients can arise in a variety of 
+While this situation tends to be more convenient for idealised in vivo experiments, many real-world in vivo scenarios do not have these conditions. Many naturally 
+occurring structures which the drugs are intended to target, tend to not allow the drugs to fully permeate throughout
+the region, creating gradients where the drug concentration can vary noticeably over space.  These gradients can arise in a variety of 
 situations, from tissue \cite{bioref:minelli-peflox-penet} to bacterial biofilms \cite{bioref:Kim-biofilm-antibio-grad-2010}.
 
-It is only in recent years that the effects of these spatial heterogeneities have been considered as a serious influencer on the evolution of resistance. 
-In fact, models have been constructed which predict that drug gradients actually tend to accelerate the evolution of resistance \cite{bioref:Hermsen-source-and-sink}.
-To test this hypothesis, Zhang et al. \cite{bioref:Zhang-effects-of-antibio-grad} constructed an apparatus involving an array of several interconnected microhabitats with 
-an antibiotic gradient of ciprofloxacin.  This gradient ranged from no discernible antibiotic concentration at the top of the array to a concentration of 
-10$\mu$g/ml at the bottom.  This concentration is around 200 times the minimum inhibitory concentration (MIC) of ciprofloxacin \cite{bioref:ciprofloxa-mic}
+It is only in recent years that the effects of these spatial heterogeneities have been considered a serious influence on the evolution of resistance. 
+In fact, models have been constructed which predict that antimicrobial gradients can actually accelerate the evolution of resistance \cite{bioref:Hermsen-source-and-sink}.
+These models were inspired by an experiment conducted by Zhang et al. \cite{bioref:Zhang-effects-of-antibio-grad}.  In which they constructed a microfluidic device involving an array of 
+several interconnected microhabitats with an antibiotic gradient of ciprofloxacin.  This gradient ranged from no discernible antibiotic concentration at the top of the array to 
+a concentration of 10$\mu$g/ml at the bottom.  This concentration is around 200 times the minimum inhibitory concentration (MIC, i.e., the minimum necessary concentration of 
+an antibiotic required to prevent observable growth of bacteria) of ciprofloxacin \cite{bioref:ciprofloxa-mic}.
 
 The array was then inoculated in the central microhabitats with around $10^6$ wild type \textit{E. coli}.  Chemotaxis due to nutrient consumption 
 then drove the bacteria towards the perimeter microhabitats.  Once resistant mutants had fixed, they then spread and propagated throughout the array,
 as shown in Figure \ref{fig:Zhang-gradient-apparatus}.
 
-\begin{figure}[H]
+\begin{figure}[h]
  \centering
  \includegraphics[width=8cm]{Zhang-microhab-gradient-cropped}
  \caption{The proliferation of the bacterial population when exposed to an antibiotic gradient.  The LHS shows the development
@@ -201,7 +204,7 @@ To confirm that it was indeed the gradient which allowed for this enhanced devel
 Firstly they eliminated the gradient by including ciprofloxacin at both ends of the array.  This uniform antibiotic concentration resulted in no growth
 from the inoculated wild-type \textit{E. coli}, as can be seen in Figure \ref{fig:Zhang-gradient-growth-graph}.
 
-\begin{figure}[H]
+\begin{figure}[h]
  \centering
  \includegraphics[width=10cm]{Zhang-microhab-gradient-growth-graph}
  \caption{The summed growth over the entire array for various scenarios.  The green diamonds are the initial experiment where the wild-type \textit{E. coli}
@@ -216,17 +219,17 @@ antibiotic concentrations in each well, ranging from low to high concentrations 
 as the growth of the bacterial colonies simply decreased as the concentration of ciprofloxacin increased, thereby implying that bacterial motility across the 
 gradients is what is key to the emergence of resistance.  
 
-To confirm the effects of motility on resistance development, Zhang et al. then used a series of agar plates with the same gradients as the microhabitat arrays,
-but varied the initial population sizes.  Once they reached an initial size of $10^8$ bacteria, no motility was observed and as such growth only occurred in 
-the regions of the plate where the antibiotic concentration was below the MIC, and no clear resistant mutants emerged.
+% To confirm the effects of motility on resistance development, Zhang et al. then used a series of agar plates with the same gradients as the microhabitat arrays,
+% but varied the initial population sizes.  Once they reached an initial size of $10^8$ bacteria, no motility was observed and as such growth only occurred in 
+% the regions of the plate where the antibiotic concentration was below the MIC, and no clear resistant mutants emerged.
+% 
+% Zhang et al. then proceeded to investigate what the source of the resistant mutants were, whether they were simply the descendants of already-present
+% mutants, or if it was indeed legitimate de novo mutation as a response to the applied antibiotic stress.  Zhang et al. reasoned that if resistance emerged due to 
+% preexisting, albeit rare, mutants, then either growth would have occurred above the MIC in the 96 well plate (which did not occur), or by serial dilution of the 
+% starting wild-type colony, they  an initial population density would eventually be reached which contained no resistant mutants, and therefore no growth would occur.
 
-Zhang et al. then proceeded to investigate what the source of the resistant mutants were, whether they were simply the descendants of already-present
-mutants, or if it was indeed legitimate de novo mutation as a response to the applied antibiotic stress.  Zhang et al. reasoned that if resistance emerged due to 
-preexisting, albeit rare, mutants, then either growth would have occurred above the MIC in the 96 well plate (which did not occur), or by serial dilution of the 
-starting wild-type colony, they  an initial population density would eventually be reached which contained no resistant mutants, and therefore no growth would occur.
 
-
-\begin{figure}[H]
+\begin{figure}[h]
  \centering
  \includegraphics[height=9.6cm]{F2-large}
  \caption{Bacterial growth over time in an antibiotic gradient up to 1 $\mu$g/ml of ciprofloxacin for various initial bacterial population sizes.  
@@ -247,18 +250,22 @@ wild-type.  Zhang et al. offered the following explanation as to why antibiotic 
  population.
 \end{quote}
 
-\subsection{Modelling the effects of antibiotic gradients}
+\subsection{Modelling the effects of antibiotic gradients} \label{subsec:modelling-gradients}
 
-As seen, there is clear experimental evidence supporting the notion that non-uniform drug distributions can accelerate the emergence of resistant organisms.  To gain 
+
+As can be seen, there is experimental evidence supporting the notion that non-uniform drug distributions can accelerate the emergence of resistant organisms.  To gain 
 a better understanding of whether this is always the case and also how the mutants emerge and propagate,  Greulich et al. (2012) 
 \cite{bioref:PRL-drugGradients} constructed a simple computational model which investigated how a bacterial population evolved along pathways 
 in genotype space when exposed to both uniform and non-uniform antibiotic concentrations.  It is this model which has also formed the basis for the other models
-constructed in this project.
+constructed in this project, although the work conducted with these models has focused less on evolution and more on colonisation along the antimicrobial gradient.
 
-The model consisted of $L$ microhabitats interconnected in series with one another.  Each of which had a carrying capacity $K$ and a concentration of antibiotic present
-$c_i$, where $i$ is the index of the microhabitat.  Each bacteria had a numeric genotype $m$, which they could mutate between with a probability $\mu$ 
-and which had a maximum value of $M$.  This genotype described the level of resistance the bacteria had to the antibiotic.  At each step in the simulation 
-each bacteria could die or move to an adjacent microhabitat at constant rates $d$ and $b$, or replicate at a rate given by 
+The model consisted of $L$ microhabitats interconnected in series with one another.  Each microhabitat had a concentration of antibiotic $c_i$ (where $i$ is the index of the 
+microhabitat), and a carrying capacity $K$.  If the number of bacteria in the microhabitat was $\geq{K}$, then no bacterial growth could occur in this microhabitat until its population 
+decreased below the carrying capacity.  
+
+Each bacterium had a numeric genotype $m$, which they could mutate between with a probability $\mu$ 
+and had a maximum value of $M$.  This genotype described the level of resistance the bacteria had to the antibiotic, with $m_2$ being more resistant than $m_1$ and so on.  
+At each step in the simulation each bacteria could die or move to an adjacent microhabitat at constant rates $d$ and $b$, or replicate at a rate given by 
 
 \begin{equation}
  R_{rep} = \phi_m(c_i)(1 - \frac{N_i}{K}).
@@ -269,7 +276,13 @@ Where $N_i$ is the total number of bacteria present in microhabitat $i$ and $\ph
 This value decreases until the MIC for that particular genotype ($\beta_m$) is reached, after which that bacteria cannot replicate.  The simulation is 
 initialised by placing $K$ bacteria of genotype $m=1$ in the first microhabitat and then allowing them to proliferate throughout the system.  To illustrate the effects 
 of the antibiotic gradient, the simulations were performed under two different conditions; with a uniform antibiotic concentration ($c_i = c$) and with an exponentially 
-increasing antibiotic concentration ($c_i = \exp(\alpha{i}) - 1$).
+increasing antibiotic concentration
+
+\begin{equation}
+ c_i = \exp(\alpha{i}) - 1.
+ \label{eqn:c_i}
+\end{equation}
+
 
 \begin{figure}[H]
  \centering
@@ -285,28 +298,55 @@ Once again, as shown in Figure \ref{fig:Greulich-geno-distbs}, the dynamics of h
 For the uniform case, mutations arise sporadically and proliferate randomly, with the system as a whole generally evolving from one genotype to the other.  However when 
 exposed to the gradient, the genotypes tend to form ``stationary fronts'', with resistant mutants emerging at the tip of the colony, then quickly spreading to fill
 the remaining space until the MIC for the current advancing genotype is reached, at which point the process repeats itself.  As Figure \ref{fig:Greulich-geno-distbs} 
-illustrates, where the snapshots were taken after an equal amount of time had passed, the presence of the gradient drastically reduced the time necessary for resistance 
-to evolve.  To further investigate the effects of the gradients, Greulich et al. ran a series of simulations varying the overall concentration of the antibiotic for the 
-uniform case, and the steepness of the gradient for the non-uniform one and recorded the time taken ($\bar{\tau}$) for a fully resistant (i.e. $m = M$) mutant to arise.
+illustrates, where the snapshots were taken after an equal amount of time had passed, the presence of the gradient causes the emergence of ``population waves'' of increasing 
+resistance, which greatly reduces the time taken for resistance to emerge.
 
 
-\begin{figure}[H]
- \centering
- \includegraphics[height=5.8cm]{greulich-time-til-resistance}
- \caption{Time taken for a fully resistant ($m = M$) mutant to emerge for a variety of uniform drug concentrations $c$, and steepness of non-uniform drug gradient $\alpha$.  
- The red dashed line shows the minimum time taken for the uniformly concentrated system to reach resistance.  Greulich et al., 2012.}
- \label{fig:Greulich-time-til-resistance}
-\end{figure}
+% To further investigate the effects of the gradients, Greulich et al. ran a series of simulations varying the overall concentration of the antibiotic for the 
+% uniform case, and the steepness of the gradient for the non-uniform one and recorded the time taken ($\bar{\tau}$) for a fully resistant (i.e. $m = M$) mutant to arise.
+% 
+% 
+% \begin{figure}[H]
+%  \centering
+%  \includegraphics[height=5.8cm]{greulich-time-til-resistance}
+%  \caption{Time taken for a fully resistant ($m = M$) mutant to emerge for a variety of uniform drug concentrations $c$, and steepness of non-uniform drug gradient $\alpha$.  
+%  The red dashed line shows the minimum time taken for the uniformly concentrated system to reach resistance.  Greulich et al., 2012.}
+%  \label{fig:Greulich-time-til-resistance}
+% \end{figure}
+% 
+% 
+% This experiment produced an interesting result, as shown in Figure \ref{fig:Greulich-time-til-resistance}.  For the uniform case, $\bar{\tau}$ followed a simple inversely 
+% proportional relation, which makes intuitive sense.  With a higher drug concentration present, there is also an increased pressure for resistance to emerge.  However 
+% for the non-uniform case, the results are somewhat more involved.  For the smallest values of $\alpha$, it's seen that the presence of the gradient actually causes $\bar{\tau}$ 
+% to be larger than in the uniform case, as there is much less pressure on the system for resistance to evolve.  Additionally, there seems to be an ``optimal'' value for $\alpha$, 
+% above which $\bar{\tau}$ begins to increase.  This is due to the fact that for the higher values of $\alpha$, the regions which the lead mutants can fill get much narrower as 
+% $\alpha$ increases, as seen in the snapshots included in Figure \ref{fig:Greulich-time-til-resistance}.  Thus reducing the available regions that the next generation of mutants 
+% can arise from.  From this it appears that the contributions of antibiotic gradients on an evolving system are even more complex than first supposed.
 
+\subsection{Growth rate dependency} \label{subsec:GR-dependency}
 
-This experiment produced an interesting result, as shown in Figure \ref{fig:Greulich-time-til-resistance}.  $\bar{\tau}$ for the uniform case followed a simple inversely 
-proportional relation, which makes intuitive sense.  With a higher drug concentration present, there is also an increased pressure for resistance to emerge.  However 
-for the non-uniform case, the results are somewhat more involved.  For the smallest values of $\alpha$, it's seen that the presence of the gradient actually causes $\bar{\tau}$ 
-to be larger than in the uniform case, as there is much less pressure on the system for resistance to evolve.  Additionally, there seems to be an ``optimal'' value for $\alpha$, 
-above which $\bar{\tau}$ begins to increase.  This is due to the fact that for the higher values of $\alpha$, the regions which the lead mutants can fill get much narrower as 
-$\alpha$ increases, as seen in the snapshots included in Figure \ref{fig:Greulich-time-til-resistance}.  Thus reducing the available regions that the next generation of mutants 
-can arise from.  From this it appears that the contributions of antibiotic gradients on an evolving system are even more complex than first supposed.
+It has long been known that the growth rate of bacteria affects their susceptibility, with slow growing or metabolically inactive bacteria having a much higher tolerance than their 
+fast growing counterparts \cite{bioref:Cozens-slow-bac-grow-1986}.  However Greulich et al., 2015 \cite{bioref:Greulich-growthDependentAntibiotics} proposed that this might not
+exclusively be the case, and instead that certain ribosome-targeting antibiotics are more effective against fast-growing or slow-growing cells depending on the mechanism which the 
+antibiotic uses to bind to the target cell's ribosomes.
 
+For example, the antibiotic tetracycline binds reversibly to the bacteria's ribosomes and is more effective when the bacteria are in a fast-growing state.  In contrast, streptomycin 
+binds irreversibly tot he bacterial ribosomes and is more suited for bacteria which are less metabolically active.  It's been shown that the ribosome content of a cell correlates with 
+the cell's growth rate \cite{bioref:Bremer-ribosome-content-2008}, with fast-growing cells dedicating more of their resources to ribosome production than their slow-growing 
+counterparts \cite{bioref:Scott-ribosome-content-2010}. 
+
+Although there are numerous factors which can affect a cell's growth rate, from oxygen limitation \cite{bioref:Dalton-oxygen-gRate-1968} to pH levels \cite{bioref:Russell-pH-gRate-1980}, 
+the main environmental influence is that of nutrient availability, which was the variable Greulich et al. varied in order to alter the growth rates of their bacteria.  The behaviour 
+of the nutrient-limited growth rate can be described by the Monod equation \cite{bioref:Monod-equation-1949} 
+
+\begin{equation}
+ \mu(S) = \mu_{\max}\frac{S}{K' + S}.
+ \label{eqn:Monod}
+\end{equation}
+
+Here $\mu(S)$ is the current growth rate of the bacteria in this environment, $\mu_{\max}$ is the maximum growth rate of the bacteria, $S$ is a measure of the nutrient concentration 
+present and $K'$ is a constant which represents the nutrient concentration at which growth is half-maximal.  As described this equation, the growth rate of bacteria decreases non-linearly 
+as nutrient availability decreases.
 
 
 \subsection{Biofilms}
@@ -318,33 +358,39 @@ can arise from.  From this it appears that the contributions of antibiotic gradi
 %  \item this section will probs be the most involved
 % \end{itemize}
 
-Bacteria which aggregate onto and around a surface forming a biofilm have a range of additional defences available to them which free-flowing planktonic bacterial 
-colonies do not \cite{bioref:Lewis-biofilm-riddle-2001}.  These defences can afford biofilm colonies resistances to antibiotics 10-1000 times greater than their individual counterparts 
-\cite{bioref:Anderson-innate-biofilm-resistances-2008}, making treatment plans an immensely more complicated affair.  These resistance mechanisms are simple to replicate in laboratory 
-conditions, which heavily suggests that it is indeed the biofilm itself which possesses these qualities, rather than any external influence from the host or environment 
-\cite{bioref:Stewart-biofilm-resis-mechanisms-2002}.  Biofilms can form on almost any surface where there is a consistent influx of bacteria and other microorganisms, from medical 
-devices \cite{bioref:Donlan-biofilms-medical-devices-2002} to the exterior of ship hulls \cite{bioref:Chambers-modern-antifoul-coatings-2006}.  
+Bacteria which aggregate onto a surface forming a biofilm have been shown to be much harder to eradicate than their free-flowing planktonic bacterial 
+counterparts \cite{bioref:Lewis-biofilm-riddle-2001}.  In fact, biofilm colonies can exhibit resistances to antibiotics 10-1000 times greater than their individual complements 
+\cite{bioref:Anderson-innate-biofilm-resistances-2008}, making treatment plans an immensely more complicated affair.  Whilst it is still relatively unclear as to what exactly affords 
+biofilms these defences, experiments conducted in laboratory conditions heavily suggest that it is indeed the biofilm itself which possesses these qualities, rather than any external 
+influence from the host or environment \cite{bioref:Stewart-biofilm-resis-mechanisms-2002}.  Biofilms can form on almost any surface where there is a consistent influx of bacteria, algae  
+or other microorganisms, ranging from medical devices \cite{bioref:Donlan-biofilms-medical-devices-2002} to the exterior of ship hulls \cite{bioref:Chambers-modern-antifoul-coatings-2006}.  
 
-The formation of biofilms is a complex and little-understood process.  Whilst originally thought that biofilms were formed by single organisms attaching to a surface, leading to 
+The formation of biofilms is a complex and little-understood process.  Whilst it was originally thought that biofilms were formed by single organisms attaching to a surface, leading to 
 the formation of micro-colonies and then 3D structures \cite{bioref:Monds-biofilm-formation-2009}, there is also now evidence that pre-existing bacterial aggregates can also 
 seed the formation of biofilms \cite{bioref:hall-stooley-biofilm-clumps-2005}, the differing shape and composition of which in turn can influence the final established biofilm 
 \cite{bioref:Xavier-biofilm-framework-multiD-modelling-2005}, making the developmental paths of biofilms increasingly hard to predict.
 
-Regardless of how they come to be, biofilms have a range of features which distinguish them from a simple gathering of bacteria. One such key trait that marks them apart is that of the 
-inter-cellular matrix.  When bacteria aggregate into a biofilm, they secrete a variety of macromolecules such as exopolysaccharides, DNA and protein fragments 
-\cite{bioref:Whitechurch-biomatrix-components-2002}, which allows the bacteria to adhere to both surfaces and one another.
+Regardless of how they come to be, biofilms have a range of features which distinguish them apart from a simple group of bacteria in close proximity to one another. One key trait 
+that marks them apart is that of the inter-cellular matrix.  When bacteria or algae aggregate into a biofilm, they secrete a variety of macromolecules such as exopolysaccharides, DNA and 
+protein fragments \cite{bioref:Whitechurch-biomatrix-components-2002}, which allows the microorganisms involved to adhere to both surfaces and one another.
 
 This matrix forms just one of the biofilm's innate defence mechanisms.  Although its composition is mainly water, perhaps up to 97\% in some cases 
-\cite{bioref:Zhang-biofilm-water97pc-1998}, the organic material present in it acts as a diffusion barrier to the applied antibiotic, preventing it from fully penetrating 
-the biofilm.  On average, the diffusion coefficient of an administered antibiotic in a biofilm matrix is roughly 40\% that of it in pure water 
+\cite{bioref:Zhang-biofilm-water97pc-1998}, the organic material present in it may act as a diffusion barrier to the applied antibiotic, preventing it from fully penetrating 
+the biofilm.  On average, the diffusion coefficient of an administered antibiotic in a biofilm matrix is roughly 40\% that in pure water 
 \cite{bioref:Stewart-biofilm-diffusion-coeff-1998}.  However it is not thought that this reduction in antibiotic mobility alone is enough to explain the levels of resistance which 
 biofilms exhibit.  
 
-Another feature of biofilms which may explain their durability is that of the formation of microenvironemts within their structure \cite{bioref:Wimpenny-micrograds-1995}.  Factors such 
-as oxygen limitation and poor nutrient diffusion throughout the biofilm matrix creates regions where the growth rate is substantially reduced compared to the outer sections.  As the 
-efficacy of many antibiotics are dependent on growth rates \cite{bioref:Field-gr-depend-antib-2005}, this causes many antibiotics to only be effective against specific sections of 
-a biofilm, rather than the structure as a whole, an example of which can be see in Figure \ref{fig:Pamp-dead-innards-biofilms}.  This multitude of factors make further research into how 
-biofilms evolve over time essential, as the surface has only just been scratched into just how the internal workings of biofilms interplay with one another.
+Another feature of biofilms which may explain their durability is that of the formation of microenvironments within their structure \cite{bioref:Wimpenny-micrograds-1995}.  Factors such 
+as oxygen limitation and poor nutrient diffusion throughout the biofilm matrix creates regions where the growth rate is substantially reduced compared to the outer sections.  As 
+mentioned previously, the efficacy of many antibiotics are dependent on growth rate \cite{bioref:Field-gr-depend-antib-2005}, this therefore causes many antibiotics to only be effective 
+against specific sections of a biofilm, rather than the structure as a whole.  
+
+An example of which can be see in Figure \ref{fig:Pamp-dead-innards-biofilms}, taken from an experiment by Pamp et al., 2008 
+\cite{bioref:Pamp-biofilm-internal-2008}.  Here they applied the antibiotic colistin to a biofilm of \textit{P. aeruginosa} bacteria to show that it is bacterial metabolic activity which 
+contributes to the tolerance of colistin.  As shown in Figure \ref{fig:Pamp-dead-innards-biofilms}, the metabolically active cells on the periphery of the biofilm are able to tolerate 
+the application of the antibiotic.  However the metabolically inactive cells towards the centre are unable to develop this tolerance, resulting in their death.  These multitude of 
+factors contributing to the persistence of biofilms make further research into how they develop over time essential.  As despite their prevalence, surprisingly little is still known 
+about their inner workings.
 
 \begin{figure}[H]
  \centering
@@ -355,6 +401,7 @@ biofilms evolve over time essential, as the surface has only just been scratched
 \end{figure}
 
 
+\subsection{Antimicrobial coatings}
 %write about majority innate stuff, then diffusion . then do differing growth rates and gene alteration and that picture martin sent then done
 
 
@@ -389,43 +436,47 @@ biofilms evolve over time essential, as the surface has only just been scratched
 
 
 
-\subsection{Greulich et al. replication}
+\subsection{Replication of Greulich et al.}
 
-Progress made so far in this project can be organised into several sections.  The initial few weeks of the project 
+The work undertaken so far in this PhD has comprised computer simulations investigating how microbial populations colonise along spatial concentration gradients of antimicrobial 
+chemicals.  The progress made up until now in this project can be organised into several sections.  The initial few weeks of the project 
 were spent replicating the results and techniques found in Greulich et al., 2012 \cite{bioref:PRL-drugGradients}.  Discussion was had
-on the subject of which algorithm would be optimal for updating the system over time.  Algorithms such as Gillespie \cite{bioref:Gillespie-algorithm} 
-and $\tau$-leaping \cite{bioref:tau-leap-algorithm} were proposed, but eventually a simple Monte-Carlo style selection process as detailed in the supplementary material 
-of Greulich et al., was decided upon.  The purpose of this was mainly as a ``warm-up'' project.  Intended to increase fluency and familiarity in the techniques and background 
+on the subject of which algorithm would be optimal for updating the system over time.  
+
+Algorithms such as Gillespie \cite{bioref:Gillespie-algorithm} and $\tau$-leaping \cite{bioref:tau-leap-algorithm} were proposed, but eventually a simple Monte-Carlo style selection 
+process as detailed in the supplementary material of Greulich et al., was decided upon.  The algorithm operated by selecting an individual cell at random and then summing together 
+the migration, death and replication rates of the cell ($R_{mig}, R_{dea}, R_{rep}$), as detailed in section \ref{subsec:modelling-gradients}.  A random number $r$ was then chosen 
+between 0 and $R_{\max}$, where $R_{\max} \geq R_{mig} + R_{dea} + R_{rep}$. Depending on the value of $r$, the cell would then either migrate, die, replicate or do nothing.  The time 
+elapsed in the simulation was then increased by an increment $\Delta{t} = 1/(NR_{max})$.  
+
+This method was found to be faster than the standard Gillespie algorithm as the number 
+of calculations required for each iteration is small, and the rate at which an event occurs (i.e., the likelihood of $r < R_{mig} + R_{dea} + R_{rep}$) is relatively high, 
+and on average around 25\%.  The only downside when compared to Gillespie is that the time elapsed is discretised into increments of $\Delta{t}$ rather than a continuous distribution.  
+However the timescales that these simulations are performed for are much larger than $\Delta{t}$, so this is relatively inconsequential.  
+
+The purpose of this was mainly to establish useful methods for future projects, intended to increase fluency and familiarity in the techniques and background 
 theory required for the modelling of biological systems.  The results obtained from this body of work were rough, proof-of-concept illustrations, rather than the precise 
-quantitative results obtained in the actual paper.
-
-[INSERT SOME GRAPHS AND SCREENSHOTS]
+quantitative results obtained in the actual paper, intended more for comparative purposes to ensure the constructed model worked as intended.
 
 
-\subsection{Growth rate-dependant antibiotics}
 
-By far the majority of the time spent on this project has been on the modelling of growth rate-dependant antibiotics, based on the 2015 paper by Greulich et al. 
-\cite{bioref:Greulich-growthDependentAntibiotics}.  In this paper, Greulich et al. proposed that certain ribosome-targeting antibiotics were more effective on either 
-fast-growing or slow-growing bacteria depending on how the antibiotic bound to the target ribosomes.  It's been shown that the ribosome content of a cell correlates with 
-the cell's growth rate \cite{bioref:Bremer-ribosome-content-2008}, with fast-growing cells dedicating more of their resources to ribosome production than their slow-growing 
-counterparts \cite{bioref:Scott-ribosome-content-2010}.  For example, the antibiotic tetracycline binds reversibly to the bacteria's ribosomes and is more effective when the 
-bacteria are fast-growing.  In contrast, streptomycin binds irreversibly with the bacterial ribosomes and is more suited for bacteria which are growing slowly.  Here we 
-assume that the growth rate of bacteria is directly proportional to nutrient availability, with a rich nutrient supply corresponding to a high growth rate.
+\subsection{Modelling growth rate-dependant antibiotics}
 
-
-The foundation of this model was heavily borrowed from the one created in the previous section, but with the key addition of nutrients, which were used to modify the 
+The majority of the time spent on this project has been on the modelling of growth rate-dependant antibiotics, based on the 2015 paper by Greulich et al. 
+\cite{bioref:Greulich-growthDependentAntibiotics} as mentioned in section \ref{subsec:GR-dependency}.  The foundation of this model was heavily borrowed from the one created in the 
+previous section, but with the key addition of nutrients, which were used to modify the 
 growth rate in lieu of the carrying capacity factor from the previous model.  Two simple functional forms for the MICs of fast-growing bacteria targeting antibiotics (FGBTA)
 and slow-growing bacteria targeting antibiotics (SGBTA) were constructed as follows: for the fast-growth targeting antibiotics; 
 
 \begin{equation}
- \beta =  10 - 9\frac{\mu(S)}{\mu_{\max}}
+ \beta_{FGT} =  10 - 9\frac{\mu(S)}{\mu_{\max}}
  \label{eqn:fast-growth-beta}
 \end{equation}
 
 and for the slow-growth targeting antibiotics;
 
 \begin{equation}
- \beta = 1 + 9\frac{\mu(S)}{\mu_{\max}}.
+ \beta_{SGT} = 1 + 9\frac{\mu(S)}{\mu_{\max}}.
  \label{eqn:slow-growth-beta}
 \end{equation}
 
@@ -438,13 +489,41 @@ Here
 
 where $K'$ is a constant which represents the nutrient concentration at which bacterial growth is half-maximal, the value used here is for that of \textit{E. coli} 
 growing in glucose, and $S$ is a measure of the nutrients present.  Each replication by a bacteria consumes nutrients, altering the MIC in the microhabitat, 
-which in turn alters the growth rate.  As $\mu_{\max}$ is a constant representing the maximum concentration of nutrients in each microhabitat, the ratio $\frac{\mu(S)}{\mu_{\max}}$ 
-will decrease over time with each successful replication.  Therefore for the bacteria exposed to the fast-growth targeting antibiotics, the tip of the advancing population will be 
-more inhibited than the slow-growing bulk towards the rear of the colony, and vice versa for the slow-growth targeting antibiotics.
+which in turn alters the growth rate.  As can be deduced from this, a concentration of 1 is required to impede bacterial growth for the FGBTA, but the required concentration 
+increases as nutrients are consumed via replication, thus lowering the growth rate.  The inverse is therefore true for the SGBTA which require less antibiotic as the bacteria's 
+growth rate decreases.
 
-A variety of experiments were conducted using this model, ranging from the effects of the differing types of antibiotic growth on overall population sizes, to their impact 
-on spatial proliferation and how the growth rates decreased over time.  Additionally, as a form of ``control'' group, a series of experiments were also performed utilising 
+Therefore the full expression for the growth rate experienced by the bacteria is given by 
+
+\begin{equation}
+ R_{rep} = \max\{0, 1 - (\frac{c}{\beta})^2\}\frac{S}{K' + S}.
+\end{equation}
+
+
+As $\mu_{\max}$ is a constant representing the maximum concentration of nutrients in each microhabitat, the ratio $\frac{\mu(S)}{\mu_{\max}}$ 
+will decrease over time with each successful replication.  Therefore for the bacteria exposed to the fast-growth targeting antibiotics, the tip of the advancing population will be 
+more inhibited than the slow-growing bulk towards the rear of the colony, and vice versa for the slow-growth targeting antibiotics.  Additionally, as a form of ``control'' group, 
+a series of simulations were also performed utilising 
 growth-independent bacteria targeting antibiotics (GIBTA) whose MIC didn't vary with $S$ or $c$, but rather remained constant at all times.
+
+
+\begin{figure}[H]
+ \centering
+ \begin{subfigure}[h]{0.49\textwidth}
+ \includegraphics[width=\textwidth]{simple-slowGrowers-S_Vs_C-contours}
+  \caption{SGBTA}
+  \label{subfig:SGBTA-const_C-contours}
+  \end{subfigure}
+  \begin{subfigure}[h]{0.49\textwidth}
+  \includegraphics[width=\textwidth]{simple-fastGrowers-S_Vs_C-contours}
+  \caption{FGBTA}
+  \label{subfig:FGBTA-const_C-contours}
+ \end{subfigure}
+\caption{Overall sizes of bacterial populations after 1000 time units have passed, for a variety of uniform antibiotic and initial nutrient concentrations.  
+From this it can be seen that the SGBTA are less effective at inhibiting overall bacterial growth, however the impact of a uniform antibiotic concentration has opposing effects 
+for SGBTA and FGBTA.  The presence of a gradient causes the SGBTA to be more effective inhibitor, while the reverse is true for the FGBTA.}
+\label{fig:const_C-popsize-contours}
+\end{figure}
 
 
 
@@ -466,23 +545,12 @@ From this it can be seen that the SGBTA are less effective at inhibiting overall
 \end{figure}
 
 
-\begin{figure}[H]
- \centering
- \begin{subfigure}[h]{0.49\textwidth}
- \includegraphics[width=\textwidth]{simple-slowGrowers-S_Vs_C-contours}
-  \caption{SGBTA}
-  \label{subfig:SGBTA-const_C-contours}
-  \end{subfigure}
-  \begin{subfigure}[h]{0.49\textwidth}
-  \includegraphics[width=\textwidth]{simple-fastGrowers-S_Vs_C-contours}
-  \caption{FGBTA}
-  \label{subfig:FGBTA-const_C-contours}
- \end{subfigure}
-\caption{Overall sizes of bacterial populations after 1000 time units have passed, for a variety of uniform antibiotic and initial nutrient concentrations.  
-From this it can be seen that the SGBTA are less effective at inhibiting overall bacterial growth, however the impact of a uniform antibiotic concentration has opposing effects 
-for SGBTA and FGBTA.  The presence of a gradient causes the SGBTA to be more effective inhibitor, while the reverse is true for the FGBTA.}
-\label{fig:const_C-popsize-contours}
-\end{figure}
+Some example results from these simulations are shown in Figures \ref{fig:const_C-popsize-contours}, \ref{fig:alpha-popsize-contours} and \ref{fig:alpha-spatdistbs}.  The first 
+computational experiment performed entailed exposing the bacteria to a variety of nutrient and uniform antibiotic concentrations, as shown in Figure \ref{fig:const_C-popsize-contours}.  
+This experiment, along with all the others, was initialised by setting $N_0 = 100$ and then allowing the system to develop for 1000 time units (increased to 2000 for the spatial 
+distributions, to ensure the populations had reached their point of impedance).  As can clearly be seen by comparing Figures \ref{subfig:SGBTA-const_C-contours} and 
+\ref{subfig:FGBTA-const_C-contours}, the SGBTA are much less effective 
+
 
 Some examples of the results that these experiments yielded are shown in Figures \ref{fig:alpha-popsize-contours}, \ref{fig:const_C-popsize-contours} and \ref{fig:alpha-spatdistbs}.  
 Figure \ref{fig:alpha-popsize-contours} shows the total growth achieved by the bacteria for various initial nutrient concentrations and steepness of antibiotic gradients, whereas 
@@ -577,7 +645,7 @@ drug gradient arises from, and discerning whether these two situations create di
  \caption{Screenshot taken from the paper by Matsumoto at al., 2007 \cite{bioref:Matsumoto-sim-snapshot-2007} which contained several differing species of bacteria whose growth rates 
  varied depending on the atmospheric composition of the biofilm.  This is included for illustrative purposes as an idea of what the simulations constructed in the later 
  stages of this PhD project might resemble.}
- \label{fig:Greulich-time-til-resistance}
+ \label{fig:Matsumoto-sim-snapshot}
 \end{figure}
 
 In conjunction with AkzoNobel, some wet work will be undertaken at their laboratory in Newcastle.  This would entail cultivating biofilms on various surfaces akin to industrial 
@@ -615,7 +683,7 @@ microorganisms taken from biofilms attached to industrial shipping vessels.
 \pagebreak
 \newpage
 %            Now build the reference list
-\bibliographystyle{unsrt}                      % The reference style
+\bibliographystyle{ieeetr}                      % The reference style
 %                This is plain and unsorted, so in the order
 %                they appear in the document.
 

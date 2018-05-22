@@ -1,63 +1,56 @@
 This is BibTeX, Version 0.99d (TeX Live 2013)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: LiteratureReview.aux
-The style file: unsrt.bst
+The style file: ieeetr.bst
 Database file #1: BiofilmReferences.bib
 Warning--empty year in bioref:tissue-antibio-grads
 Warning--can't use both author and editor fields in bioref:biofilm-fuel-consumption
 Warning--empty year in bioref:Liu-baicalin-synergy
-Too many commas in name 1 of "Bertazzoni Minelli E, Benini A, Muner A, Bassi C, Abbas H, Pederzoli P." for entry bioref:minelli-peflox-penet
-while executing---line 944 of file unsrt.bst
-Too many commas in name 1 of "Bertazzoni Minelli E, Benini A, Muner A, Bassi C, Abbas H, Pederzoli P." for entry bioref:minelli-peflox-penet
-while executing---line 944 of file unsrt.bst
-Too many commas in name 1 of "Bertazzoni Minelli E, Benini A, Muner A, Bassi C, Abbas H, Pederzoli P." for entry bioref:minelli-peflox-penet
-while executing---line 944 of file unsrt.bst
+Warning--empty journal in bioref:Scott-ribosome-content-2010
 Warning--can't use both author and editor fields in bioref:Anderson-innate-biofilm-resistances-2008
 Too many commas in name 1 of "Wimpenny, J. W. T., Kinniment, S. L." for entry bioref:Wimpenny-micrograds-1995
-while executing---line 944 of file unsrt.bst
+while executing---line 969 of file ieeetr.bst
 Warning--can't use both author and editor fields in bioref:Wimpenny-micrograds-1995
-Warning--empty year in bioref:Greulich-growthDependentAntibiotics
-Warning--empty journal in bioref:Scott-ribosome-content-2010
 Warning--can't use both volume and number fields in bioref:Matsumoto-sim-snapshot-2007
-You've used 44 entries,
-            1791 wiz_defined-function locations,
-            770 strings with 14822 characters,
-and the built_in function-call counts, 11268 in all, are:
-= -- 944
-> -- 554
-< -- 5
-+ -- 203
-- -- 159
-* -- 956
-:= -- 1811
-add.period$ -- 136
-call.type$ -- 44
-change.case$ -- 40
+You've used 49 entries,
+            1876 wiz_defined-function locations,
+            837 strings with 16027 characters,
+and the built_in function-call counts, 16408 in all, are:
+= -- 1662
+> -- 624
+< -- 0
++ -- 228
+- -- 179
+* -- 1226
+:= -- 2244
+add.period$ -- 57
+call.type$ -- 49
+change.case$ -- 45
 chr.to.int$ -- 0
-cite$ -- 52
-duplicate$ -- 428
-empty$ -- 1073
-format.name$ -- 159
-if$ -- 2468
+cite$ -- 56
+duplicate$ -- 821
+empty$ -- 1432
+format.name$ -- 179
+if$ -- 4083
 int.to.chr$ -- 0
-int.to.str$ -- 44
-missing$ -- 48
-newline$ -- 227
-num.names$ -- 44
-pop$ -- 70
+int.to.str$ -- 49
+missing$ -- 53
+newline$ -- 158
+num.names$ -- 49
+pop$ -- 79
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 170
+skip$ -- 682
 stack$ -- 0
-substring$ -- 917
-swap$ -- 74
-text.length$ -- 5
+substring$ -- 1292
+swap$ -- 435
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 8
-while$ -- 93
-width$ -- 46
-write$ -- 489
-(There were 4 error messages)
+warning$ -- 7
+while$ -- 141
+width$ -- 51
+write$ -- 526
+(There was 1 error message)
