@@ -283,6 +283,9 @@ increasing antibiotic concentration
  \label{eqn:c_i}
 \end{equation}
 
+Here $\alpha$ is a dimensionless constant which dictates the steepness of the antibiotic gradient, i.e. by how much it increases between microhabitats, and by extension, 
+the concentration of antibiotic in the final microhabitat.
+
 
 \begin{figure}[H]
  \centering
@@ -402,6 +405,29 @@ about their inner workings.
 
 
 \subsection{Antimicrobial coatings}
+
+Whilst the ability to eradicate, or at the very least suppress biofilm growth has numerous medical applications, it is also of notable economic and environmental consequence.  Marine 
+biofouling, where a variety of micro and macroorganisms adhere to the exterior of a ship's hull, has extremely adverse effects on the efficiency of transportation.  Due to the 
+contributions of the additional weight and surface roughness from marine biofouling, fuel consumption can increase by up to 45\% \cite{bioref:biofilm-fuel-consumption}.  This in 
+turn affects the cost of these sea voyages, where a one-way trip between San Francisco and Yokohama has seen a price increase of 77\% due to the impact of 
+biofouling \cite{bioref:Abbot-biofoul-price-2000}.
+
+The process of marine biofouling begins to occur within minutes of a surface being exposed to a marine environment \cite{bioref:Callow-biofoul-onset-time-1994}, with the formation 
+of a layer of proteins and polysaccharides not dissimilar to the intercellular matrix found in biofilms.  Following on from this, microorganisms such as bacteria and algae attach 
+themselves to the surface and begin to grow.  Within 2-3 weeks, macroorganisms such as molluscs and seaweed have then adhered to this biofilm and a complex ecosystem has been formed 
+\cite{bioref:Chambers-modern-antifoul-coatings-2006}.
+
+It is the inhibition of the formation of the microorganism biofilm which will prove key to curtailing marine biofouling, as the majority of macrofouling is reliant on the presence 
+of an established biofilm \cite{bioref:Abarzua-macrofoul-dependent-1995}.  As such, the majority of antifouling research is orientated towards the inhibition of the initial adhesion 
+of marine bacteria, diatoms and other microorganisms.  Although numerous avenues of techniques have been pursued in this endeavour, the field of research relevant to this project 
+is that of biocidal-containing paints.
+
+These coatings consist of paints mixed with a variety of antimicrobial compounds which then leach said compounds into the surrounding marine atmosphere upon their submergence 
+in seawater.  These coatings can be placed into two classes, of soluble or insoluble matrices, which depends on the manner of how the paints release their contained biocides.  
+Coatings belonging to the insoluble matrix family contain an insoluble polymer framework, which persists after the soluble antimicrobials have been dissolved into the seawater.  This 
+remaining porous structure is referred to as the ``leached layer'' \cite{bioref:Cao-bifoul-coatings-review-2011}.
+
+
 %write about majority innate stuff, then diffusion . then do differing growth rates and gene alteration and that picture martin sent then done
 
 
@@ -487,9 +513,8 @@ Here
  \mu(S) = \frac{S}{K' + S}
 \end{equation}
 
-where $K'$ is a constant which represents the nutrient concentration at which bacterial growth is half-maximal, the value used here is for that of \textit{E. coli} 
-growing in glucose, and $S$ is a measure of the nutrients present.  Each replication by a bacteria consumes nutrients, altering the MIC in the microhabitat, 
-which in turn alters the growth rate.  As can be deduced from this, a concentration of 1 is required to impede bacterial growth for the FGBTA, but the required concentration 
+is the Monod equation as detailed in section \ref{subsec:GR-dependency}.  Each replication by a bacteria consumes nutrients, altering the growth rate and MIC
+in the microhabitat.  As can be deduced from this, a concentration of 1 is required to impede bacterial growth for the FGBTA, but the required concentration 
 increases as nutrients are consumed via replication, thus lowering the growth rate.  The inverse is therefore true for the SGBTA which require less antibiotic as the bacteria's 
 growth rate decreases.
 
@@ -520,14 +545,13 @@ growth-independent bacteria targeting antibiotics (GIBTA) whose MIC didn't vary 
   \label{subfig:FGBTA-const_C-contours}
  \end{subfigure}
 \caption{Overall sizes of bacterial populations after 1000 time units have passed, for a variety of uniform antibiotic and initial nutrient concentrations.  
-From this it can be seen that the SGBTA are less effective at inhibiting overall bacterial growth, however the impact of a uniform antibiotic concentration has opposing effects 
-for SGBTA and FGBTA.  The presence of a gradient causes the SGBTA to be more effective inhibitor, while the reverse is true for the FGBTA.}
+From this it can be seen that the SGBTA are less effective at inhibiting overall bacterial growth.}
 \label{fig:const_C-popsize-contours}
 \end{figure}
 
 
 
-\begin{figure}[H]
+\begin{figure}[h!]
  \centering
  \begin{subfigure}[h]{0.49\textwidth}
  \includegraphics[width=\textwidth]{simple-slowGrowers-S_Vs_Alpha-contours}
@@ -540,7 +564,8 @@ for SGBTA and FGBTA.  The presence of a gradient causes the SGBTA to be more eff
   \label{subfig:FGBTA-alphagrad-contours}
  \end{subfigure}
 \caption{Overall sizes of bacterial populations after 1000 time units have passed, for a variety of antibiotic gradients and initial nutrient concentrations.  
-From this it can be seen that the SGBTA are less effective at inhibiting overall bacterial growth.}
+From this it can be seen that the SGBTA are less effective at inhibiting overall bacterial growth, however the impact of a uniform antibiotic concentration has opposing effects 
+for SGBTA and FGBTA.  The presence of a gradient causes the SGBTA to be a more effective inhibitor, while the reverse is true for the FGBTA.}
 \label{fig:alpha-popsize-contours}
 \end{figure}
 
@@ -549,16 +574,13 @@ Some example results from these simulations are shown in Figures \ref{fig:const_
 computational experiment performed entailed exposing the bacteria to a variety of nutrient and uniform antibiotic concentrations, as shown in Figure \ref{fig:const_C-popsize-contours}.  
 This experiment, along with all the others, was initialised by setting $N_0 = 100$ and then allowing the system to develop for 1000 time units (increased to 2000 for the spatial 
 distributions, to ensure the populations had reached their point of impedance).  As can clearly be seen by comparing Figures \ref{subfig:SGBTA-const_C-contours} and 
-\ref{subfig:FGBTA-const_C-contours}, the SGBTA are much less effective 
+\ref{subfig:FGBTA-const_C-contours}, the SGBTA are much less effective at inhibiting bacterial growth than the FGBTA.
 
-
-Some examples of the results that these experiments yielded are shown in Figures \ref{fig:alpha-popsize-contours}, \ref{fig:const_C-popsize-contours} and \ref{fig:alpha-spatdistbs}.  
-Figure \ref{fig:alpha-popsize-contours} shows the total growth achieved by the bacteria for various initial nutrient concentrations and steepness of antibiotic gradients, whereas 
-Figure \ref{fig:const_C-popsize-contours} utilises uniform antibiotic concentrations.  From these results two observations can be made.  Firstly, if we compare Figures 
-\ref{subfig:SGBTA-alphagrad-contours} to \ref{subfig:FGBTA-alphagrad-contours} and \ref{subfig:SGBTA-const_C-contours} to \ref{subfig:FGBTA-const_C-contours}, it can be seen that 
-in both cases, the SGBTA are much less effective at inhibiting the growth of the population.  However when the scenarios involving gradients are compared to those without, two 
-differing features can be observed, which leads to the second observation; SGBTA are more effective inhibitors when they are applied in the form of a gradient, but the reverse is true 
-for FGBTA, which are more effective in uniform concentrations.
+Following on from this, these simulations were then repeated but with the antibiotic applied in the form of an exponential gradient, with its steepness being varied.  Once 
+again by comparing Figure \ref{subfig:SGBTA-alphagrad-contours} to \ref{subfig:FGBTA-alphagrad-contours}, it's observed that the SGBTA are still less effective at inhibiting 
+bacterial growth when compared to the FGBTA.  However, the presence of a gradient compared has differing effects on the potency of the two antibiotic types.  By comparing Figures 
+\ref{subfig:SGBTA-const_C-contours} and \ref{subfig:SGBTA-alphagrad-contours}, it can be seen that the presence of an antibiotic gradient causes the SGBTA to be relatively more 
+effective at inhibiting the growth of the bacteria, while the reverse appears to be true for the FGBTA, as the presence of a gradient allows for more proliferation of bacteria.
 
 
 
@@ -580,33 +602,38 @@ for FGBTA, which are more effective in uniform concentrations.
   \label{subfig:FGBTA-spatdistb-spef_alpha}
  \end{subfigure}
 \caption{Spatial distributions of bacterial populations exposed to SGBTA, GIBTA and FGBTA respectively.  The steepness of the antibiotic gradient has been chosen here such that 
-the antibiotic concentration has a maximum of just over 10 in the final microhabitat.  Once again, the SGBTA is inferior at inhibiting bacterial growth.}
+the antibiotic concentration has a maximum of just over 10 in the final microhabitat.  This is done so that the largest possible value of the MIC is not reached until the far 
+edge of the microhabitats, allowing for clear comparisons of the dependency on growth rate.  Once again, the SGBTA is inferior at inhibiting bacterial growth.}
 \label{fig:alpha-spatdistbs}
 \end{figure}
 
 
-Following on from this, simulations were run to determine how gradients of these differing antibiotic types affected the spatial distribution of the bacteria, an example of which is 
-shown in Figure \ref{fig:alpha-spatdistbs}.  Here once again we can see that the SGBTA allow for the bacteria to spread much further than the FGBTA in the same timeframe, with the 
-GIBTA's efficacy being somewhere inbetween the two.  Therefore showing that antibiotics which target the fast-growing tip of an advancing colony are more effective at impeding their 
-progress.  
+The objective of the next set of simulations performed was to determine of heterogeneous concentrations of these differing antibiotic types affected the spatial distribution 
+of the bacteria, an example of which is shown in Figure \ref{fig:alpha-spatdistbs}.  Here we can once again see that the SGBTA allow for the bacteria to spread much further than the FGBTA 
+in the same timeframe, with the GIBTA's efficacy being somewhere inbetween the two.  This shows that antibiotics which target the fast-growing tip of an advancing colony are more effective 
+at impeding their progress.  
 
 These simulations were then performed using more ``realistic'' expressions for the MICs and replication rates of relevant bacteria, from the findings in Greulich et al., 2015, which 
-continue to corroborate these findings.  This component of the project has now deemed to have been completed and is currently in the process of being written up into a paper intended 
-for publication.
+continue to corroborate these findings, i.e. that antibiotics which target fast-growing bacteria are more efficient at curtailing the spread of bacterial populations.  This component 
+of the project has now deemed to have been completed and is currently in the process of being written up into a paper intended for publication.
 
 
 \subsection{Multispecies models}
 
-While many experimental investigations in laboratory conditions utilise biofilms containing only one species of bacteria, in nature the vast majority of biofilms are actually composed 
-of a wide variety of species, which have differing physical properties and typically are in competition with one another \cite{bioref:Elias-biofilm-multispecies-2012}.  Motivated by 
-our discussion with AkzoNobel, where they highlighted the importance of understanding how these multispecies biofilms behave in order to better design the combinations of 
-anti-microbials they include in their anti-fouling paints.
+While many experimental investigations in laboratory conditions utilise biofilms containing only one species of microbe, in nature the vast majority of biofilms are actually composed 
+of a wide variety of species, which have differing physical properties and typically are in competition with one another \cite{bioref:Elias-biofilm-multispecies-2012}.  Recently, I have 
+moved onto a study that is motivated by our discussions with AkzoNobel, where they highlighted the importance of understanding how these multispecies biofilms behave in order to better 
+design the combinations of antimicrobials they include in their anti-fouling paints.
 
-To this end, work has now begun on creating a model which contains a variety of species of bacteria, each with differing resistances to the applied antibiotic.  This design is 
-currently in its infancy, and is little more than a toy at the moment.  However there are plans to incorporate real lab data supplied by AkzoNobel to allow the model to utilise 
-growth curves and other relevant features of observed microorganisms from real-world environments, rather than the simple numeric approximations the model currently has in place.  
-Additionally discussions have been had about how best to incorporate another external source of bacteria to the system, representing the influx of microorganisms which one would 
-experience in the wild.
+To this end, work has now begun on a simple model to investigate the effect of these inter-species dynamics.  This design is 
+currently in its infancy, and is once again based on the format of the simulations mentioned in the previous sections.  What sets these simulations apart from their predecessors is that 
+the system is initialised with each microhabitat containing a number of randomly distributed microbial species.  Each of these species have differing levels of resistance to the applied 
+antimicrobial, which is once again applied in the form of a gradient.  
+
+Currently these resistance levels are simple numeric approximations which increase monotonically between each 
+species, but there are plans for AkzoNobel to supply values for growth curves and other features of observed real-world organisms which have been determined via metagenomic analysis 
+and other methods in their laboratories.  Additionally, discussions have been had about how best to incorporate another external source of bacteria to the system, 
+representing the influx of microorganisms which one would experience in the wild.
 
 \begin{figure}[H]
  \centering
@@ -620,38 +647,39 @@ experience in the wild.
 
 \section{Proposal}
 
-Over the next year, the first step will be to complete writing the paper on the growth-rate dependent antibiotic model.  This should not take longer than a few weeks, as all 
+Over the next year, the first step will be to complete writing the paper on the growth-rate dependent antibiotic model.  All of
 the results have now been collated, so a write-up and commentary, along with a discussion section is all that remains.  Along with some mainly stylistic editing.
 
 Following on from this, work will continue on the multispecies model.  The current version is a simplistic toy model, similar to the one in the 
-Greulich paper \cite{bioref:Greulich-growthDependentAntibiotics}.  Ideally our industrial partners AkzoNobel will provide us with some more realistic parameters for factors such as 
-growth and death rates for a variety of microorganisms, and their susceptibility to various biocides.  When incorporated into the current model, this should provide us with some more 
-accurate, if still overly simplified, results for how a system with multiple species compete with each other over time.  Additionally, the current models only consider freely 
-moving, independent bacteria.  But as seen in the previous literature, there is a vast difference between the behaviour of these  planktonic bacteria and those which have 
-aggregated to form a biofilm.  As such, it seems that the next logical step is to incorporate the formation and subsequent property-altering qualities of biofilms.  I estimate 
+Greulich paper \cite{bioref:Greulich-growthDependentAntibiotics}.  Our industrial partners AkzoNobel have agreed to provide us with some more realistic parameters for factors such as 
+growth and death rates for a variety of biofouling microorganisms, and their susceptibility to various biocides used in marine hull coatings.  When incorporated into the current model, 
+this should provide us with some more accurate, if still somewhat simplified, results for how a system with multiple species compete with each other over time.  AkzoNobel themselves 
+have also monitored species composition over time on a variety of antimicrobial surfaces, so this should prove useful for comparison.  I estimate 
 that at least, but no more than a few months will be spent working on this model.
 
 While these additions should certainly yield some interesting results, there is only so far that these simplistic models can take us in providing a clear picture of the mechanics 
-involved in how biofilms respond to the application of antibiotics.  Therefore the plan at present is to move on from this 1D ``lattice'' model and begin work on a more 
+involved in how biofilms respond to the application of antibiotics.  Therefore the plan at present is to eventually move on from this 1D ``lattice'' model and begin work on a more 
 intricate continuum model.  This model would allow us to incorporate key features of biofilms and the environment which surrounds them, such as surface roughness and flow around 
 the biofilm.  These models should allow us to perform research on both the medical and industrial scenarios where biofilms form, by varying the side of the biofilm that the 
-drug gradient arises from, and discerning whether these two situations create differing outcomes.  I predict that this will consume the majority of the second year of my PhD.
+drug gradient arises from, and discerning whether these two situations create differing outcomes.  I predict that completing the existing multispecies model and setting up the more 
+advanced simulations will consume the majority of the second year of my PhD.
 
 
 
 \begin{figure}[H]
  \centering
- \includegraphics[width=16.4cm]{Matsumoto-biofilm-simulation}
+ \includegraphics[width=\textwidth]{Matsumoto-biofilm-simulation}
  \caption{Screenshot taken from the paper by Matsumoto at al., 2007 \cite{bioref:Matsumoto-sim-snapshot-2007} which contained several differing species of bacteria whose growth rates 
  varied depending on the atmospheric composition of the biofilm.  This is included for illustrative purposes as an idea of what the simulations constructed in the later 
  stages of this PhD project might resemble.}
  \label{fig:Matsumoto-sim-snapshot}
 \end{figure}
 
-In conjunction with AkzoNobel, some wet work will be undertaken at their laboratory in Newcastle.  This would entail cultivating biofilms on various surfaces akin to industrial 
+In conjunction with AkzoNobel, some wet work will also be undertaken by me at their laboratory in Newcastle.  This would entail cultivating biofilms on various surfaces akin to industrial 
 ship hulls and exposing them to a variety of biocidal paints and then examining the composition of the established biofilm to compare the model with reality.  There might also 
-be opportunity to undertake part of the metagenomic analysis of these cultivated biofilms.  This aspect of the project is intended as more of an interesting aside, rather than 
-as a basis of the overall PhD project.  It should only require a month or so of involvement, and will likely be performed alongside my other commitments. 
+be opportunity to undertake part of the metagenomic analysis of these cultivated biofilms to determine species composition.  I think this will be helpful to the project as it will 
+complement the simulations, but is not intended as an integral component of my PhD.  It should only require a month or so of involvement, and will likely be performed alongside my 
+other commitments. 
 
 % In this section, detail, as far as you are currently able, 
 % your research plan for the second and third years of your PhD, 
@@ -668,14 +696,19 @@ as a basis of the overall PhD project.  It should only require a month or so of 
  
 \section{Summary}
 
-Simple models investigating the effects of antibiotic gradients have been constructed which demonstrate the relation between gradient steepness and time taken to evolve resistance, 
-the differing inhibition properties of growth-rate dependent antibiotics and how colonies involving multiple species with differing levels of resistance develop over time.  An 
-article is currently being written on the findings of the growth-rate dependent simulations.
+Although substantial research has been undertaken in the field of antibiotic and antimicrobial resistance, many of these studies were performed under idealised conditions, and neglect 
+important environmental factors, such as the presence of a heterogeneous antimicrobial concentration gradient, in lieu of a uniform concentration which is typically used in laboratory 
+environments.  To this end, simple models investigating the effects of antibiotic gradients have been constructed which demonstrate the relation between gradient steepness and time taken 
+for resistance to emerge, the differing inhibition properties of growth-rate dependent antibiotics and how colonies involving multiple species with differing levels of resistance 
+develop over time.  An article is currently being written on the findings of the growth-rate dependent simulations.
 
 The aim for the next year or so is to finish writing the article regarding the work on the growth-dependent antibiotics, then to continue with the multispecies
-model and hopefully incorporate some realistic parameters contributed by AkzoNobel.  Following on from this, work will begin on the proposed
-continuum model which could incorporate other factors such as surface texture and flow into the system.  This will be accompanied by some wet work at the AkzoNobel laboratory
-at their Newcastle compound.  This is mainly for interest and not intended to form a sizable component of the project.  There has also been some discussion of
+model and hopefully incorporate some realistic parameters contributed by our industrial partners AkzoNobel.  Following on from this, work will begin on the proposed
+continuum model which could incorporate other factors such as surface texture and flow into the system, which would allow us to perform more realistic biofilm simulations as a 
+long-term goal.  
+
+This will be accompanied by some wet work at the AkzoNobel laboratory
+at their Newcastle compound.  There has also been some discussion of
 my involvement in AkzoNobel's metagenomic analysis of organisms gathered from their laboratory to extract information about the growth rates and biocidal susceptibility from 
 microorganisms taken from biofilms attached to industrial shipping vessels.
 

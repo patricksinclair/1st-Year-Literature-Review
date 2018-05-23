@@ -12,45 +12,45 @@ Too many commas in name 1 of "Wimpenny, J. W. T., Kinniment, S. L." for entry bi
 while executing---line 969 of file ieeetr.bst
 Warning--can't use both author and editor fields in bioref:Wimpenny-micrograds-1995
 Warning--can't use both volume and number fields in bioref:Matsumoto-sim-snapshot-2007
-You've used 49 entries,
+You've used 52 entries,
             1876 wiz_defined-function locations,
-            837 strings with 16027 characters,
-and the built_in function-call counts, 16408 in all, are:
-= -- 1662
-> -- 624
+            863 strings with 16905 characters,
+and the built_in function-call counts, 17441 in all, are:
+= -- 1777
+> -- 654
 < -- 0
-+ -- 228
-- -- 179
-* -- 1226
-:= -- 2244
-add.period$ -- 57
-call.type$ -- 49
-change.case$ -- 45
++ -- 239
+- -- 187
+* -- 1299
+:= -- 2382
+add.period$ -- 62
+call.type$ -- 52
+change.case$ -- 48
 chr.to.int$ -- 0
-cite$ -- 56
-duplicate$ -- 821
-empty$ -- 1432
-format.name$ -- 179
-if$ -- 4083
+cite$ -- 59
+duplicate$ -- 872
+empty$ -- 1523
+format.name$ -- 187
+if$ -- 4344
 int.to.chr$ -- 0
-int.to.str$ -- 49
-missing$ -- 53
-newline$ -- 158
-num.names$ -- 49
-pop$ -- 79
+int.to.str$ -- 52
+missing$ -- 56
+newline$ -- 169
+num.names$ -- 52
+pop$ -- 80
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 682
+skip$ -- 726
 stack$ -- 0
-substring$ -- 1292
-swap$ -- 435
+substring$ -- 1383
+swap$ -- 462
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 7
-while$ -- 141
-width$ -- 51
-write$ -- 526
+while$ -- 151
+width$ -- 54
+write$ -- 563
 (There was 1 error message)
